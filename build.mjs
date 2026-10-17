@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Baut die statische Seite "KI-Gerüchte der Woche" aus data/*.json nach public/.
+// Baut die statische Seite "KI-Gerüchte" (tägliche Ausgaben) aus data/*.json nach public/.
 // Keine Abhängigkeiten, nur Node-Standardbibliothek. Aufruf: node build.mjs
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, copyFileSync, existsSync } from "node:fs";
@@ -10,12 +10,19 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(ROOT, "data");
 const OUT_DIR = join(ROOT, "public");
 const STYLE_SRC = join(ROOT, "src", "style.css");
-const SITE_NAME = "KI-Gerüchte der Woche";
+const SITE_NAME = "KI-Gerüchte";
 
 const MONTHS = [
   "Januar", "Februar", "März", "April", "Mai", "Juni",
   "Juli", "August", "September", "Oktober", "November", "Dezember",
 ];
+
+const WEEKDAYS = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+
+const DAILY_RE = /^(\d{4})-(\d{2})-(\d{2})$/;
+const WEEKLY_RE = /^(\d{4})-w(\d{2})$/;
+// Sicherungskopien (siehe .gitignore), werden mit Hinweis übersprungen
+const BACKUP_RE = /(\.v\d.*|\.before-.*)\.json$/;
 
 const STATUS_LABELS = {
   confirmed: "Bestätigt",
@@ -34,13 +41,33 @@ function esc(value) {
 }
 
 function fail(file, msg) {
-  throw new Error(`${file}: ${msg}`);
+  throw new Error(`data/${file}: ${msg}`);
 }
 
 function parseDate(str, file, field) {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str ?? "");
   if (!m) fail(file, `${field} muss im Format JJJJ-MM-TT sein, ist aber ${JSON.stringify(str)}`);
   return { y: Number(m[1]), m: Number(m[2]), d: Number(m[3]) };
+}
+
+function isRealDate({ y, m, d }) {
+  const t = new Date(Date.UTC(y, m - 1, d));
+  return t.getUTCFullYear() === y && t.getUTCMonth() === m - 1 && t.getUTCDate() === d;
+}
+
+function dateKey({ y, m, d }) {
+  return y * 10000 + m * 100 + d;
+}
+
+// 18. Oktober 2026
+function formatDate({ y, m, d }) {
+  return `${d}. ${MONTHS[m - 1]} ${y}`;
+}
+
+// Sonntag, 18. Oktober 2026
+function formatLongDate(date) {
+  const wd = new Date(Date.UTC(date.y, date.m - 1, date.d)).getUTCDay();
+  return `${WEEKDAYS[wd]}, ${formatDate(date)}`;
 }
 
 // 13.10.2026
@@ -76,22 +103,54 @@ function checkOriginal(orig, file, where) {
 // ---------- Daten laden ----------
 
 function loadIssues() {
-  // Nur Dateien der Form JJJJ-wKW.json sind Ausgaben; andere .json (z. B. Sicherungskopien) werden übersprungen.
-  const all = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")).sort();
-  const files = all.filter((f) => /^\d{4}-w\d{2}\.json$/.test(f));
-  for (const f of all) if (!files.includes(f)) console.warn(`Übersprungen (kein Ausgaben-Dateiname): data/${f}`);
+  // Ausgaben heißen JJJJ-MM-TT.json (täglich) oder JJJJ-wKW.json (alte Wochenausgaben).
+  // Sicherungskopien werden übersprungen, jeder andere .json-Name bricht den Build ab.
+  const files = [];
+  for (const f of readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")).sort()) {
+    if (BACKUP_RE.test(f)) {
+      console.warn(`Übersprungen (Sicherungskopie): data/${f}`);
+      continue;
+    }
+    const stem = f.slice(0, -".json".length);
+    if (!DAILY_RE.test(stem) && !WEEKLY_RE.test(stem)) {
+      fail(f, `ungültiger Dateiname, erwartet JJJJ-MM-TT.json (z. B. 2026-10-18.json) oder JJJJ-wKW.json`);
+    }
+    files.push(f);
+  }
+  const seen = new Set();
   const issues = files.map((f) => {
-    const issue = JSON.parse(readFileSync(join(DATA_DIR, f), "utf8"));
-    const m = /^(\d{4})-w(\d{2})$/.exec(issue.issue ?? "");
-    if (!m) fail(f, `"issue" muss das Format JJJJ-wKW haben (z. B. 2026-w42)`);
-    if (`${issue.issue}.json` !== f) fail(f, `Dateiname passt nicht zu "issue": ${issue.issue}`);
+    let issue;
+    try {
+      issue = JSON.parse(readFileSync(join(DATA_DIR, f), "utf8"));
+    } catch (err) {
+      fail(f, `ungültiges JSON (${err.message})`);
+    }
+    if (!issue || typeof issue !== "object" || Array.isArray(issue)) fail(f, "muss ein JSON-Objekt sein");
+    const stem = f.slice(0, -".json".length);
+    if (issue.issue !== stem) fail(f, `"issue" (${JSON.stringify(issue.issue)}) passt nicht zum Dateinamen, erwartet "${stem}"`);
+    if (seen.has(issue.issue)) fail(f, `Ausgabe ${issue.issue} ist doppelt`);
+    seen.add(issue.issue);
     for (const key of ["title", "intro"]) {
       if (typeof issue[key] !== "string" || !issue[key].trim()) fail(f, `"${key}" fehlt`);
     }
-    issue._kw = Number(m[2]);
-    issue._start = parseDate(issue.week_start, f, "week_start");
-    issue._end = parseDate(issue.week_end, f, "week_end");
-    if (issue.published) issue._published = parseDate(issue.published, f, "published");
+    const weekly = WEEKLY_RE.exec(issue.issue);
+    if (weekly) {
+      issue._kind = "weekly";
+      issue._kw = Number(weekly[2]);
+      if (issue._kw < 1 || issue._kw > 53) fail(f, `Kalenderwoche muss zwischen 01 und 53 liegen, ist aber ${weekly[2]}`);
+      issue._start = parseDate(issue.week_start, f, "week_start");
+      issue._end = parseDate(issue.week_end, f, "week_end");
+      issue._sort = issue._end;
+    } else {
+      issue._kind = "daily";
+      issue._date = parseDate(issue.issue, f, "issue");
+      if (!isRealDate(issue._date)) fail(f, `"issue" ist kein gültiges Kalenderdatum: ${issue.issue}`);
+      issue._sort = issue._date;
+    }
+    if (issue.published) {
+      issue._published = parseDate(issue.published, f, "published");
+      if (issue._kind === "daily" && !isRealDate(issue._published)) fail(f, `"published" ist kein gültiges Kalenderdatum: ${issue.published}`);
+    }
     if (!Array.isArray(issue.items) || issue.items.length === 0) fail(f, `"items" ist leer`);
     const ids = new Set();
     issue.items.forEach((item, i) => {
@@ -109,8 +168,26 @@ function loadIssues() {
     });
     return issue;
   });
-  // Neueste zuerst (Issue-IDs sind dank fester Breite lexikografisch sortierbar)
-  return issues.sort((a, b) => (a.issue < b.issue ? 1 : -1));
+  // Neueste zuerst: Tagesausgaben nach Datum, Wochenausgaben nach week_end.
+  // Bei gleichem Datum kommt die Tagesausgabe vor der Wochenausgabe.
+  return issues.sort(
+    (a, b) =>
+      dateKey(b._sort) - dateKey(a._sort) ||
+      (a._kind === b._kind ? 0 : a._kind === "daily" ? -1 : 1) ||
+      (a.issue < b.issue ? 1 : -1)
+  );
+}
+
+// Kurzlabel für Pager und Archiv: „17. Oktober 2026“ bzw. „KW 42“
+function shortLabel(issue) {
+  return issue._kind === "daily" ? formatDate(issue._date) : `KW ${issue._kw}`;
+}
+
+// Datumszeile: „Sonntag, 18. Oktober 2026“ bzw. „12.–18. Oktober 2026 · KW 42“
+function dateLabel(issue) {
+  return issue._kind === "daily"
+    ? formatLongDate(issue._date)
+    : `${formatRange(issue._start, issue._end)} · KW ${issue._kw}`;
 }
 
 // ---------- Templates ----------
@@ -192,13 +269,12 @@ const NEWSLETTER = `<section class="newsletter" aria-labelledby="newsletter-titl
 </section>`;
 
 function renderIssue(issue, { prefix, newer, older, isFrontPage }) {
-  const range = formatRange(issue._start, issue._end);
-  const meta = [range, `KW ${issue._kw}`];
+  const meta = [dateLabel(issue)];
   if (issue.number) meta.push(`Ausgabe ${esc(issue.number)}`);
 
   const pager = [];
-  if (older) pager.push(`<a href="${prefix}ausgaben/${esc(older.issue)}/index.html" rel="prev">Ältere Ausgabe: KW ${older._kw}</a>`);
-  if (newer) pager.push(`<a href="${prefix}ausgaben/${esc(newer.issue)}/index.html" rel="next">Neuere Ausgabe: KW ${newer._kw}</a>`);
+  if (older) pager.push(`<a href="${prefix}ausgaben/${esc(older.issue)}/index.html" rel="prev">Ältere Ausgabe: ${shortLabel(older)}</a>`);
+  if (newer) pager.push(`<a href="${prefix}ausgaben/${esc(newer.issue)}/index.html" rel="next">Neuere Ausgabe: ${shortLabel(newer)}</a>`);
   const permalink = isFrontPage
     ? `<p class="permalink"><a href="${prefix}ausgaben/${esc(issue.issue)}/index.html">Dauerhafter Link zu dieser Ausgabe</a></p>\n`
     : "";
@@ -217,7 +293,10 @@ ${permalink}${pager.length ? `<nav class="pager" aria-label="Weitere Ausgaben">\
   return layout({
     prefix,
     title: isFrontPage ? `${SITE_NAME} – ${issue.title}` : `${issue.title} – ${SITE_NAME}`,
-    description: `KW ${issue._kw}, ${range}: ${issue.title.replace(/^KW \d+:\s*/, "")}. KI-Gerüchte, Leaks und News von X, jede Woche gesammelt.`,
+    description:
+      issue._kind === "daily"
+        ? `${formatDate(issue._date)}: ${issue.title}. KI-Gerüchte, Leaks und News von X, täglich gesammelt.`
+        : `KW ${issue._kw}, ${formatRange(issue._start, issue._end)}: ${issue.title.replace(/^KW \d+:\s*/, "")}. KI-Gerüchte, Leaks und News von X, täglich gesammelt.`,
     current: isFrontPage ? "aktuell" : null,
     body,
   });
@@ -229,7 +308,7 @@ function renderArchive(issues) {
     .map(
       (i) => `<li>
 <a href="${prefix}ausgaben/${esc(i.issue)}/index.html">${esc(i.title)}</a>
-<span class="archive-date">${formatRange(i._start, i._end)} · KW ${i._kw}</span>
+<span class="archive-date">${dateLabel(i)}</span>
 </li>`
     )
     .join("\n");
@@ -280,8 +359,14 @@ function write(relPath, html) {
   console.log(`  public/${relPath}`);
 }
 
-const issues = loadIssues();
-if (issues.length === 0) throw new Error("Keine Ausgaben in data/ gefunden.");
+let issues;
+try {
+  issues = loadIssues();
+  if (issues.length === 0) throw new Error("Keine Ausgaben in data/ gefunden.");
+} catch (err) {
+  console.error(`Build abgebrochen: ${err.message}`);
+  process.exit(1);
+}
 
 // public/ wird komplett neu erzeugt, damit gelöschte JSON-Dateien keine Leichen hinterlassen.
 rmSync(OUT_DIR, { recursive: true, force: true });
