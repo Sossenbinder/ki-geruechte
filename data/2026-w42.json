@@ -1,0 +1,178 @@
+{
+  "issue": "2026-w42",
+  "number": 1,
+  "title": "KW 42: Gemini 4 Argon, Fable-5.5-Leak und Anthropics Quartalszahlen",
+  "week_start": "2026-10-12",
+  "week_end": "2026-10-18",
+  "published": "2026-10-18",
+  "intro": "Die erste Ausgabe: Google hat Gemini 4 Argon veröffentlicht, Claude Fable 5.5 ist offenbar bei Azure gelistet, und laut Bloomberg und CNBC hat Anthropic potenziellen Investoren für das dritte Quartal einen Umsatz von 16,8 Milliarden Dollar genannt. Dazu kommen Replits Entscheidung für OpenAI als bevorzugten Partner und drei Beiträge von Anthropic zu Versionskontrolle, Distillation und Selbstreplikation. Jeder Eintrag ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "gemini-4-argon",
+      "headline": "Google veröffentlicht Gemini 4 Argon",
+      "status": "confirmed",
+      "summary": "Sundar Pichai hat den Release am 13. Oktober angekündigt. Verfügbar ist Argon weltweit für Entwickler und Unternehmen im kostenpflichtigen Tarif der Gemini API und auf der Gemini-Plattform, für Ultra-Abonnenten in Google Antigravity sowie für Ultra- und Pro-Abonnenten in der Gemini-App und der Google-Suche. Aaron Levie von Box hat das Modell eine Woche lang auf dem hauseigenen Eval „Box AI Complex Work“ getestet und sieht über alle Tests ein Plus von 14 Prozentpunkten gegenüber Gemini 3.1 Pro.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/sundarpichai/status/2110038898009407584",
+        "handle": "sundarpichai",
+        "date": "2026-10-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/levie/status/2110046686198550539",
+          "handle": "levie",
+          "date": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5-5-azure",
+      "headline": "Claude Fable 5.5 offenbar bei Azure gelistet",
+      "status": "rumor",
+      "summary": "Laut X-Posts ist die Modell-ID claude-fable-5-5 in Azure East US 2 mit dem Status „GenerallyAvailable“ aufgetaucht, entdeckt über einen automatischen Preis-Sync-PR bei LiteLLM. LiteLLM hat den Eintrag inzwischen wieder aus seiner Cost Map entfernt, weil Azure das Modell nicht listet. Ein weiterer Leak zeigt angeblich den Codenamen claude-onigiri-eap im Frontend von Artificial Analysis; angekündigt hat Anthropic Fable 5.5 bisher nicht.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/chetaslua/status/2110032565927329992",
+        "handle": "chetaslua",
+        "date": "2026-10-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/letdarky/status/2110716200074289170",
+          "handle": "letdarky",
+          "date": "2026-10-15"
+        },
+        {
+          "url": "https://x.com/sughanthans1/status/2110826649885557096",
+          "handle": "sughanthans1",
+          "date": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "openai-rosalind",
+      "headline": "OpenAI listet angeblich Rosalind-Modelle auf der API-Preisseite",
+      "status": "rumor",
+      "summary": "Laut einem Post von Stats Wire auf X standen zwei Modelle mit dem Codenamen „Rosalind“ auf OpenAIs API-Preisseite: gpt-rosalind-discovery und gpt-rosalind-research. Als Preise nennt der Post 5 bzw. 25 Dollar pro Million Tokens. Das ist bisher die einzige Quelle, von OpenAI gibt es nichts Offizielles.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2110618211943333979",
+        "handle": "StatsWire",
+        "date": "2026-10-15"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "gemini-carbon",
+      "headline": "Bericht: Google testet Gemini-4-Build Carbon intern",
+      "status": "rumor",
+      "summary": "Business Insider hat am 9. Oktober über interne Dokumente, Screenshots und Chats berichtet, nach denen Mitarbeiter bei Google bereits „Carbon“ testen, einen neueren Build von Gemini 4. Getestet wird auf Jetski, Googles interner Coding-Plattform. Ein Mitarbeiter sagt, Carbon fühle sich beim Coding vergleichbar mit Opus 5.5 an; öffentliche Benchmarks gibt es nicht, und Google hat sich nicht geäußert.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/naumowf/status/2109704538923888748",
+        "handle": "naumowf",
+        "date": "2026-10-12"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/DeepStarts/status/2109983698766741526",
+          "handle": "DeepStarts",
+          "date": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-q3",
+      "headline": "Bericht: Anthropic nennt Investoren 16,8 Milliarden Dollar Quartalsumsatz",
+      "status": "rumor",
+      "summary": "Laut Bloomberg und CNBC hat Anthropic potenziellen Investoren für das dritte Quartal einen Umsatz von 16,8 Milliarden Dollar genannt und war auf bereinigter Basis profitabel. Die Infos stammen von Personen, die mit der Sache vertraut sind; Anthropic wollte sich nicht äußern. Reuters berichtet außerdem, dass einige Investoren wegen des langsameren Umsatzwachstums eine IPO-Bewertung von 1,5 Billionen Dollar erwägen, 25 Prozent weniger als die zuvor erwarteten 2 Billionen.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/theoutput_show/status/2110703678973767840",
+        "handle": "theoutput_show",
+        "date": "2026-10-15"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/TheLatentCo/status/2111013234530783440",
+          "handle": "TheLatentCo",
+          "date": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "replit-openai",
+      "headline": "Replit macht OpenAI zum bevorzugten Partner für seinen Agent",
+      "status": "confirmed",
+      "summary": "Replit-CEO Amjad Masad hat auf der TechCrunch Disrupt 2026 gesagt, dass OpenAI jetzt der bevorzugte Partner hinter Replits Agent ist. Als Gründe nennt er Performance, Kosten und die starke Partnerschaft. Auf X hat er danach klargestellt, dass Replit modellagnostisch bleibt und Nutzer weiterhin Anthropic-Modelle und viele andere Modelle auswählen können.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/amasad/status/2111494912562888939",
+        "handle": "amasad",
+        "date": "2026-10-17"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/TechCrunch/status/2111206322381185492",
+          "handle": "TechCrunch",
+          "date": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-source-control",
+      "headline": "Anthropic baut eigene Versionskontrolle für KI-Agenten",
+      "status": "confirmed",
+      "summary": "Anthropic erklärt im Engineering-Blog, warum das Unternehmen eine eigene Source Control entwickelt hat. Im Mai wurden dort rund 2.500 Code-Änderungen pro Tag gemergt, im September mehr als 30.000. Die bestehende Entwickler-Infrastruktur war auf Menschen ausgelegt, nicht auf Agenten, und wurde damit zum Flaschenhals.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2110047081414987957",
+        "handle": "AnthropicAI",
+        "date": "2026-10-13"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "anthropic-distillation",
+      "headline": "Anthropic senkt Distillation-Rate um mehr als 90 Prozent",
+      "status": "confirmed",
+      "summary": "Anthropic beschreibt in einem Blogpost, wie es Distillation-Angriffe auf Claude in den letzten Monaten deutlich weniger wirksam gemacht hat. Die Distillation-Rate ist laut Anthropic um mehr als 90 Prozent gesunken. Bei unerlaubter Distillation kopieren Modellentwickler die Fähigkeiten von Frontier-Modellen, ohne entsprechend robuste Schutzmaßnahmen aufzubauen.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2109795898909950247",
+        "handle": "AnthropicAI",
+        "date": "2026-10-13"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.anthropic.com/research/distillation-defenses",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "anthropic-replication",
+      "headline": "Anthropic: Kleine KI-Modelle könnten sich bald selbst replizieren",
+      "status": "confirmed",
+      "summary": "Anthropic schreibt in einem Research-Post, dass kleine Modelle in einigen Monaten so weit sein könnten, sich auf IoT-Geräten wie smarten Backöfen oder No-Name-Android-TV-Boxen selbst zu replizieren. Ein 9B-Modell brachte Inference auf 8 von 9 getesteten Hardwaretypen zum Laufen, und Gemma4-26B-A4B lief verteilt auf 15 vernetzten TV-Boxen für je rund 55 Dollar mit 0,39 Tokens pro Sekunde. Die End-to-End-Replikation lief allerdings nur in vereinfachten Tests auf emulierten Android-Geräten mit einem ADB-Port ohne Authentifizierung, worauf auch ein Kritiker auf X hinweist.",
+      "take": "[Platzhalter: Meine Einschätzung folgt]",
+      "source": {
+        "url": "https://x.com/SparkyMark96/status/2109730566572548308",
+        "handle": "SparkyMark96",
+        "date": "2026-10-12",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Kaiyc12/status/2109948652987031861",
+          "handle": "Kaiyc12",
+          "date": "2026-10-13"
+        }
+      ],
+      "original": {
+        "url": "https://www.anthropic.com/research/self-replicating-ai",
+        "label": "Anthropic-Blog"
+      }
+    }
+  ]
+}

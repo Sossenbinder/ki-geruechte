@@ -1,0 +1,287 @@
+/* KI-Gerüchte der Woche – eine Spalte, Systemschriften, keine Effekte. */
+
+:root {
+  --bg: #fbfaf7;
+  --text: #1f1d1a;
+  --muted: #6b665e;
+  --rule: #ddd8cf;
+  --accent: #a2361b;
+  --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Sitka Text", Cambria, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1a18;
+    --text: #e6e2da;
+    --muted: #a39d92;
+    --rule: #3a3733;
+    --accent: #e08a6c;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 38rem;
+  padding: 1.5rem 1.25rem 3rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent);
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+/* Kopf und Fuß */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1.25rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.site-name a {
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.site-header nav a[aria-current="page"] {
+  text-decoration-thickness: 2px;
+}
+
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.4rem;
+}
+
+/* Ausgabe */
+
+.issue-meta {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.status {
+  margin: 0 0 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.status-rumor .status {
+  color: var(--accent);
+}
+
+.take strong {
+  font-weight: 700;
+}
+
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.placeholder strong {
+  font-style: normal;
+}
+
+.source,
+.more {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.source a,
+.more a {
+  color: var(--text);
+}
+
+.permalink,
+.pager {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+/* Newsletter-Platzhalter */
+
+.newsletter {
+  margin-top: 3rem;
+}
+
+.newsletter h2 {
+  font-size: 1.1rem;
+}
+
+.newsletter p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.newsletter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.newsletter label {
+  flex-basis: 100%;
+  font-size: 1rem;
+}
+
+.newsletter input,
+.newsletter button {
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+}
+
+.newsletter input {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+.newsletter button {
+  flex: 0 0 auto;
+  cursor: not-allowed;
+}
+
+/* Archiv */
+
+.archive {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.archive li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.archive li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.archive a {
+  display: block;
+  font-weight: 700;
+}
+
+.archive-date {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding-top: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Rechtstexte */
+address {
+  font-style: normal;
+  margin: 0 0 1.25rem;
+}

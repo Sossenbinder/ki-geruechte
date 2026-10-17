@@ -1,0 +1,44 @@
+# Logs and error output
+logs/
+*.log
+*.err
+
+# Claude Code run outputs
+claude-*.json
+
+# Agent prompts (internal working material)
+prompt*.txt
+
+# Internal research material for issues
+sources/
+
+# Screenshots and temporary files
+preview*.png
+screenshots/
+/*.png
+tmp/
+.tmp/
+*.tmp
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Build artifact (site is built from source at deploy time)
+public/
+
+# Backup data files skipped by build.mjs
+data/*.v[0-9]*.json
+data/*.before-*.json
+data/*.bak
+data/*~
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
