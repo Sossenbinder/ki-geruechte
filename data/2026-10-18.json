@@ -1,0 +1,125 @@
+{
+  "issue": "2026-10-18",
+  "number": 2,
+  "title": "DeepSeek-V4.1-Flash-1017, Sicherheitsvorfall bei OpenCode und Hinweise auf neue OpenAI-Modelle",
+  "published": "2026-10-18",
+  "intro": "DeepSeek hat DeepSeek-V4.1-Flash-1017 veröffentlicht, und OpenCode bestätigt einen Sicherheitsvorfall in der OpenCode Console. Dazu gibt es Hinweise auf drei neue Modelle in der OpenAI-API und weitere Spuren von Claude Fable 5.5 in Cursor, beides bisher unbestätigt. Jede Meldung ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "openai-aurora",
+      "headline": "OpenAI-API listet offenbar drei neue Aurora-Modelle",
+      "status": "rumor",
+      "summary": "Andrew Curran berichtet von drei neuen Modellen in der OpenAI-API: aurora-red-alpha, aurora-green-alpha und aurora-blue-alpha. Auch der Tracker gptbotio meldet sie, OpenAI hat die Modelle aber weder angekündigt noch erklärt. scaling01 spekuliert, dass es spezialisierte Codex-Modelle oder Modelle für schnelle Inference sein könnten, weil hinter dem OpenRouter-Modell aurora-alpha früher in diesem Jahr wahrscheinlich GPT-5.3-Codex-Spark steckte.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2111656899338973391",
+        "handle": "AndrewCurran_",
+        "date": "2026-10-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/scaling01/status/2111653358322729401",
+          "handle": "scaling01",
+          "date": "2026-10-18"
+        },
+        {
+          "url": "https://x.com/gptbotio/status/2111650857317957974",
+          "handle": "gptbotio",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5-5-cursor",
+      "headline": "Cursor 3.25.6 behandelt Claude Fable 5.5 offenbar als eigenes Modell",
+      "status": "rumor",
+      "summary": "Laut dem Tracker-Account aitrackerbot erkennt der neue stabile Cursor-Build 3.25.6 Modell-IDs mit fable-5.5 oder fable-5-5 als eigenes Modell und ordnet sie nicht mehr Fable 5 zu. In 3.24 fehlte diese Sonderbehandlung noch, das bestätigt auch FOMAnews nach einem Vergleich beider Builds. Anthropic hat Fable 5.5 bisher nicht angekündigt, die Modell-ID claude-fable-5-5 soll laut früheren Leaks aber schon zuvor bei Azure gelistet gewesen sein.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2111333514398290262",
+        "handle": "aitrackerbot",
+        "date": "2026-10-17"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/FOMAnews/status/2111344716256059585",
+          "handle": "FOMAnews",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-v4-1-flash-1017",
+      "headline": "DeepSeek veröffentlicht DeepSeek-V4.1-Flash-1017",
+      "status": "confirmed",
+      "summary": "Laut DeepSeek schneidet das neue Modell in Benchmarks besser ab als die Vorversion, erledigt Aufgaben schneller und liefert kürzere Ausgaben. Es ist auf der Website, in der App und über die API verfügbar und als Open Source auf Hugging Face und ModelScope erschienen. Außerdem sind die Search- und Fetch-APIs jetzt für alle offen und kosten 0,75 Dollar pro 1.000 Aufrufe je Endpoint. Über die serverseitigen Tools in DeepSeek Harness, Claude Code und Codex sind sie für DeepSeek-API-Nutzer derzeit kostenlos, abgerechnet wird ab dem 31. Oktober 2026, 16:00 UTC.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+        "handle": "deepseek_ai",
+        "date": "2026-10-17"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "label": "Hugging Face"
+      }
+    },
+    {
+      "id": "opencode-breach",
+      "headline": "OpenCode bestätigt Sicherheitsvorfall in der OpenCode Console",
+      "status": "confirmed",
+      "summary": "Laut OpenCode hängt der Vorfall mit einem „large scale distillation attack“ zusammen und betraf 1,4 Prozent der Nutzer der OpenCode Console, und zwar einen Teil der Nutzer mit externen Providern; alle Betroffenen wurden per E-Mail informiert. kimmonismus gibt Berichte von Nutzern weiter, die unautorisierte API-Kosten bemerkt haben, in einem Fall 400 Dollar auf einem Anthropic-Account. dax von OpenCode stellt klar, dass nur die OpenCode Console betroffen ist und nicht OpenCode selbst, und dass die Rückerstattungen bereits laufen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/opencode/status/2111519637049319818",
+        "handle": "opencode",
+        "date": "2026-10-17"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2111525476292341861",
+          "handle": "kimmonismus",
+          "date": "2026-10-17"
+        },
+        {
+          "url": "https://x.com/thdxr/status/2111608620441817449",
+          "handle": "thdxr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "devin-desktop-codenames",
+      "headline": "Devin-Desktop-Build enthält offenbar vier neue Modell-Codenamen",
+      "status": "rumor",
+      "summary": "Laut aitrackerbot enthält der aktuelle Next-Build von Devin Desktop (Windsurf) vier Modell-Codenamen, die im vorherigen Build fehlten: Theia, Obsidian 2, Obsidian 3 und Slate 2, jeweils mit eigenen Reasoning-Stufen. Angekündigt ist keines der Modelle, und aus dem Build geht nicht hervor, von welchem Lab sie stammen. Bisher gibt es dafür nur diese eine Quelle.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2111553510797889632",
+        "handle": "aitrackerbot",
+        "date": "2026-10-17"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "reflection-beam-tokens",
+      "headline": "Reflection meldet eine Billion Tokens für Beam in 24 Stunden",
+      "status": "confirmed",
+      "summary": "Reflection hat nach eigenen Angaben in 24 Stunden eine Billion Tokens mit Beam ausgeliefert und aus diesem Anlass die Limits aller Nutzer zurückgesetzt. Laut dem Launch-Post, den thechadcoder zitiert, lief Beam vorher im Stealth-Modus als „Catjam“ in OpenCode und als „MissingNo“ auf Nous Portal. Das Modell hat 501 Milliarden Parameter, davon 23 Milliarden aktiv, und ist als Open Weights unter Apache 2.0 verfügbar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/reflection_ai/status/2111640810148303231",
+        "handle": "reflection_ai",
+        "date": "2026-10-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thechadcoder/status/2111101857481539866",
+          "handle": "thechadcoder",
+          "date": "2026-10-16"
+        }
+      ]
+    }
+  ]
+}
