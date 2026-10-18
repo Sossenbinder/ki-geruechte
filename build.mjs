@@ -10,6 +10,7 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(ROOT, "data");
 const OUT_DIR = join(ROOT, "public");
 const STYLE_SRC = join(ROOT, "src", "style.css");
+const ANALYTICS_FILE = join(ROOT, "analytics.json");
 const SITE_NAME = "KI-Gerüchte";
 
 const MONTHS = [
@@ -98,6 +99,53 @@ function checkOriginal(orig, file, where) {
   if (!orig || typeof orig !== "object") fail(file, `${where} muss ein Objekt sein`);
   checkUrl(orig.url, file, where);
   if (typeof orig.label !== "string" || !orig.label.trim()) fail(file, `${where}: label fehlt`);
+}
+
+// ---------- Statistik (Umami) ----------
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const DOMAINS_RE = /^[a-z0-9.-]+(\s*,\s*[a-z0-9.-]+)*$/i;
+
+// Liest analytics.json; die Umgebungsvariable UMAMI_WEBSITE_ID überschreibt websiteId.
+// Fehlt die Datei oder ist die ID leer, gibt es kein Skript (Rückgabe null).
+function loadAnalytics() {
+  const failA = (msg) => {
+    throw new Error(`analytics.json: ${msg}`);
+  };
+  let umami = {};
+  if (existsSync(ANALYTICS_FILE)) {
+    let cfg;
+    try {
+      cfg = JSON.parse(readFileSync(ANALYTICS_FILE, "utf8"));
+    } catch (err) {
+      failA(`ungültiges JSON (${err.message})`);
+    }
+    if (!cfg || typeof cfg !== "object" || Array.isArray(cfg)) failA("muss ein JSON-Objekt sein");
+    if (cfg.umami !== undefined && (!cfg.umami || typeof cfg.umami !== "object" || Array.isArray(cfg.umami))) {
+      failA(`"umami" muss ein Objekt sein`);
+    }
+    umami = cfg.umami ?? {};
+  }
+  const envId = (process.env.UMAMI_WEBSITE_ID ?? "").trim();
+  const websiteId = envId || (typeof umami.websiteId === "string" ? umami.websiteId.trim() : umami.websiteId ?? "");
+  if (websiteId === "") return null;
+  if (typeof websiteId !== "string" || !UUID_RE.test(websiteId)) {
+    const where = envId ? "Umgebungsvariable UMAMI_WEBSITE_ID" : "analytics.json: umami.websiteId";
+    throw new Error(`${where} muss eine UUID sein (z. B. 01234567-89ab-cdef-0123-456789abcdef), ist aber ${JSON.stringify(websiteId)}`);
+  }
+  const { scriptUrl, domains } = umami;
+  if (typeof scriptUrl !== "string" || !/^https:\/\/\S+$/.test(scriptUrl)) {
+    failA(`umami.scriptUrl muss mit https:// beginnen, ist aber ${JSON.stringify(scriptUrl)}`);
+  }
+  if (typeof domains !== "string" || !DOMAINS_RE.test(domains.trim())) {
+    failA(`umami.domains muss ein Hostname oder eine kommagetrennte Liste sein, ist aber ${JSON.stringify(domains)}`);
+  }
+  return { websiteId, scriptUrl, domains: domains.trim() };
+}
+
+function analyticsTag(a) {
+  if (!a) return "";
+  return `<script defer src="${esc(a.scriptUrl)}" data-website-id="${esc(a.websiteId)}" data-domains="${esc(a.domains)}" data-do-not-track="true"></script>\n`;
 }
 
 // ---------- Daten laden ----------
@@ -203,7 +251,7 @@ function layout({ prefix, title, description, current, body }) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="stylesheet" href="${prefix}style.css">
-</head>
+${analyticsTag(analytics)}</head>
 <body>
 <header class="site-header">
 <p class="site-name"><a href="${prefix}index.html">${esc(SITE_NAME)}</a></p>
@@ -217,7 +265,11 @@ ${body}
 </main>
 <footer class="site-footer">
 <p><a href="${prefix}impressum/index.html">Impressum</a> · <a href="${prefix}datenschutz/index.html">Datenschutz</a> · <a href="${prefix}archiv/index.html">Archiv</a></p>
-<p>Diese Seite verwendet keine Cookies und keine Tracker.</p>
+<p>${
+    analytics
+      ? "Diese Seite verwendet keine Cookies. Zugriffe werden mit einem selbst gehosteten Umami anonym gezählt."
+      : "Diese Seite verwendet keine Cookies und keine Tracker."
+  }</p>
 </footer>
 </body>
 </html>
@@ -360,13 +412,20 @@ function write(relPath, html) {
 }
 
 let issues;
+let analytics;
 try {
+  analytics = loadAnalytics();
   issues = loadIssues();
   if (issues.length === 0) throw new Error("Keine Ausgaben in data/ gefunden.");
 } catch (err) {
   console.error(`Build abgebrochen: ${err.message}`);
   process.exit(1);
 }
+console.log(
+  analytics
+    ? `Statistik: Umami aktiv (Website-ID ${analytics.websiteId}, ${analytics.scriptUrl}).`
+    : "Statistik: deaktiviert (keine Umami-Website-ID gesetzt)."
+);
 
 // public/ wird komplett neu erzeugt, damit gelöschte JSON-Dateien keine Leichen hinterlassen.
 rmSync(OUT_DIR, { recursive: true, force: true });
