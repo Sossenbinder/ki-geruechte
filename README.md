@@ -42,20 +42,21 @@ Besucherzahlen zählt optional ein selbst gehostetes [Umami](https://umami.is) u
 
 Einrichten:
 
-1. Im Umami-Dashboard unter https://stats.dotschranz.net die Website anlegen: Settings > Websites > Add website, Domain `ki-geruechte.dotschranz.net`.
-2. Die angezeigte Website ID in `analytics.json` bei `websiteId` eintragen:
+1. Die Website in Umami muss niemand von Hand anlegen. Das übernimmt das HKube-Chart `charts/umami`: Es legt jede Website aus der Liste `websites` in seiner `values.yaml` per PostSync-Hook bei jedem ArgoCD-Sync an, und zwar mit fester ID. Im Umami-Dashboard ist nichts zu klicken.
+2. In `analytics.json` steht bereits die feste Website-ID `1bfd182c-b7a4-4859-aa40-6846e0ee7b6f`. Sie entspricht dem Eintrag unter `websites` in `charts/umami/values.yaml` im HKube-Repo:
 
    ```json
    {
      "umami": {
-       "websiteId": "01234567-89ab-cdef-0123-456789abcdef",
+       "websiteId": "1bfd182c-b7a4-4859-aa40-6846e0ee7b6f",
        "scriptUrl": "https://stats.dotschranz.net/script.js",
        "domains": "ki-geruechte.dotschranz.net"
      }
    }
    ```
 
-3. Committen und nach `main` pushen. git-sync holt die Änderung, und der Build im Cluster bindet das Skript automatisch in jede Seite ein.
+   Die ID ist öffentlich (sie steht im Quelltext jeder Seite) und kein Geheimnis. Sie sollte nicht geändert werden. Falls doch, müssen `analytics.json` und die HKube-Values gemeinsam angepasst werden, sonst laufen die Zugriffe ins Leere. Eine leere `websiteId` schaltet das Skript ab.
+3. Änderungen an `analytics.json` committen und nach `main` pushen. git-sync holt sie, und der Build im Cluster bindet das Skript automatisch in jede Seite ein.
 
 Details:
 
