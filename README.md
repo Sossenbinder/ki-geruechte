@@ -2,7 +2,7 @@
 
 Ein täglicher deutscher Überblick über KI-Gerüchte, Leaks und News, die auf X auftauchen. Jede Meldung ist als „Bestätigt“ oder „Gerücht – unbestätigt“ markiert und verlinkt auf ihre Quelle.
 
-Die Seite ist komplett statisch: kein Framework, kein JavaScript im Browser, keine externen Fonts oder Skripte, keine Cookies, kein Tracking. Das Build-Skript nutzt nur die Node-Standardbibliothek, `npm install` ist nicht nötig.
+Die Seite ist komplett statisch: kein Framework, kein eigenes JavaScript, keine externen Fonts, keine Cookies. Einzige Ausnahme ist optional das Zählskript eines selbst gehosteten Umami von `stats.dotschranz.net` (cookielos, respektiert „Do Not Track“, siehe „Statistik (Umami)“). Ist keine Website-ID eingetragen, enthält die Seite gar kein Skript. Das Build-Skript nutzt nur die Node-Standardbibliothek, `npm install` ist nicht nötig.
 
 ## Bauen
 
@@ -18,6 +18,7 @@ Zum Ansehen einfach `public/index.html` im Browser öffnen. Alle Links sind rela
 
 ```
 build.mjs                        Build-Skript (Quelle)
+analytics.json                   Umami-Einstellungen (Website-ID, Skript-URL, Domain)
 src/style.css                    einziges Stylesheet (Quelle, wird nach public/ kopiert)
 src/impressum.html               Impressum (HTML-Fragment, Quelle)
 src/datenschutz.html             Datenschutzerklärung (HTML-Fragment, Quelle)
@@ -34,6 +35,36 @@ public/                          fertige Seite, wird bei jedem Build gelöscht u
 ```
 
 Nur `public/` wird ausgeliefert. README, Build-Skript, `data/`, Logs, Prompts und Screenshots liegen außerhalb und landen nicht auf der Seite. Dateien in `public/` bitte nicht von Hand bearbeiten, beim nächsten Build ist der Ordner wieder weg. Impressum und Datenschutz stehen in `src/impressum.html` und `src/datenschutz.html`, Newsletter-Hinweis und Footer in `build.mjs`, das Layout in `src/style.css`.
+
+## Statistik (Umami)
+
+Besucherzahlen zählt optional ein selbst gehostetes [Umami](https://umami.is) unter https://stats.dotschranz.net. Umami setzt keine Cookies; das Skript wird mit `data-do-not-track="true"` eingebunden und zählt Browser mit aktiviertem „Do Not Track“ nicht mit.
+
+Einrichten:
+
+1. Im Umami-Dashboard unter https://stats.dotschranz.net die Website anlegen: Settings > Websites > Add website, Domain `ki-geruechte.dotschranz.net`.
+2. Die angezeigte Website ID in `analytics.json` bei `websiteId` eintragen:
+
+   ```json
+   {
+     "umami": {
+       "websiteId": "01234567-89ab-cdef-0123-456789abcdef",
+       "scriptUrl": "https://stats.dotschranz.net/script.js",
+       "domains": "ki-geruechte.dotschranz.net"
+     }
+   }
+   ```
+
+3. Committen und nach `main` pushen. git-sync holt die Änderung, und der Build im Cluster bindet das Skript automatisch in jede Seite ein.
+
+Details:
+
+- Leere `websiteId` (oder fehlende `analytics.json`) = kein Skript, der Build meldet „Statistik: deaktiviert“.
+- Die Umgebungsvariable `UMAMI_WEBSITE_ID` überschreibt `websiteId`, wenn sie gesetzt und nicht leer ist (z. B. `UMAMI_WEBSITE_ID=… node build.mjs`).
+- Der Build bricht ab, wenn die ID keine UUID ist, `scriptUrl` nicht mit `https://` beginnt oder `domains` kein Hostname bzw. keine kommagetrennte Liste von Hostnamen ist.
+- `domains` sorgt dafür, dass nur Aufrufe auf dieser Domain gezählt werden (lokal über `file://` oder `localhost` also nicht).
+- Ist Umami aktiv, ändert sich der Footer-Hinweis von „keine Cookies und keine Tracker“ zu „keine Cookies, Zugriffe werden mit Umami anonym gezählt“.
+- Die Content-Security-Policy im HKube-Chart muss `https://stats.dotschranz.net` bei `script-src` (Skript laden) und `connect-src` (Zugriffe senden) erlauben, sonst blockiert der Browser das Zählen.
 
 ## JSON-Schema einer Ausgabe
 
