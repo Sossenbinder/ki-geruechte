@@ -1,0 +1,165 @@
+{
+  "issue": "2026-10-19",
+  "number": 3,
+  "title": "Hinweise auf Aurora-Bildmodelle von OpenAI, Anthropics Public Benefit Fund und Chinas Entwurf für KI-Exportkontrollen",
+  "published": "2026-10-19",
+  "intro": "Anthropic bringt Aktien in einen neuen Public Benefit Fund ein, China legt einen Entwurf für KI-Exportkontrollen vor und DeepSeek-V4.1-Flash führt bei den offenen Modellen in der Code Arena. Dazu gibt es Hinweise, dass OpenAIs Aurora-Modelle Bildmodelle sind, sowie Berichte über eine Finanzfunktion für Claude und einen zweiten Checkpoint von Claude Fable 5.5. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "openai-aurora-bildmodelle",
+      "headline": "Bericht: OpenAI testet Aurora-Bildmodelle in der Arena",
+      "status": "rumor",
+      "summary": "Die Modelle aurora-red-alpha, aurora-green-alpha und aurora-blue-alpha, die gestern in der OpenAI-API aufgetaucht sind, sind offenbar keine Codex-Modelle, sondern Bildmodelle, die gerade in der Arena getestet werden. TestingCatalog findet die Ergebnisse deutlich besser als gpt-image-2.5-flare, vor allem bei den Farben; LuminaBench schreibt, aurora-red-alpha sei schneller, aurora-green-alpha langsamer, aber besser. In der Community ist schon von GPT Image 3 die Rede, OpenAI selbst hat sich zu den Modellen nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2111894437877916032",
+        "handle": "testingcatalog",
+        "date": "2026-10-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/LuminaBench/status/2111767131675381835",
+          "handle": "LuminaBench",
+          "date": "2026-10-18"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2111860713035550945",
+          "handle": "kimmonismus",
+          "date": "2026-10-18"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2111724606927028578",
+          "handle": "testingcatalog",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-public-benefit-fund",
+      "headline": "Anthropic gründet Public Benefit Fund mit eigenen Aktien",
+      "status": "confirmed",
+      "summary": "Anthropic gründet den Anthropic Public Benefit Fund, eine hundertprozentige Tochter als LLC, die ausschließlich dem Gemeinwohl dienen soll; die Anteile im Fonds werden laut Blog nicht für Lobbying oder politische Spenden genutzt. Wenn die Aktionäre zustimmen, startet der Fonds mit 5 Prozent der Aktien, für jede Wertsteigerung um 50 Prozent über einer festgelegten Basis kann Anthropic nach Ermessen des Boards bis zu 2 Prozent nachlegen. Rund 20 Prozent der Anteile kommen laut Anthropic erst zusammen mit zwei weiteren Zusagen zustande: Die Mitgründer wollen 80 Prozent ihrer Anteile spenden, und etwa die Hälfte der Beschäftigten spendet über ein Matching-Programm, das es seit der Gründung gibt, einen Teil ihrer Anteile.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2111881963657412903",
+        "handle": "AnthropicAI",
+        "date": "2026-10-18"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.anthropic.com/news/public-benefit-fund",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "opencode-daybreak-blue",
+      "headline": "KI-Modelle blockieren OpenCode bei Abwehr eines Cyberangriffs",
+      "status": "confirmed",
+      "summary": "OpenCode steht derzeit unter einem anhaltenden Cyberangriff, und mitten im Vorfall haben die Frontier-Modelle, mit denen das Team die Angriffe untersucht hat, die Hilfe verweigert. Laut Andrew Curran lag das daran, dass die Analyse der Angriffe die Safety-Guardrails auslöste; dasselbe Problem hatte zuvor schon Hugging Face. Wie dax von OpenCode schreibt, haben die Modelle erst einiges erledigt und dann abgeblockt; inzwischen hat das Team Zugang zu Daybreak Blue, und es läuft besser.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thdxr/status/2111831348336091179",
+        "handle": "thdxr",
+        "date": "2026-10-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-18"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2111895589307003210",
+          "handle": "kimmonismus",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "claude-personal-finance",
+      "headline": "Anthropic bereitet offenbar Finanzfunktion für Claude vor",
+      "status": "rumor",
+      "summary": "Anthropic bereitet laut TestingCatalog erneut eine Personal-Finance-Funktion für Claude vor: Über eine Plaid-Integration soll Claude Bankdaten auswerten und darauf verschiedene Dashboards bauen. Während der Entwicklung hieß das Feature noch „Claude Money“; wegen des neuen Onboarding-Screens und der Plaid-Logik rechnet TestingCatalog mit einem baldigen Start. Auch Andrew Curran hält den Start für nah, angekündigt hat Anthropic die Funktion aber nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2111944960652034447",
+        "handle": "testingcatalog",
+        "date": "2026-10-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2111951546657493349",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-19"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2099485567163510804",
+          "handle": "testingcatalog",
+          "date": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5-5-checkpoint",
+      "headline": "Leaker: Partner erhalten zweiten Checkpoint von Claude Fable 5.5",
+      "status": "rumor",
+      "summary": "Der Leaker-Account lyra schreibt, Partner hätten Zugang zu einem zweiten Checkpoint von Claude Fable 5.5 bekommen, der bisher stärker wirke als der erste. Schon am 15. Oktober hatte lyra gemeldet, dass Partner Fable 5.5 testen, einen Release-Termin gab es dabei nicht. Screenshots oder andere Belege fehlen, und Anthropic hat Fable 5.5 bisher nicht angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/lyraxana/status/2111891363230814426",
+        "handle": "lyraxana",
+        "date": "2026-10-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/lyraxana/status/2110732706443067733",
+          "handle": "lyraxana",
+          "date": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "china-ki-exportkontrollen",
+      "headline": "China legt Entwurf für KI-Exportkontrollen vor",
+      "status": "confirmed",
+      "summary": "Laut Reuters hat China einen Entwurf für Exportkontrollen auf 23 KI-Technologien vorgelegt, darunter Modelle, Agenten und Rechencluster. Ausgenommen sind der Zugriff über APIs, Websites, Apps und SaaS-Plattformen sowie Technik, die über Open-Source-Releases oder wissenschaftliche Paper schon öffentlich ist. Wer Weights, Checkpoints oder Code der größten Modelle (ab 2 Billionen Parametern, ab 10^26 FLOPs oder global unter den Top 10) exportieren will, bräuchte laut kimmonismus eine Genehmigung; die öffentliche Konsultation läuft bis zum 15. November.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2111782551513690277",
+        "handle": "kimmonismus",
+        "date": "2026-10-18"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.streetinsider.com/Reuters/Beijing+seeks+tighter+grip+on+AI+exports+amid+US+rivalry/27194895.html",
+        "label": "Reuters"
+      }
+    },
+    {
+      "id": "devin-astra-cyber-preview",
+      "headline": "Devin Desktop listet offenbar OpenAI-Modell astra-cyber-preview",
+      "status": "rumor",
+      "summary": "Der Account aitrackerbot hat im neuesten Next-Build von Devin Desktop astra-cyber-preview in der OpenAI-Modellliste gefunden, mit Reasoning-Stufen bis „ultra“ und direkt neben gpt-daybreak-red-latest und gpt-daybreak-blue-latest, den Cyber-Aliassen, die OpenAI gerade abgekündigt hat. Weil OpenAI die vollen Cyber-Fähigkeiten von Astra nur Daybreak-Partnern geben will, hält aitrackerbot den Eintrag für genau diese Preview. Andere Quellen gibt es bisher nicht, und OpenAI hat astra-cyber-preview nicht angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2111977466755514774",
+        "handle": "aitrackerbot",
+        "date": "2026-10-19"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "deepseek-code-arena",
+      "headline": "DeepSeek-V4.1-Flash führt offene Modelle in der Code Arena an",
+      "status": "confirmed",
+      "summary": "DeepSeek-V4.1-Flash-20261017 (Max) ist laut Arena jetzt das beste offene Modell in Code Arena: WebDev und liegt bei zehnmal geringeren Kosten vor Kimi K3 (Max). Insgesamt kommt es mit 1.670 Punkten auf Platz 12, vor Claude Opus 5 (High) und nur rund 10 Punkte hinter GPT-6 Sol (Max). Es kostet 0,3 bzw. 1,2 Dollar pro Million Input- bzw. Output-Tokens und legt gegenüber DeepSeek-V4.1-Flash-20260910 um 52 Punkte zu.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/arena/status/2111894091168682086",
+        "handle": "arena",
+        "date": "2026-10-18"
+      },
+      "more_sources": []
+    }
+  ]
+}
