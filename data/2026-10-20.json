@@ -1,0 +1,194 @@
+{
+  "issue": "2026-10-20",
+  "number": 4,
+  "title": "Bericht über neues Anthropic-Modell, MiniMax M3.1 Flash und DHS-Verbot für DeepSeek",
+  "published": "2026-10-20",
+  "intro": "MiniMax veröffentlicht M3.1 Flash, OpenAI zeigt Fortschritte bei COBOL, Fortran und Visual Basic und das US-Heimatschutzministerium verbannt DeepSeek aus zivilen Bundesbehörden. Dazu berichtet The Information über ein neues Anthropic-Modell, ein mögliches neues Terra-Modell von OpenAI und eine Zusammenarbeit von DeepSeek und Huawei bei KI-Chips. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "anthropic-neues-modell",
+      "headline": "Bericht: Anthropic bereitet neues Modell für diesen Monat vor",
+      "status": "rumor",
+      "summary": "Laut The Information will Anthropic noch in diesem Monat ein neues Modell veröffentlichen, das die eigentlichen Absichten von Nutzern auch bei wenig Kontext besser erkennt; im selben Bericht geht es auch um Gemini 4 Carbon und ein mögliches neues Terra-Modell von OpenAI. Ein anonymer Tester beschreibt, dass das Modell bei einem einzelnen Bug die ganze Klasse von Problemen dahinter erkennt und fragt, ob es die gleich mit angehen soll. Ob es ein Fable- oder Opus-Modell wird, ist laut Artikel offen; viele auf X rechnen mit Fable 5.5, Anthropic selbst hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/steph_palazzolo/status/2112183963452059734",
+        "handle": "steph_palazzolo",
+        "date": "2026-10-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2112195306695647502",
+          "handle": "testingcatalog",
+          "date": "2026-10-19"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2112185581597860349",
+          "handle": "kimmonismus",
+          "date": "2026-10-19"
+        }
+      ],
+      "original": {
+        "url": "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better",
+        "label": "The Information"
+      }
+    },
+    {
+      "id": "gpt-6-1-terra",
+      "headline": "Microsoft-PR erwähnt offenbar GPT-6.1 Terra",
+      "status": "rumor",
+      "summary": "LuminaBench hat einen Screenshot eines Microsoft-PRs gepostet, in dem 18 Eval-Configs von GPT-5.6 Terra auf GPT-6.1 Terra umgestellt werden. Unabhängig davon berichtet The Information, dass OpenAI in den nächsten Wochen ein neues Modell bringen will, das mehr kann und weniger kostet als GPT-6.1 Sol; wahrscheinlich ist es ein weiteres Modell der Mittelklasse-Familie Terra. Den Namen GPT-6.1 Terra nennt The Information nicht, und OpenAI hat das Modell nicht angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/LuminaBench/status/2112189697388613850",
+        "handle": "LuminaBench",
+        "date": "2026-10-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/choblin29/status/2112200647382548491",
+          "handle": "choblin29",
+          "date": "2026-10-19"
+        },
+        {
+          "url": "https://x.com/LuminaBench/status/2112186994885304414",
+          "handle": "LuminaBench",
+          "date": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m3-1-flash",
+      "headline": "MiniMax veröffentlicht M3.1 Flash, Space Bunny war eine Vorversion",
+      "status": "confirmed",
+      "summary": "Das anonyme Stealth-Modell Space Bunny, das bei OpenRouter zehn Tage in Folge auf Platz 1 lag und dort 56,7 Billionen Tokens verarbeitet hat, war eine frühere Version von M3.1 Flash. Laut MiniMax kostet M3.1 Flash ein Drittel von M3, ist dreimal so schnell und kommt auf 73,7 Prozent in DeepSWE v1.1; über die API kostet es 0,15 bzw. 0,60 Dollar pro Million Input- bzw. Output-Tokens, Cache-Reads 0,015 Dollar pro Million Tokens. Die Weights kommen am 23. Oktober, bei OpenRouter ist das Modell 72 Stunden lang kostenlos.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+        "handle": "MiniMax_AI",
+        "date": "2026-10-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OpenRouter/status/2112152045461680591",
+          "handle": "OpenRouter",
+          "date": "2026-10-19"
+        }
+      ],
+      "original": {
+        "url": "https://www.minimax.io/blog/minimax-m31f",
+        "label": "MiniMax-Blog"
+      }
+    },
+    {
+      "id": "openai-low-resource-sprachen",
+      "headline": "OpenAI zeigt Fortschritte bei COBOL, Fortran und Visual Basic",
+      "status": "confirmed",
+      "summary": "OpenAI hat mit eigenen Evals gemessen, wie gut seine bestehenden Modelle Software in Sprachen wie COBOL, Fortran und Visual Basic bauen und migrieren, und stellt den Benchmark MultiLangBench auf GitHub. In MultiLangBench, wo ein Modell in 20 Programmiersprachen eine SQLite-kompatible Datenbank-Engine von Grund auf bauen muss, besteht GPT-6 Astra im Schnitt 87,4 Prozent der Tests (GPT-5.6 Sol: 26,8 Prozent), GPT-6 Luna kommt bei geschätzt rund 78 Prozent geringeren API-Kosten auf 40,3 Prozent. Bei der COBOL-Migration erreicht GPT-6.1 Sol mit niedrigem Reasoning Effort 86,6 Prozent (GPT-5.6 Sol: 5,4 Prozent) bei 39 Prozent geringeren Kosten, mit höherem Reasoning Effort sind es 97,9 Prozent.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2112310345863930168",
+        "handle": "OpenAI",
+        "date": "2026-10-20"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://openai.com/index/low-resource-programming-languages/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "deepseek-huawei-chips",
+      "headline": "Bericht: DeepSeek arbeitet mit Huawei an KI-Chips",
+      "status": "rumor",
+      "summary": "Laut The Information arbeitet DeepSeek eng mit Huawei am Design künftiger KI-Chips: Huawei-Ingenieure sitzen bei DeepSeek im Büro und lassen dessen Feedback ins Chipdesign einfließen, etwa dazu, wie Modelle rechnen und Daten zwischen Prozessoren übertragen. DeepSeek will demnach schon Ende 2026 Ascend 950DT fürs Pretraining nutzen, und Huawei will DeepSeek beim Großteil der Ascend 960DT bevorzugen, die im ersten Quartal 2027 erwartet werden. Von Nvidia wendet sich DeepSeek laut dem Bericht nicht ab, bestätigt haben ihn weder DeepSeek noch Huawei.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2112294645829173472",
+        "handle": "kimmonismus",
+        "date": "2026-10-19",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Techmeme/status/2112228737941180918",
+          "handle": "Techmeme",
+          "date": "2026-10-19"
+        }
+      ],
+      "original": {
+        "url": "https://www.theinformation.com/articles/deepseek-shaping-huaweis-ai-chips-growing-challenge-nvidia",
+        "label": "The Information"
+      }
+    },
+    {
+      "id": "dhs-deepseek-verbot",
+      "headline": "US-Heimatschutzministerium verbannt DeepSeek aus zivilen Bundesbehörden",
+      "status": "confirmed",
+      "summary": "Das Department of Homeland Security verpflichtet alle zivilen Bundesbehörden, DeepSeek-Produkte aus ihrer IT zu entfernen und nicht mehr zu kaufen. Das gilt auch für Produkte verbundener Unternehmen und für Dienste von Drittanbietern, die auf DeepSeek-Implementierungen aufbauen. Grundlage ist der Federal Acquisition Supply Chain Security Act von 2018; das DHS hat die Anordnung am 19. Oktober beim Federal Register eingereicht, veröffentlicht wird sie am 20. Oktober.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2112250754358788437",
+        "handle": "AndrewCurran_",
+        "date": "2026-10-19",
+        "via": true
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.federalregister.gov/d/2026-21447",
+        "label": "Federal Register"
+      }
+    },
+    {
+      "id": "meta-muse-glimmer",
+      "headline": "Meta veröffentlicht technischen Report zu Muse Glimmer",
+      "status": "confirmed",
+      "summary": "Muse Glimmer ist ein Open-Weight-Modell mit 30 Milliarden Parametern, das Meta für agentische Aufgaben auf Consumer-Hardware gebaut hat. Mit 4-Bit-Präzision läuft es laut Meta in praxistauglicher Geschwindigkeit auf einem Mac oder einem PC mit einer einzelnen Consumer-GPU und liegt bei Tool Use und mehrstufiger Planung vor vergleichbar großen offenen Modellen. Der Report beschreibt unter anderem die Architektur, die Destillation und die Quantisierung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AIatMeta/status/2112265822274302066",
+        "handle": "AIatMeta",
+        "date": "2026-10-19"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "muse-wonder-full-code-arena",
+      "headline": "Muse Wonder Full erreicht Platz 6 in der Code Arena",
+      "status": "confirmed",
+      "summary": "Metas Muse Wonder Full (Max) steigt in Code Arena: WebDev mit 1.726 Punkten auf Platz 6 ein, 75 Punkte und elf Plätze vor Muse Wonder (Max), das mit 1.651 Punkten auf Platz 17 steht. Damit liegt es 16 Punkte vor Claude Sonnet 5.5 (Platz 17) und 48 Punkte vor Gemini 4 Argon (Platz 10), und Meta übernimmt unter den Labs Platz 3, den bisher Google hatte. Alexandr Wang von Meta schreibt dazu, das sei nicht schlecht, es gebe aber noch viel Luft nach oben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/arena/status/2112215825944117361",
+        "handle": "arena",
+        "date": "2026-10-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/alexandr_wang/status/2112216908758225368",
+          "handle": "alexandr_wang",
+          "date": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-slides",
+      "headline": "OpenAI bringt gemeinsames Bearbeiten in ChatGPT Slides",
+      "status": "confirmed",
+      "summary": "In ChatGPT Slides lassen sich Decks jetzt teilen, in Echtzeit gemeinsam bearbeiten und kommentieren, und ChatGPT oder der eigene dot setzt Feedback auf Wunsch in Änderungen um. Texte, Diagramme, Bilder und Formen bearbeitet man direkt auf der Folie; gestartet wird mit „create ChatGPT slides“ aus einem Chat oder einer geteilten Datei. Präsentieren kann man in ChatGPT oder nach PowerPoint bzw. Google Slides exportieren, verfügbar ist das in den Plänen Pro, Business und Enterprise.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ChatGPT/status/2112265233192657153",
+        "handle": "ChatGPT",
+        "date": "2026-10-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2112309941058818222",
+          "handle": "testingcatalog",
+          "date": "2026-10-20"
+        }
+      ]
+    }
+  ]
+}
