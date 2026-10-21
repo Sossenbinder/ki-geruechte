@@ -1,0 +1,193 @@
+{
+  "issue": "2026-10-21",
+  "number": 5,
+  "title": "Bericht über Anthropics Börsenprospekt-Entwurf, DeepInfer von DeepSeek und Voxtral 3 von Mistral",
+  "published": "2026-10-21",
+  "intro": "Laut einem WSJ-Bericht über den Entwurf von Anthropics Börsenprospekt lag der Umsatz im ersten Halbjahr 2026 bei 16,3 Milliarden Dollar. DeepSeek veröffentlicht sein Inferenz-Framework DeepInfer als Open Source, Mistral stellt Voxtral 3 vor und OpenAI übernimmt Orchestra Bio; außerdem erklärt Theo, warum der vermeintliche Fable-5.5-Leak keiner war. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "anthropic-s1-entwurf",
+      "headline": "WSJ: Anthropic setzt im ersten Halbjahr 16,3 Milliarden Dollar um",
+      "status": "rumor",
+      "summary": "Das Wall Street Journal hat den Entwurf von Anthropics Börsenprospekt (S-1) eingesehen: Im ersten Halbjahr 2026 lag der Umsatz demnach bei 16,3 Milliarden Dollar, nach 1,1 Milliarden im ersten Halbjahr 2025, und für Rechenleistung hat Anthropic knapp 9 Milliarden Dollar ausgegeben. Von den 80,7 Milliarden Dollar Nettoverlust entfallen 72 Milliarden auf bilanzielle Belastungen durch Wertänderungen bei Wandelanleihen und anderen Finanzierungsinstrumenten, das ist also kein operativer Verlust. Anthropic hat den Prospekt vertraulich eingereicht, er ist nicht öffentlich und die Zahlen können sich noch ändern; Anthropic hat sich nicht dazu geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/RealNickMugalli/status/2112628866732769777",
+        "handle": "RealNickMugalli",
+        "date": "2026-10-20",
+        "via": true
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+        "label": "Wall Street Journal"
+      }
+    },
+    {
+      "id": "fable-5-5-kein-leak",
+      "headline": "Theo: Fable-5.5-Commit in T3 Code war kein Leak",
+      "status": "rumor",
+      "summary": "In einem Commit im T3-Code-Repo stand die Zeile „Co-authored-by: Fable 5.5“, die Claude Code automatisch einfügt, und viele haben das als Leak gelesen. Theo erklärt, Fable 5.1 habe sich nach einem Aufruf von Opus 5.5 fälschlich als Fable 5.5 bezeichnet; auch Posts wie „fable 5.5 in ~2 hours“ haben sich nicht bewahrheitet. Fable 5.5 bleibt damit unbestätigt, Anthropic hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/theo/status/2112503499774890100",
+        "handle": "theo",
+        "date": "2026-10-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/mark_k/status/2112603384176120281",
+          "handle": "mark_k",
+          "date": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/Ananth7e/status/2112573940627538341",
+          "handle": "Ananth7e",
+          "date": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k3-1-sglang",
+      "headline": "sglang-Commit fügt Support für Kimi K3.1 hinzu",
+      "status": "rumor",
+      "summary": "Ein Commit vom 18. Oktober im sglang-Projekt ergänzt Support für Kimi K3.1 im Chat-Encoder von Kimi K3: Tokenizer und Chat-Format sind identisch, die einzige inhaltliche Änderung ist die neue Thinking-Effort-Stufe „medium“ neben low, high und max. aitrackerbot schreibt außerdem, die Testdaten eines nach 7 Minuten geschlossenen PRs zeigten ein laufendes Kimi-K3.1-Deployment bei DeepInfra vom 18. Oktober sowie Bildinput; geprüft ist das nicht. Moonshot hat Kimi K3.1 nicht angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2112392996947939564",
+        "handle": "aitrackerbot",
+        "date": "2026-10-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ChrisGPT/status/2112453748832211295",
+          "handle": "ChrisGPT",
+          "date": "2026-10-20"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/sgl-project/sglang/commit/588d63659d9b17a0ebdf99df6885ccb614b8e1c5",
+        "label": "sglang-Commit auf GitHub"
+      }
+    },
+    {
+      "id": "anthropic-skorpion-binder",
+      "headline": "Claude entwirft Proteinbinder gegen Skorpion-Neurotoxine",
+      "status": "confirmed",
+      "summary": "Ein internes Forschungsmodell von Anthropic hat in Claude Science 64 Stunden lang weitgehend autonom Minibinder gegen Skorpion-Neurotoxine entworfen, insgesamt 318.484 Designs, von denen es 180 für Tests ausgewählt hat; das Team hat 31 weitere ergänzt. Adaptyv Bio und Twist Bioscience haben die 211 Designs im Labor auf Bindung getestet, 17 davon erfüllten Anthropics Kriterien; der Aufwand lag bei rund 10.000 GPU-Stunden. Ob die Binder das Gift in Zellen neutralisieren, ist nicht bestätigt, ein Gegengift beansprucht Anthropic ausdrücklich nicht; alle 211 Designs samt Daten sind veröffentlicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+        "handle": "AnthropicAI",
+        "date": "2026-10-20"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "deepseek-deepinfer",
+      "headline": "DeepSeek veröffentlicht Inferenz-Framework DeepInfer als Open Source",
+      "status": "confirmed",
+      "summary": "DeepInfer ist DeepSeeks hauseigenes Inferenz-Framework, auf dem DeepSeek-V4.1-Flash im großen Maßstab läuft, und ist jetzt komplett Open Source. Laut DeepSeek liefert es hohen Durchsatz bei niedriger Latenz, mit dem Release will das Unternehmen anderen helfen, Rechen- und Energiekosten zu senken. kimmonismus merkt an, dass DeepInfer auf Huawei-Chips läuft.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/deepseek_ai/status/2112476496283775135",
+        "handle": "deepseek_ai",
+        "date": "2026-10-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2112490675174359312",
+          "handle": "kimmonismus",
+          "date": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "openai-orchestra-bio",
+      "headline": "OpenAI übernimmt Orchestra Bio",
+      "status": "confirmed",
+      "summary": "Orchestra Bio ist eine Plattform, mit der Biopharma-Teams die Abläufe in der Medikamentenentwicklung koordinieren. Gemeinsam will OpenAI Rosalind, seine KI-Modelle und Tools für die Life-Sciences-Forschung, weiterentwickeln, um diese Abläufe zu vereinfachen und neue Therapien schneller zu Patienten zu bringen. Einen Kaufpreis hat OpenAI nicht genannt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2112607347688583586",
+        "handle": "OpenAI",
+        "date": "2026-10-20"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "mistral-voxtral-3",
+      "headline": "Mistral stellt Voxtral 3 für Transkription und Sprachausgabe vor",
+      "status": "confirmed",
+      "summary": "Voxtral 3 besteht aus neuen Transcribe- und Speech-Modellen, die Mistral als State of the Art bezeichnet und auf denen die neue Voice-Agents-API von Mistral läuft. Laut aitrackerbot standen die Modell-IDs voxtral-small-transcribe-3-0, voxtral-mini-tts-3-0, voxtral-mini-transcribe-3-0 und voxtral-mini-transcribe-realtime-3-0 schon vor dem Launch im Modellkatalog der Mistral-API.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/MistralAI/status/2112574615318876178",
+        "handle": "MistralAI",
+        "date": "2026-10-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/aitrackerbot/status/2112537227934695532",
+          "handle": "aitrackerbot",
+          "date": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "openai-prompt-caching",
+      "headline": "OpenAI bietet 12 Stunden Prompt Caching in der API an",
+      "status": "confirmed",
+      "summary": "In der API lässt sich Prompt Caching jetzt auf 12 Stunden stellen, sodass gemeinsame Instructions, Tools und Kontext auch dann zum günstigeren Cached-Input-Preis abgerechnet werden, wenn zwischen den Requests Stunden liegen. Als Anwendungsfall nennt OpenAI persistente Agents wie dots, die den ganzen Tag über denselben Kontext nutzen. Für eingeloggte Nutzer in Codex und Work hält OpenAI den Cache laut Tibo dauerhaft vor, auch alte Unterhaltungen treffen also garantiert den Cache.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+        "handle": "OpenAIDevs",
+        "date": "2026-10-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2112712984644784534",
+          "handle": "thsottiaux",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "codex-usage-limits",
+      "headline": "OpenAI korrigiert Usage Limits bei rund 40.000 Konten",
+      "status": "confirmed",
+      "summary": "Am Wochenende hatten einige Nutzer gemeldet, dass ihr Kontingent schneller aufgebraucht war als erwartet. Laut Tibo von OpenAI galten bei rund 40.000 Konten Usage Limits, die nicht zum gewählten Plan passten. Der Fehler ist behoben, OpenAI kontaktiert alle Betroffenen einzeln und schreibt ihnen Credits gut.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2112592264686149749",
+        "handle": "thsottiaux",
+        "date": "2026-10-20"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "dario-mythos",
+      "headline": "Dario Amodei verteidigt Anthropics Umgang mit Mythos",
+      "status": "confirmed",
+      "summary": "Dario Amodei antwortet auf Kritik von Nathan Calvin: Modelle der Mythos-Klasse hatte Anthropic schon im Februar, allgemein verfügbar wurden sie aber erst im Juni, als stärkere Cyber-Safeguards bereitstanden. Bis dahin bekamen nur ausgewählte Partner Zugang, um den Fokus auf Cyberabwehr zu legen; damit hat Anthropic laut Amodei vermutlich einen erheblichen Teil seines Vorsprungs von mehreren Monaten aufgegeben. Außerdem verweist er auf die Ankündigung von dieser Woche, 5 Prozent des Unternehmens (womöglich später mehr) in einen Public Benefit Fund einzubringen, und kündigt an, bald mehr dazu zu sagen, wie Anthropic seine Werte in dieser Phase umsetzen will.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/DarioAmodei/status/2112732230124818891",
+        "handle": "DarioAmodei",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2112736946498011446",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}
