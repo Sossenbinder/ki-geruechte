@@ -1,0 +1,234 @@
+{
+  "issue": "2026-10-22",
+  "number": 6,
+  "title": "Anthropic stellt Claude Duet vor, Bericht über DeepSeek-Finanzierung, Sicherheitsvorfall bei Railway",
+  "published": "2026-10-22",
+  "intro": "Anthropic startet eine Research Preview der Agent-App Claude Duet, Railway meldet einen Sicherheitsvorfall mit Environment Variables von Kunden und pausiert alle Deployments. Laut Bloomberg hat DeepSeek rund 15 Milliarden Dollar eingesammelt; außerdem gibt es neue Hinweise auf Kimi K3.1 und Gemini 4 Carbon, und OpenAI-Modelle haben kritische Lücken in PHP gefunden. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "claude-duet",
+      "headline": "Anthropic stellt Agent-App Claude Duet als Research Preview vor",
+      "status": "confirmed",
+      "summary": "Claude Duet ist eine neue App, in der Claude als proaktiver Agent arbeitet: Der Agent fasst jeden Morgen zusammen, was ansteht, erledigt Aufgaben, arbeitet weiter, während man weg ist, und fragt nach, bevor er im Namen des Nutzers handelt. Laut Produktseite läuft Duet auf Opus 5.5, unterstützt mehr als 6.000 Connectors und Plugins und übernimmt Memory, Skills und Apps aus der Claude-App. Die Research Preview gibt es vorerst nur in den USA für Pro- und Max-Pläne, Zugang bekommt man über eine Warteliste.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2112984664256241837",
+        "handle": "claudeai",
+        "date": "2026-10-21"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://claude.com/product/claude-duet",
+        "label": "Claude-Produktseite"
+      }
+    },
+    {
+      "id": "deepseek-15-milliarden",
+      "headline": "Bericht: DeepSeek sammelt 15 Milliarden Dollar ein",
+      "status": "rumor",
+      "summary": "Laut Bloomberg hat DeepSeek in seiner jüngsten Finanzierungsrunde rund 100 Milliarden Yuan (15 Milliarden Dollar) eingesammelt, eine der größten Runden, die es in China je gab. Bloomberg stützt sich auf Insider, zu den größten Investoren gehören demnach CATL und Tencent. Laut Caijing wurde die Runde von etwa 7,5 auf 15 Milliarden Dollar verdoppelt, die Bewertung vor dem Investment liegt unverändert bei rund 75 Milliarden Dollar; DeepSeek hat sich bisher nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/joannachiu/status/2113104620805628350",
+        "handle": "joannachiu",
+        "date": "2026-10-22",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2113101606363484199",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-22"
+        },
+        {
+          "url": "https://x.com/TechHornLab/status/2113087660147580944",
+          "handle": "TechHornLab",
+          "date": "2026-10-22"
+        }
+      ],
+      "original": {
+        "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+        "label": "Bloomberg"
+      }
+    },
+    {
+      "id": "kimi-k3-1-arena",
+      "headline": "aitrackerbot: Arena-Modell Kibitz läuft auf Kimis Tokenizer",
+      "status": "rumor",
+      "summary": "aitrackerbot liest mit einer eigenen Methode den Tokenizer eines Modells allein über das Chatfenster aus: Das neue anonyme Arena-Modell Kibitz hat alle 11 Moonshot-spezifischen Test-Tokens in beiden Versuchen falsch wiedergegeben, wie jedes bisher getestete Kimi-Modell, das zweite neue Modell Kalmia nutzt dagegen den Tokenizer von Qwen. Unabhängig geprüft ist die Methode nicht, und dass Kibitz Kimi K3.1 ist, belegt der Test auch nicht. Nach dem sglang-Commit steht K3.1 laut LuminaBench jetzt in der Warnung beim Modellwechsel in Kimi Code, lyraxana zeigt Output eines neueren Checkpoints und schreibt, dass daran noch gearbeitet wird; Moonshot hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2113069020781875472",
+        "handle": "aitrackerbot",
+        "date": "2026-10-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/aitrackerbot/status/2113096168863375668",
+          "handle": "aitrackerbot",
+          "date": "2026-10-22"
+        },
+        {
+          "url": "https://x.com/LuminaBench/status/2112861576952676404",
+          "handle": "LuminaBench",
+          "date": "2026-10-21"
+        },
+        {
+          "url": "https://x.com/lyraxana/status/2112975867240759302",
+          "handle": "lyraxana",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-carbon-arena",
+      "headline": "Leaker: Google testet Gemini 4 Carbon mit Partnern",
+      "status": "rumor",
+      "summary": "Laut dem Leaker Lentils80 hat Google ein Early-Access-Programm für Gemini 4 Carbon gestartet: Partner haben Zugang, das Modell wird in LMArena getestet und der Release steht kurz bevor. Die Arena-Tester chetaslua und LuminaBench schreiben, dass dort ein neuer Checkpoint unter dem bestehenden Namen Gemini 4 Argon läuft. Laut Lentils80 und LuminaBench ist er bei 3D-Aufgaben deutlich stärker und nicht mehr so faul, beim Frontend-Design aber weiterhin schwach; Google hat nichts bestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Lentils80/status/2112770669549068684",
+        "handle": "Lentils80",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/chetaslua/status/2112827860713156853",
+          "handle": "chetaslua",
+          "date": "2026-10-21"
+        },
+        {
+          "url": "https://x.com/LuminaBench/status/2112899505708265794",
+          "handle": "LuminaBench",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "railway-sicherheitsvorfall",
+      "headline": "Railway meldet Sicherheitsvorfall und pausiert alle Deployments",
+      "status": "confirmed",
+      "summary": "Railway hat ungewöhnliche Aktivität an Systemen festgestellt, in denen die Environment Variables der Kunden liegen: Ein Unbefugter hatte möglicherweise Zugriff auf die verschlüsselten Werte und konnte einen Teil davon entschlüsseln. Railway vermutet eine Angriffsserie auf Plattformanbieter mit dem Ziel, KI-Inference-Provider zu kompromittieren, hat diese Provider gebeten, vorsorglich alle Keys zu widerrufen, und rät allen Kunden, sofort sämtliche Environment Variables, API-Keys und Zugangsdaten für private Registries zu rotieren. Während der Untersuchung sind alle Deployments pausiert und neue Versionen lassen sich nicht ausrollen; Theo zufolge bleiben deshalb seine Apps Lakebed, Postplan und Shoo offline, bis er sie mit neuen Keys deployen kann.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Railway/status/2113025284148715845",
+        "handle": "Railway",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/theo/status/2113047601058873564",
+          "handle": "theo",
+          "date": "2026-10-22"
+        },
+        {
+          "url": "https://x.com/synthwavedd/status/2113033492317487312",
+          "handle": "synthwavedd",
+          "date": "2026-10-22"
+        }
+      ],
+      "original": {
+        "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+        "label": "Railway-Blog"
+      }
+    },
+    {
+      "id": "openai-php-luecke",
+      "headline": "OpenAI-Modelle finden kritische Sicherheitslücken in PHP",
+      "status": "confirmed",
+      "summary": "Im Rahmen der Initiative Patch the Planet haben Forscher mithilfe von OpenAI-Modellen kritische Lücken in PHP gefunden, auf dem schätzungsweise 70 Prozent aller Websites laufen. OpenAI hat zwei Monate lang mit Maintainern, Forschern und Security-Anbietern Fixes vorbereitet, weil dafür ein größerer Umbau der PHP-Engine nötig war; alle PHP-Seiten können jetzt gefahrlos auf eine aktuelle Version updaten. Zum Prüfen der eigenen Seite gibt es einen Codex-Skill im Repo php2shell-checker, und laut Andrew Curran wurden die Lücken mit GPT-5.6 Sol gefunden, weitere Funde will OpenAI noch bekanntgeben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2112907856018309586",
+        "handle": "OpenAI",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OpenAI/status/2112945805686604033",
+          "handle": "OpenAI",
+          "date": "2026-10-21"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2112913197774807491",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-21"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/openai/php2shell-checker",
+        "label": "php2shell-checker auf GitHub"
+      }
+    },
+    {
+      "id": "openai-google-cloud",
+      "headline": "OpenAI bringt seine Modelle zu Google Cloud",
+      "status": "confirmed",
+      "summary": "OpenAI stellt seine Frontier-Modelle und die agentischen Workflows von Codex im Model Garden von Google Cloud bereit, damit Unternehmen sie dort nutzen können, wo sie ohnehin entwickeln. Google Cloud ist damit nach eigener Aussage der einzige Hyperscaler, der alle drei führenden Closed-Source-LLMs anbietet, dazu mehr als 200 weitere Modelle auf einer gemeinsamen Enterprise-Plattform.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2112988118471295323",
+        "handle": "OpenAI",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/googlecloud/status/2112896659608785181",
+          "handle": "googlecloud",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "claude-security-scans",
+      "headline": "Claude Security scannt Repos jetzt bei jeder Änderung neu",
+      "status": "confirmed",
+      "summary": "Repositories verbindet man einmal mit Claude Security, danach macht Claude einen gründlichen ersten Scan und scannt bei jeder neuen Änderung erneut. So sollen die Findings nah am aktuellen Stand des Codes bleiben. Das Feature ist als Public Beta in Claude Enterprise verfügbar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2112962248218148878",
+        "handle": "claudeai",
+        "date": "2026-10-21"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "recursive-flint",
+      "headline": "Recursive veröffentlicht lokales Coding-Modell Flint mit Open Weights",
+      "status": "confirmed",
+      "summary": "Flint ist das erste Modell von Recursive und wurde mit dem hauseigenen automatisierten Research-System Eureka Machine in weniger als 4 Monaten von Grund auf entwickelt. Laut Recursive ist es bis zu doppelt so schnell wie vergleichbare Modelle, mit mehr als 125 Tokens pro Sekunde auf einem MacBook Pro und über 150 auf RTX Spark; die Open Weights liegen auf Hugging Face, kostenlos ausprobieren lässt sich Flint bei opencode und pi.dev. Laut chetaslua hat die Eureka Machine 40 Milliarden Parameter insgesamt bei 2,5 Milliarden aktiv gewählt, den lm_head entgegen der üblichen Praxis in 4 Bit gelegt und einen Metal-Megakernel für den gesamten Decode-Pass geschrieben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/RichardSocher/status/2112944385415426249",
+        "handle": "RichardSocher",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/chetaslua/status/2112962984301769202",
+          "handle": "chetaslua",
+          "date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtc-berlin",
+      "headline": "Nvidia stellt auf der GTC Berlin neue offene Modelle vor",
+      "status": "confirmed",
+      "summary": "Die Modelle sollen Teams in Europa helfen, KI mit eigenen Daten auf selbst kontrollierter Infrastruktur zu bauen, etwa für spezialisierte Agents, Robotertraining, Proteindesign und die Entwicklung von Quantencomputern. Laut testingcatalog gibt es außerdem eine neue OpenShell Reference Architecture und einen neuen NVIDIA DSX POD. Damit soll der Aufbau einer AI Factory an einem vorbereiteten Standort nur noch 14 Tage statt sechs Monate dauern.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/NVIDIAAI/status/2112847569827348804",
+        "handle": "NVIDIAAI",
+        "date": "2026-10-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2112849355090559438",
+          "handle": "testingcatalog",
+          "date": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}
