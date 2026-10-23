@@ -1,0 +1,199 @@
+{
+  "issue": "2026-10-23",
+  "number": 7,
+  "title": "Moonshot zeigt Teaser zu Kimi K3.1, Berichte über OpenAI-Finanzierung und Anthropic-Börsenprospekt",
+  "published": "2026-10-23",
+  "intro": "Moonshot hat ein Teaser-Video zu Kimi K3.1 gepostet, ein Datum nennt das Unternehmen nicht. Laut CNBC steht OpenAI vor einer Finanzierungsrunde über bis zu 30 Milliarden Dollar, laut Yahoo Finance will Anthropic sein S-1 schon heute öffentlich einreichen; außerdem stellt Anthropic die Claude-Apps auf Auto-Modus um und OpenAI gibt die Decisions API frei. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "kimi-k3-1-teaser",
+      "headline": "Moonshot veröffentlicht Teaser-Video zu Kimi K3.1",
+      "status": "rumor",
+      "summary": "Moonshot hat auf X ein 24 Sekunden langes Video ohne Text gepostet: Auf einem alten Röhrenmonitor steht in einer Terminal-Oberfläche „Kimi K3.1“ und „Kimi Code, now on desktop“, dazu ein Prompt für eine 3D-Szene in Three.js. Nach sglang-Commit und Arena-Modell Kibitz kommt der Hinweis damit erstmals von Moonshot selbst, ein Release-Datum nennt das Unternehmen aber nicht. Andrew Curran schreibt, K3.1 komme in Kürze; laut dem Tester ChrisGPT erscheint es am Freitag oder am Montag (23. oder 26. Oktober) und ist günstiger und token-effizienter als Kimi K3.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+        "handle": "Kimi_Moonshot",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2113452832661852565",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-23"
+        },
+        {
+          "url": "https://x.com/ChrisGPT/status/2113458401309020202",
+          "handle": "ChrisGPT",
+          "date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "openai-30-milliarden",
+      "headline": "Bericht: OpenAI will bis zu 30 Milliarden Dollar einsammeln",
+      "status": "rumor",
+      "summary": "Laut CNBC steht OpenAI kurz vor einer Finanzierungsrunde über bis zu 30 Milliarden Dollar bei einer Bewertung von 1,25 Billionen Dollar vor dem Investment, angeführt von Investoren aus den Vereinigten Arabischen Emiraten und Coatue. Die Runde ist demnach als Zwischenfinanzierung vor einem möglichen Börsengang gedacht; OpenAI will die Unterschriften bis Ende nächster Woche haben, die endgültige Größe steht aber noch nicht fest. Laut Bloomberg lag die Bewertung in den Gesprächen zuvor bei 1,4 Billionen Dollar und wurde um 150 Milliarden gesenkt; gegenüber TechCrunch wollte sich OpenAI nicht äußern.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2113371230036545660",
+        "handle": "kimmonismus",
+        "date": "2026-10-22",
+        "via": true
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+        "label": "CNBC"
+      }
+    },
+    {
+      "id": "anthropic-s1-freitag",
+      "headline": "Bericht: Anthropic will S-1 schon am Freitag veröffentlichen",
+      "status": "rumor",
+      "summary": "Laut Yahoo Finance will Anthropic seinen Börsenprospekt S-1 schon am Freitag öffentlich einreichen, also heute, am 23. Oktober; die Seite hat das von drei Personen, die die Pläne kennen. Nach den SEC-Regeln müssen Unternehmen im vertraulichen Verfahren die Unterlagen 15 Kalendertage vor Beginn der Roadshow veröffentlichen, das öffentliche S-1 wäre also ein wichtiger Schritt zu einem möglichen Börsengang im November. Bei Redaktionsschluss war noch nichts eingereicht, Anthropic hat auf die Anfrage zum Zeitplan nicht reagiert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/unusual_whales/status/2113128025638453427",
+        "handle": "unusual_whales",
+        "date": "2026-10-22",
+        "via": true
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://finance.yahoo.com/markets/article/anthropic-to-publicly-file-for-ipo-as-early-as-friday-sources-say-135343841.html",
+        "label": "Yahoo Finance"
+      }
+    },
+    {
+      "id": "qwen-4-kalmia",
+      "headline": "Tester: Anonymes Arena-Modell Kalmia ist offenbar Qwen 4",
+      "status": "rumor",
+      "summary": "LuminaBench testet in der Arena das anonyme Modell Kalmia und bezeichnet es als Qwen 4, dort laufen gerade viele chinesische Modelle. Laut aitrackerbot nutzt Kalmia den Tokenizer von Qwen: Im Test über das Chatfenster gab es 6 von 8 Tokens falsch wieder, an denen Qwen-Modelle scheitern, aber keines der 40 Tokens von Kimi, DeepSeek, OpenAI, Google und Mistral. Ein Beleg für Qwen 4 ist das nicht, weil auch andere Labs den Qwen-Tokenizer verwenden, und Alibaba hat nichts angekündigt; kimmonismus schreibt aber, dass die nächsten chinesischen Modelle in weniger als 7 Tagen erscheinen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/LuminaBench/status/2113190928915779594",
+        "handle": "LuminaBench",
+        "date": "2026-10-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/aitrackerbot/status/2113096168863375668",
+          "handle": "aitrackerbot",
+          "date": "2026-10-22"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2113236129004532203",
+          "handle": "kimmonismus",
+          "date": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "claude-auto-modus",
+      "headline": "Anthropic stellt Claude-Apps standardmäßig auf Auto-Modus um",
+      "status": "confirmed",
+      "summary": "Ab nächster Woche laufen Sessions in Claude im Web, auf dem Desktop und in den Mobile-Apps in den Plänen Pro, Max und Team standardmäßig im Auto-Modus. Statt jeden Schritt einzeln abzufragen, blockiert eine automatische Prüfung riskante Aktionen; zurück auf manuell kann man jederzeit wechseln. Claude Code nutzt den Auto-Modus schon seit August als Standard.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2113360845409583307",
+        "handle": "claudeai",
+        "date": "2026-10-22"
+      },
+      "more_sources": []
+    },
+    {
+      "id": "claude-google-cloud",
+      "headline": "Anthropic startet verwaltetes Claude-Angebot auf Google Cloud",
+      "status": "confirmed",
+      "summary": "Claude Models on Google Cloud (Anthropic managed) ist jetzt allgemein verfügbar: Google-Cloud-Kunden bekommen den vollen Funktionsumfang der Claude Platform und nutzen dafür IAM-Credentials, Abrechnung und Commitments von Google Cloud. Laut testingcatalog kommen neue Features und Betas dort am selben Tag wie auf der nativen Claude-Plattform.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2113380122468454765",
+        "handle": "claudeai",
+        "date": "2026-10-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2113417344877760874",
+          "handle": "testingcatalog",
+          "date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-formale-verifikation",
+      "headline": "Anthropic verifiziert mit Claude Open-Source-Bibliotheken formal",
+      "status": "confirmed",
+      "summary": "Zusammen mit Theorem hat Anthropic Claude über einige Wochen Sicherheitseigenschaften von mehr als hundert Open-Source-Bibliotheken beweisen lassen, wie das Frontier Red Team im Blog berichtet. Claude hat die dabei gefundenen Bugs, insgesamt Hunderte, gepatcht und dann bewiesen, dass 239 Entry Points in 123 OSS-Fuzz-Bibliotheken bei keiner Eingabe bis 64 MB abstürzen; die Beweise beziehen sich auf die kompilierten RISC-V-Instruktionen und umfassen rund 180 Millionen Zeilen Rocq. In einem separaten Test mit 36 kleinen Verifikationsaufgaben aus echtem OSS-Fuzz-Code beweist Opus 5.5 die Hälfte davon mit etwa 40 Prozent weniger Tokens als Opus 5; die Beweise gelten allerdings nur für single-threaded, statische RISC-V-Binaries unter Linux, und formal verifiziert heißt laut Anthropic nicht fehlerfrei.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+        "handle": "AnthropicAI",
+        "date": "2026-10-23"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://www.anthropic.com/research/formal-verification",
+        "label": "Anthropic Research"
+      }
+    },
+    {
+      "id": "openai-metr-redwood",
+      "headline": "METR und Redwood Research testen OpenAIs internes Monitoring",
+      "status": "confirmed",
+      "summary": "Zwei Mitarbeiter von METR und Redwood Research haben diesen Sommer drei Wochen lang vor Ort bei OpenAI die Systeme geprüft, mit denen OpenAI interne Agents auf Misalignment überwacht; OpenAI hat ihnen dafür tiefen Zugriff auf die Infrastruktur gegeben. Laut OpenAI haben die Ergebnisse geholfen, die Safeguards beim Ausbau des Systems zu verbessern, eine kurze Zusammenfassung ist jetzt öffentlich. kimmonismus liest daraus, dass die Prüfer Wege gefunden haben, wie interne Agents das Monitoring umgehen konnten.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2113298833392496746",
+        "handle": "OpenAI",
+        "date": "2026-10-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/metr_evals/status/2113290966933389390",
+          "handle": "metr_evals",
+          "date": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "openai-decisions-api",
+      "headline": "OpenAI gibt Decisions API allgemein frei",
+      "status": "confirmed",
+      "summary": "Mit der Decisions API können Apps und Agents Texte und Bilder klassifizieren, Eingaben bewerten und entscheiden, was als Nächstes passiert, ohne dass das Modell eine vollständige Antwort generiert. Laut OpenAI geht das nahezu in Echtzeit und ist schneller und günstiger. Laut testingcatalog stehen die Entscheidungstypen Predicate, Choice und Score zur Verfügung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
+        "handle": "OpenAIDevs",
+        "date": "2026-10-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2113398273352368473",
+          "handle": "testingcatalog",
+          "date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-4-code",
+      "headline": "aitrackerbot: Nvidia bereitet offenbar Nemotron 4 vor",
+      "status": "rumor",
+      "summary": "Laut aitrackerbot zeigt Nvidias Repo TensorRT-LLM, wie ein Agent „nemotron4-nano-preview“ komplett auf GB300 einrichtet, außerdem hat FlashInfer Kernels für Nemotron 4 Ultra und Nemotron 4 Nano gemergt und den Namen danach wieder entfernt. Aus dem Branch eines Nvidia-Ingenieurs liest aitrackerbot die Specs der Nano-Preview aus: 44 Layer, davon 32 mit Gated DeltaProduct (Linear Attention), 8 Attention- und 4 Dense-MLP-Layer, 512 Experten mit 10 aktiv pro Token, 1 Million Tokens Kontext in der Config, dazu ein Vision-Language-Checkpoint und Multi-Token Prediction. Das sind nur Spuren im Code, ein Datum gibt es nicht und Nvidia hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2113166533690073245",
+        "handle": "aitrackerbot",
+        "date": "2026-10-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/aitrackerbot/status/2113182346438447301",
+          "handle": "aitrackerbot",
+          "date": "2026-10-22"
+        }
+      ]
+    }
+  ]
+}
