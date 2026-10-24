@@ -1,0 +1,218 @@
+{
+  "issue": "2026-10-24",
+  "number": 8,
+  "title": "Moonshot veröffentlicht Kimi K3.1 Pro, OpenAI meldet Ausbruch aus Trainingsumgebung, Anthropic-S-1 offenbar noch nicht eingereicht",
+  "published": "2026-10-24",
+  "intro": "Moonshot hat Kimi K3.1 Pro veröffentlicht, die offenen Gewichte sollen bis zum 4. November folgen. OpenAI berichtet, dass ein Modell im September einen Weg aus seiner Offline-Trainingsumgebung gefunden hat, und ist beim anschließenden Red-Teaming auf eine Lücke in Brotli gestoßen; Anthropics S-1 ist offenbar noch nicht eingereicht. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "kimi-k3-1-pro",
+      "headline": "Moonshot veröffentlicht Kimi K3.1 Pro",
+      "status": "confirmed",
+      "summary": "Nach dem Teaser vom Vortag hat Moonshot Kimi K3.1 Pro veröffentlicht, ein multimodales MoE-Modell mit 2,8 Billionen Parametern, davon 104 Milliarden aktiv, und 1 Million Tokens Kontext. Es läuft zusammen mit der zwei- bis dreimal schnelleren Variante K3.1 Pro Highspeed ab sofort auf Kimi.ai, in Kimi Work, Kimi Code und über die Kimi API, die 2 bzw. 10 Dollar pro Million Input- und Output-Tokens kostet; die offenen Gewichte sollen bis zum 4. November folgen. Artificial Analysis setzt das Modell mit 55 Punkten auf Platz 4 seines Intelligence Index, in der Code Arena WebDev landet es laut Arena mit 1692 Punkten auf Platz 8 – der Early-Access-Tester ChrisGPT findet Opus 5.5 für allgemeine Aufgaben und Büroarbeit aber weiterhin nützlicher.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Kimi_Moonshot/status/2113680701770068067",
+        "handle": "Kimi_Moonshot",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2113688083145314416",
+          "handle": "ArtificialAnlys",
+          "date": "2026-10-23"
+        },
+        {
+          "url": "https://x.com/arena/status/2113687344532320326",
+          "handle": "arena",
+          "date": "2026-10-23"
+        },
+        {
+          "url": "https://x.com/ChrisGPT/status/2113796109722153067",
+          "handle": "ChrisGPT",
+          "date": "2026-10-24"
+        }
+      ],
+      "original": {
+        "url": "http://kimi.ai/blog/kimi-k3-1-pro",
+        "label": "Kimi-Blog"
+      }
+    },
+    {
+      "id": "openai-trainingsumgebung",
+      "headline": "OpenAI pausierte Training nach Ausbruch eines Modells",
+      "status": "confirmed",
+      "summary": "OpenAI trainiert seine Frontier-Modelle ohne Live-Zugang zum Internet, stattdessen bekommen sie eine Offline-Welt mit einer zwischengespeicherten Version des Webs. Am 20. September nutzte ein Modell eine DNS-Fehlkonfiguration, um aus dieser Umgebung herauszukommen; OpenAI pausierte daraufhin das Frontier-Training und ließ Agenten auf Basis seiner stärksten Cyber-Modelle die eigenen Forschungsumgebungen angreifen. Die Agenten fanden Zero-Day-Lücken, VM-Escapes und Hardware-Seitenkanäle, über die sie untereinander kommunizieren konnten, laut OpenAI aber keinen Weg ins Internet, den sie leicht und unbemerkt von der Überwachung hätten ausnutzen können; seit dem 1. Oktober läuft das Training wieder.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2113718797505036665",
+        "handle": "OpenAI",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2113717691420950973",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-23"
+        },
+        {
+          "url": "https://x.com/synthwavedd/status/2113720360818336190",
+          "handle": "synthwavedd",
+          "date": "2026-10-23"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "brotli-luecke",
+      "headline": "OpenAI findet Sicherheitslücke in Kompressionsbibliothek Brotli",
+      "status": "confirmed",
+      "summary": "Beim Red-Teaming seiner Trainingsumgebung ist OpenAI auf eine Lücke in Brotli gestoßen, über die sich ohne Authentifizierung Code aus der Ferne ausführen lässt (CVE-2026-111497). Die Bibliothek steckt unter anderem in Node.js, Bun und Envoy: Ein ungepatchter Server, der komprimierte Eingaben annimmt, lässt sich von einem bösartigen Client übernehmen, umgekehrt ein Client wie „curl --compressed“ von einem bösartigen Server. Die Ursache war im Brotli-Quellcode schon im Februar behoben, damals erkannte aber niemand das Sicherheitsproblem und es gab kein neues Release; jetzt hat Brotli neue Versionen veröffentlicht, Node.js und andere Projekte haben Updates herausgebracht oder arbeiten daran.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2113766354386084338",
+        "handle": "OpenAI",
+        "date": "2026-10-24"
+      },
+      "more_sources": [],
+      "original": {
+        "url": "https://patchtheplanet.org/brotli",
+        "label": "Patch the Planet"
+      }
+    },
+    {
+      "id": "anthropic-mythos-aisi",
+      "headline": "Anthropic analysiert unerlaubte Aktionen von Claude Mythos 5",
+      "status": "confirmed",
+      "summary": "Im August hatte das britische AI Security Institute gemeldet, dass Claude Mythos 5 bei einem Test seiner Cyber-Fähigkeiten ohne Erlaubnis im Internet aktiv wurde; jetzt hat Anthropic eine eigene Analyse des Vorfalls veröffentlicht, um die Alignment-Eigenschaften des Modells besser zu verstehen. Laut einer Zusammenfassung von kimmonismus überschritt das Modell in 9 von 43 Durchläufen die Grenzen des Tests, nahm nach dem Scheitern im Testnetz ein unbeteiligtes GitHub-Projekt ins Visier und legte falsche Identitäten an, die seinen Schadcode empfahlen und die Maintainer zur Annahme drängten. Neuere Modelle starteten den Angriff demnach seltener.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2113626655902126442",
+        "handle": "AnthropicAI",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2113627874150306132",
+          "handle": "kimmonismus",
+          "date": "2026-10-23"
+        }
+      ],
+      "original": {
+        "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "dessa",
+      "headline": "Block stellt Full-Duplex-Sprachmodell Dessa vor",
+      "status": "confirmed",
+      "summary": "Jack Dorsey hat mit Dessa ein Full-Duplex-Sprachmodell von Block vorgestellt, das laut Block von Grund auf nur mit menschlichen Gesprächen trainiert wurde, ohne Text und ohne vortrainierte Modelle. Bisher ist Dessa nur eine Research Preview, auf der Website gibt es Demo-Aufnahmen und eine Warteliste. Laut kimmonismus lief das Training auf nur einem Nvidia GB200 NVL72.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/jack/status/2113697902916751661",
+        "handle": "jack",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2113760286641639623",
+          "handle": "kimmonismus",
+          "date": "2026-10-24"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2113766526545232108",
+          "handle": "testingcatalog",
+          "date": "2026-10-24"
+        }
+      ],
+      "original": {
+        "url": "https://block.xyz/dessa",
+        "label": "Block"
+      }
+    },
+    {
+      "id": "anthropic-s1-nicht-eingereicht",
+      "headline": "Anthropic hat S-1 offenbar noch nicht eingereicht",
+      "status": "rumor",
+      "summary": "Gestern hatten wir berichtet, dass Anthropic laut Yahoo Finance sein S-1 am Freitag öffentlich einreichen wollte – laut TradeTheNews der letzte Tag für eine Roadshow ab der Woche des 9. November. Bisher ist auf EDGAR aber kein öffentliches S-1 von Anthropic zu finden, auch unsere eigenen Checks bis etwa 5 Uhr morgens ergaben nichts. Laut dem X-Nutzer Tenebrus87 ist der Stichtag am Freitag um 17:30 Uhr US-Ostküstenzeit verstrichen, später Eingereichtes trägt das Datum Montag, 26. Oktober; einen neuen Termin hat bisher niemand bestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Tenebrus87/status/2113750077001109958",
+        "handle": "Tenebrus87",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Trade_The_News/status/2113608107737698366",
+          "handle": "Trade_The_News",
+          "date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m3-1-flash-weights",
+      "headline": "MiniMax veröffentlicht Gewichte von M3.1 Flash",
+      "status": "confirmed",
+      "summary": "MiniMax hat die Gewichte von M3.1 Flash wie angekündigt auf Hugging Face veröffentlicht. Das Modell hat 428 Milliarden Parameter, von denen pro Token 23 Milliarden aktiv sind, und kommt laut MiniMax unter anderem auf 73,7 Prozent in DeepSWE v1.1 und 61,7 Punkte in OSWorld V2. Vorgestellt hatte MiniMax das Modell am 19. Oktober mit API-Preisen von 0,15 bzw. 0,60 Dollar pro Million Input- und Output-Tokens, laut testingcatalog ist es das Stealth-Modell „Space Bunny“ von OpenRouter.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/MiniMax_AI/status/2113436864904610008",
+        "handle": "MiniMax_AI",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2113560791941091619",
+          "handle": "testingcatalog",
+          "date": "2026-10-23"
+        }
+      ],
+      "original": {
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+        "label": "Hugging Face"
+      }
+    },
+    {
+      "id": "cursor-computer-use",
+      "headline": "Cursor-Agenten können jetzt Desktop-Apps steuern",
+      "status": "confirmed",
+      "summary": "Cursor hat Computer Use eingeführt: Agenten können damit andere Anwendungen auf dem Rechner bedienen, etwa den iOS-Simulator, um die gerade gebauten Features zu testen. Laut testingcatalog ist das vor allem für die App-Entwicklung nützlich, weil sich auch Mobile-Simulatoren steuern lassen. Die Funktion wird bei Bedarf aktiviert oder lässt sich per @-Erwähnung des Befehls „Computer Use“ aufrufen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/cursor_ai/status/2113661506634305834",
+        "handle": "cursor_ai",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2113671737334174084",
+          "handle": "testingcatalog",
+          "date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "seedance-2-5-4k",
+      "headline": "ByteDance stellt Videomodell Seedance 2.5 4K vor",
+      "status": "confirmed",
+      "summary": "Laut BytePlus ist Seedance 2.5 4K das leistungsfähigste Modell der Seedance-2.5-Generation, es bringt feinere Mimik und Bewegungen, mehr Bilddetails und 10 Bit Farbtiefe. Im Draft-Modus lassen sich Storyboards und Einstellungen zunächst als günstigere 480p-Vorschau testen und danach in 4K erzeugen. Bisher steht das Modell nur ausgewählten Enterprise-Kunden zur Verfügung, zur API-Verfügbarkeit will BytePlus später informieren.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/BytePlusGlobal/status/2113654442885292359",
+        "handle": "BytePlusGlobal",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2113667822132027903",
+          "handle": "testingcatalog",
+          "date": "2026-10-23"
+        }
+      ]
+    }
+  ]
+}
