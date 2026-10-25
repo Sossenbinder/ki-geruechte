@@ -1,0 +1,177 @@
+{
+  "issue": "2026-10-25",
+  "number": 9,
+  "title": "Thariq verlässt Anthropic, Texas verklagt OpenAI, Bericht: OpenAI wirbt Anthropic-Kunden mit Rabatten ab",
+  "published": "2026-10-25",
+  "intro": "Thariq, der mehr als ein Jahr an Claude Code gearbeitet hat, hat Anthropic verlassen. Texas verklagt OpenAI und Sam Altman und wirft ihnen vor, Nutzer über die Sicherheit von ChatGPT getäuscht zu haben; laut einem Bericht von The Information gewinnt OpenAI außerdem mit hohen Rabatten Coding-Workloads von Anthropic-Kunden wie Replit und Rippling. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "thariq-verlaesst-anthropic",
+      "headline": "Claude-Code-Entwickler Thariq verlässt Anthropic",
+      "status": "confirmed",
+      "summary": "Thariq hat Anthropic nach mehr als einem Jahr Arbeit an Claude Code verlassen. Er lobt seine bisherigen Kollegen und will jetzt erst einmal eine Pause machen, bevor er etwas Neues anfängt. Laut ArfurGrok und synthwavedd hat auch Anthony Morris (amorriscode) Anthropic verlassen, eine eigene Ankündigung von Morris gibt es bisher nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/trq212/status/2113844051938054167",
+        "handle": "trq212",
+        "date": "2026-10-24"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ArfurGrok/status/2113792338195542039",
+          "handle": "ArfurGrok",
+          "date": "2026-10-24"
+        },
+        {
+          "url": "https://x.com/synthwavedd/status/2113864989769605141",
+          "handle": "synthwavedd",
+          "date": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "openai-rabatte",
+      "headline": "Bericht: OpenAI wirbt Anthropic-Kunden mit hohen Rabatten ab",
+      "status": "rumor",
+      "summary": "Laut The Information hat Replit den Großteil seiner KI-Ausgaben von Anthropic zu OpenAI verlagert, nachdem Anthropic seinen Rabatt gestrichen hatte; OpenAI gibt demnach mehr als 30 Prozent Nachlass, der Deal ist mehr als 100 Millionen Dollar pro Jahr wert. Bei Rippling liefen im Mai noch 57 Prozent der Coding-Arbeit über Anthropic-Modelle und 16 Prozent über OpenAI, inzwischen sind es laut CEO Parker Conrad 52 Prozent bei OpenAI und 18 Prozent bei Anthropic, weil die Firma Kosten senken wollte und OpenAI günstiger war. Anthropic hat sich zu dem Bericht bisher nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2114066987995349180",
+        "handle": "kimmonismus",
+        "date": "2026-10-24",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.techmeme.com/261024/p8",
+        "label": "The Information (via Techmeme)"
+      }
+    },
+    {
+      "id": "texas-klage-openai",
+      "headline": "Texas verklagt OpenAI und Sam Altman",
+      "status": "confirmed",
+      "summary": "Der texanische Generalstaatsanwalt Ken Paxton hat OpenAI und Sam Altman vor dem Bezirksgericht von Collin County verklagt und wirft ihnen vor, Nutzer über die Sicherheit von ChatGPT getäuscht zu haben. Die 67 Seiten lange Klage stützt sich vor allem auf das texanische Verbraucherschutzgesetz DTPA und den Securing Children Online through Parental Empowerment Act; Paxton beantragt unter anderem, dass OpenAI neue ChatGPT-Modelle in Texas nur noch mit Freigabe eines gerichtlich bestellten unabhängigen Prüfers veröffentlichen darf. Laut Courthouse News kommt die Klage eine Woche, nachdem Unterlagen zur Wahlkampffinanzierung gezeigt hatten, dass Elon Musk fast 200 Millionen Dollar für Werbung für Paxtons Senatswahlkampf ausgegeben hat; OpenAI hat sich bisher nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/unusual_whales/status/2113733225424224553",
+        "handle": "unusual_whales",
+        "date": "2026-10-23",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-sues-openai-and-ceo-sam-altman-lying-users-and-harming-texans",
+        "label": "Texas Attorney General"
+      }
+    },
+    {
+      "id": "kimi-influencer-briefing",
+      "headline": "X-Nutzer zeigt angebliches Influencer-Briefing von Moonshot",
+      "status": "rumor",
+      "summary": "Der X-Nutzer elshayib_ hat den Screenshot eines angeblichen Kampagnen-Briefings von Moonshot zu Kimi K3.1 Pro gepostet, bestätigt ist seine Echtheit nicht. Laut Screenshot müssen Influencer ihre Entwürfe von Moonshot freigeben lassen, sollen ihre Posts nicht als bezahlte Partnerschaft kennzeichnen und Sätze wie „China just made Opus 5.5 free to use for everyone“ verwenden oder GPT-6 Sol als „no comparison“ darstellen. Die Accounts kimmonismus und chetaslua schreiben, dass sie nicht Teil des Briefings waren, Moonshot hat sich bisher nicht öffentlich geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/elshayib_/status/2113710752741892476",
+        "handle": "elshayib_",
+        "date": "2026-10-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2113872950214438955",
+          "handle": "kimmonismus",
+          "date": "2026-10-24"
+        },
+        {
+          "url": "https://x.com/chetaslua/status/2113968076937154587",
+          "handle": "chetaslua",
+          "date": "2026-10-24"
+        },
+        {
+          "url": "https://x.com/Hesamation/status/2113939080203645198",
+          "handle": "Hesamation",
+          "date": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "theo-agents-sdk-limits",
+      "headline": "Theo meldet Bug: Agents SDK verbraucht 5-Stunden-Limit schneller",
+      "status": "rumor",
+      "summary": "Theo baut mit T3 Code ein Tool auf Basis von Anthropics Agents SDK; ein Nutzer hatte berichtet, dass damit schon eine einzelne Session das 5-Stunden-Limit seines Claude-Max-Plans in etwa 30 Minuten aufgebraucht hat. Theo hat das untersucht und spricht von einem echten Bug bei Anthropic: Jede Nutzung über das Agents SDK verbraucht das 5-Stunden-Limit schneller als Claude Code direkt, die Wochenlimits sind nicht betroffen. Er hat den Bug an Anthropic gemeldet, Anthropic hat ihn bisher nicht bestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/theo/status/2114166439813017873",
+        "handle": "theo",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/DeepakNesss/status/2113912028675162171",
+          "handle": "DeepakNesss",
+          "date": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k3-1-agent-arena",
+      "headline": "Kimi K3.1 Pro landet in der Agent Arena auf Platz 11",
+      "status": "confirmed",
+      "summary": "Laut Arena kommt Kimi K3.1 Pro (Max) in der Agent Arena auf Platz 11, mit einer Netto-Verbesserung von 7,6 Prozent aus mehr als 4.000 echten Agent-Sessions; Kimi K3 (Max) lag mit 1,6 Prozent noch auf Platz 25. Damit würde es DeepSeek-v4.1-Flash als bestes offenes Modell in der Agent Arena ablösen, die offenen Gewichte sollen laut Arena bald folgen. Die mittleren Kosten pro Aufgabe liegen bei 1,03 Dollar und damit 13 Prozent unter dem Vorgänger, in den Kategorien Work, Code und Chat landet das Modell auf den Plätzen 8, 9 und 10.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/arena/status/2114008313054527901",
+        "handle": "arena",
+        "date": "2026-10-24"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/arena/status/2114008318746517884",
+          "handle": "arena",
+          "date": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-carbon-teamfood",
+      "headline": "Bericht: Google testet Gemini 4 Carbon intern",
+      "status": "rumor",
+      "summary": "Laut dem Recap-Account StatsWire ist Gemini 4 Carbon bei Google ins interne Teamfooding gegangen, neu sind unter anderem die Kennungen gemini-4-carbon-teamfood, carbon-g-medium-tf, gemini-4-argon-teamfood und gemini-4-argon-max-mode-tf. Außerdem testet Google demnach eine weniger eingeschränkte Cybersecurity-Variante von Gemini 4 Argon (gemini-4-argon-cyber-permissive) und eine neue Modellfamilie namens Barium. Die Kennungen sollen aus einem aktualisierten Discovery-Dokument von Google stammen, das wir nicht selbst prüfen konnten; bisher berichten nur kleine Recap-Accounts darüber, einen Release-Termin gibt es nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2113999409574756701",
+        "handle": "StatsWire",
+        "date": "2026-10-24"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/StatsWire/status/2114029399595200920",
+          "handle": "StatsWire",
+          "date": "2026-10-24"
+        },
+        {
+          "url": "https://x.com/LuminaBench/status/2113960038423572794",
+          "handle": "LuminaBench",
+          "date": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "codex-reset-tag-20",
+      "headline": "Tibo kündigt nächsten Reset der Codex-Limits an",
+      "status": "confirmed",
+      "summary": "Tibo, der bei OpenAI Codex leitet, will an Tag 20 seiner 28-tägigen Aktion die Nutzungslimits von Codex bis Mitternacht pazifischer Zeit zurücksetzen. Bei der Aktion bringt er vom 5. Oktober bis 1. November jeden Tag eine Verbesserung oder einen Reset. Seit Tag 19 macht ein Wechsel des Reasoning-Levels mitten in der Unterhaltung den Cache nicht mehr ungültig.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2114200152701575656",
+        "handle": "thsottiaux",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2114200291319124163",
+          "handle": "thsottiaux",
+          "date": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}
