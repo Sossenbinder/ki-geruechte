@@ -1,0 +1,142 @@
+{
+  "issue": "2026-10-26",
+  "number": 10,
+  "title": "Bericht: Anthropic rollt Fable 5.5 an Enterprise-Kunden aus, Moonshot entschuldigt sich für Kimi-Limits, Nanbeige veröffentlicht Nanbeige4.3-33B",
+  "published": "2026-10-26",
+  "intro": "Laut ChrisGPT hat Anthropic Fable 5.5 an Enterprise-Kunden wie JP Morgan und Meta ausgerollt, bestätigt ist das nicht. Moonshot entschuldigt sich für die Limits im Abo für Kimi K3.1 Pro und setzt die Kontingente teilweise zurück, außerdem veröffentlicht Nanbeige das offene Modell Nanbeige4.3-33B. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "fable-5-5-enterprise",
+      "headline": "Bericht: Anthropic rollt Fable 5.5 an Enterprise-Kunden aus",
+      "status": "rumor",
+      "summary": "Laut den Quellen von ChrisGPT hat Anthropic Fable 5.5 an Enterprise-Kunden ausgerollt, darunter JP Morgan, Meta und weitere „Top-Kunden“. AndrewCurran_ hält das für wahrscheinlich, kimmonismus nennt ChrisGPT zuverlässig und rechnet selbst mit einem Release für Endnutzer schon in der kommenden Woche. Anthropic hat nichts bestätigt, öffentlich verfügbar ist Fable 5.5 bisher nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ChrisGPT/status/2114450507616129300",
+        "handle": "ChrisGPT",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2114460498653782265",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-25"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2114477104406708444",
+          "handle": "kimmonismus",
+          "date": "2026-10-25"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2114398711229116536",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-1-terra-copilot",
+      "headline": "Bericht: GitHub testet GPT-6.1 Terra in Copilot",
+      "status": "rumor",
+      "summary": "LuminaBench und Mr_Salio zeigen Screenshots eines Commits, in dem ein GitHub-Mitarbeiter GPT-6.1 Terra in GitHub Copilot einrichtet, getestet wird das Modell demnach als günstigere Alternative zu GPT-6.1 Sol. Laut Mr_Salio stammt der Commit von Nate Finch aus dem Copilot-Team, Terra ersetzt darin Sol bei Code-Reviews, Re-Reviews, Integration und CI-Reviews mit hohem Reasoning-Effort. Den Commit selbst konnten wir nicht finden; es ist nach Microsofts Eval-Config für dotnet/efcore vom 20.10. die zweite Sichtung von Terra, OpenAI hat das Modell bisher nicht bestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/LuminaBench/status/2114302559447830599",
+        "handle": "LuminaBench",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Mr_Salio/status/2114266090356232253",
+          "handle": "Mr_Salio",
+          "date": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "id": "kimi-entschuldigung",
+      "headline": "Moonshot entschuldigt sich für Limits bei Kimi K3.1 Pro",
+      "status": "confirmed",
+      "summary": "Moonshot entschuldigt sich für Rate Limits und unnötigen Quota-Verbrauch im Abo für K3.1 Pro und setzt bei allen Abonnenten in allen Plänen einmalig 25 Prozent des Monatskontingents zurück, das entspricht einer Woche Nutzung (wer unter 25 Prozent liegt, landet bei null). Außerdem hat Moonshot die Parameter des Plans angepasst und reduziert unnötige Subagent-Aufrufe und die Ausgabelänge, damit das Kontingent länger reicht. Das angebliche Influencer-Briefing erwähnt Moonshot nicht, kimmonismus nennt das dreist.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Kimi_Moonshot/status/2114450610724708492",
+        "handle": "Kimi_Moonshot",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2114461632512274812",
+          "handle": "kimmonismus",
+          "date": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "id": "nanbeige-4-3-33b",
+      "headline": "Nanbeige veröffentlicht offenes Modell Nanbeige4.3-33B",
+      "status": "confirmed",
+      "summary": "Nanbeige hat Nanbeige4.3-33B samt Base-Variante auf Hugging Face veröffentlicht, die Gewichte stehen unter Apache 2.0, das Kontextfenster fasst 512K Tokens. Laut Nanbeige ist es bei Agent-Aufgaben das beste offene Modell um 30B Parameter, laut kimmonismus schlägt es Qwen 3.8 27B und ähnlich große Gemma-Modelle in den meisten Benchmarks; das sind Angaben des Labs, unabhängig geprüft ist das nicht. Das Modell dient außerdem als Lehrermodell für kleinere Nanbeige-Modelle, den Anfang macht Nanbeige4.3-3B.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/nanbeige/status/2114328933181333798",
+        "handle": "nanbeige",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2114368186208453089",
+          "handle": "kimmonismus",
+          "date": "2026-10-25"
+        }
+      ],
+      "original": {
+        "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+        "label": "Hugging Face"
+      }
+    },
+    {
+      "id": "openai-bildmodelle-arena",
+      "headline": "Anonyme Bildmodelle in der Arena stammen offenbar von OpenAI",
+      "status": "rumor",
+      "summary": "Laut aitrackerbot kommen die anonymen Bildmodelle shooting-star-red-alpha, shooting-star-green-alpha und aurora-purple-alpha in der Arena alle von OpenAI. Mehrere unabhängige Checks, kalibriert an Hunderten Bildern von 10 Labs, deuten demnach auf dieselbe Pipeline wie bei OpenAIs gpt-image-2.5. Die Zuordnung stammt von einem Klassifikator, OpenAI und Arena haben nichts bestätigt, einen Release-Termin gibt es nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2114123779441914246",
+        "handle": "aitrackerbot",
+        "date": "2026-10-25"
+      }
+    },
+    {
+      "id": "ai-studio-managed-agents",
+      "headline": "Google AI Studio bekommt offenbar Managed Agents",
+      "status": "rumor",
+      "summary": "testingcatalog hat in Google AI Studio Hinweise auf Managed Agents gefunden: In einem eigenen Agents-Hub sollen Nutzer ihre autonomen Agents samt Tools, Umgebungen und Triggern einsehen und verwalten können. Google hat die Funktion nicht angekündigt. testingcatalog vermutet, dass sie auf der Agent Compute Engine für GCP aufbaut, die Google kürzlich vorgestellt hat.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2114349445760303238",
+        "handle": "testingcatalog",
+        "date": "2026-10-25"
+      }
+    },
+    {
+      "id": "muse-sprachanrufe",
+      "headline": "Metas Assistent Muse bekommt Sprachanrufe",
+      "status": "confirmed",
+      "summary": "Muse, der Assistent von Meta, bekommt seit dem 24.10. schrittweise Sprachanrufe, damit lassen sich Gespräche mit dem Muse-Agent in Echtzeit führen. Laut gambrill fragt Muse beim Anruf, ob man die Stimme ändern will, und schlägt dann passende Stimmen zu einer eigenen Beschreibung vor; im Chat läuft ein Transkript mit. Eine offizielle Ankündigung von Meta haben wir nicht gefunden, auch gambrill hat keinen Hinweis auf die neue Funktion bekommen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2114389254927220845",
+        "handle": "testingcatalog",
+        "date": "2026-10-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/gambrill/status/2114013529132961820",
+          "handle": "gambrill",
+          "date": "2026-10-24"
+        }
+      ]
+    }
+  ]
+}
