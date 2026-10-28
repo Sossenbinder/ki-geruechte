@@ -1,0 +1,158 @@
+{
+  "issue": "2026-10-28",
+  "number": 12,
+  "title": "Artificial Analysis stellt Index v5 vor, Anthropic meldet Claude-Beweis zur Exponential Time Hypothesis, Google zeigt Genie 4",
+  "published": "2026-10-28",
+  "intro": "Artificial Analysis hat Version 5 seines Intelligence Index veröffentlicht, Anthropic legt ein Paper zur Exponential Time Hypothesis und erste Ergebnisse in der Medikamentenentwicklung vor, Google DeepMind zeigt das Weltmodell Genie 4. Unbestätigt sind dagegen die Behauptung, Cathedral habe vollen Admin-Zugriff auf Anthropics Slack gehabt, Spekulationen über einen Release von Fable 5.5 im November und ein angeblicher Test von Qwen 4 in der Arena. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "aa-index-v5",
+      "headline": "Artificial Analysis veröffentlicht Index v5, Claude Opus 5.5 führt",
+      "status": "confirmed",
+      "summary": "Artificial Analysis hat Version 5 seines Intelligence Index veröffentlicht: 60 Prozent beruhen jetzt auf Evals mit privaten Testsets oder zurückgehaltenen Antworten, neu sind unter anderem FrontierCode 2.0 von Cognition und Terminal-Bench-Science, HLE-Diamond ersetzt Humanity’s Last Exam. Claude Opus 5.5 (max) führt mit 58 Punkten vor GPT-6 Astra (max, 57) und GPT-6.1 Sol (max, 55); unter den zehn bestplatzierten Modellen ist GPT-6.1 Terra (max) mit 0,96 Dollar pro Index-Aufgabe am günstigsten, Claude Fable 5.1 (max) mit 13,04 Dollar am teuersten. Das war die Ankündigung, die Artificial Analysis am 27. Oktober mit „Tomorrow.“ angeteasert hatte, nicht Fable 5.5.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ArtificialAnlys/status/2115265133467635877",
+        "handle": "ArtificialAnlys",
+        "date": "2026-10-28"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2115276413997850742",
+          "handle": "kimmonismus",
+          "date": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-eth",
+      "headline": "Anthropic: Internes Claude-Modell widerlegt Exponential Time Hypothesis",
+      "status": "confirmed",
+      "summary": "Anthropic hat ohne Blogpost oder Ankündigung im GitHub-Repo anthropics/formal-math ein Paper veröffentlicht, das die Exponential Time Hypothesis (ETH) widerlegt. Den Kernalgorithmus hat laut Paper ein internes Claude-Forschungsmodell am 16. Oktober gefunden, mit 14 Millionen Output-Tokens und ohne menschlichen Input, danach haben Anthropic-Forscher zusammen mit Claude die Darstellung überarbeitet. Als Autor steht nur Claude auf dem Paper, außerdem heißt es dort, dass ein internes OpenAI-Modell unabhängig und zeitgleich ein ähnliches Ergebnis bewiesen haben will.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/__alpoge__/status/2114930095009968506",
+        "handle": "__alpoge__",
+        "date": "2026-10-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2114935219539345486",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-27"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth",
+        "label": "Anthropic auf GitHub"
+      }
+    },
+    {
+      "id": "genie-4",
+      "headline": "Google DeepMind stellt Weltmodell Genie 4 vor",
+      "status": "confirmed",
+      "summary": "Google DeepMind hat Genie 4 vorgestellt und nennt es sein bisher realistischstes und interaktivstes Weltmodell: Man erkundet dynamische Umgebungen in Echtzeit und sieht und hört, wie die Szene reagiert und wie sich die Personen darin bewegen, reagieren und sprechen. Zum Start gibt es eine Research Preview für Trusted Testers, Ultra-Abonnenten folgen laut AndrewCurran_ bald. Logan Kilpatrick kündigt außerdem an, dass Genie 4 demnächst als erstes Genie-Modell in die API kommt, verfügbar ist es dort noch nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
+        "handle": "GoogleDeepMind",
+        "date": "2026-10-27"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OfficialLoganK/status/2115129174826647863",
+          "handle": "OfficialLoganK",
+          "date": "2026-10-27"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2115117920993120570",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-drug-development",
+      "headline": "Anthropic meldet erste Ergebnisse in der Medikamentenentwicklung",
+      "status": "confirmed",
+      "summary": "Anthropic forscht seit einigen Monaten mit sechs Organisationen an neuen Medikamenten, darunter Bristol Myers Squibb, betreibt inzwischen auch eigene Wirkstoffforschung und hat Mithril Medicine übernommen, eine Ein-Personen-Firma mit Therapien gegen zwei seltene Formen von Muskeldystrophie; Studien am Menschen könnten frühestens Ende 2028 beginnen. Bei Generate Biomedicines schlug Claude Code ein rund 70 Prozent kürzeres Design für eine Komponente einer CAR-T-Zelltherapie vor, mit dem Immunzellen im Labor rund zehnmal so viele Rezeptoren bildeten, für Divergence Labs erzeugte Claude in etwa einem Monat rund 35.000 Antikörper-Designs. Bei Enveda fand Claude in 1.061 Seiten Dokumentation alle 11 Probleme, die menschliche Prüfer gefunden hatten, und sieben weitere, die Prüfzeit sank um 89 Prozent; laut Anthropic steht die Arbeit aber noch am Anfang und ist bisher größtenteils präklinisch.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+        "handle": "AnthropicAI",
+        "date": "2026-10-27"
+      },
+      "original": {
+        "url": "https://www.anthropic.com/research/early-progress-drug-development",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "cathedral-slack",
+      "headline": "Will Depue: Cathedral hatte angeblich vollen Slack-Zugriff bei Anthropic",
+      "status": "rumor",
+      "summary": "Will Depue schreibt, Anthropic spiele den Sicherheitsvorfall mit Cathedral stark herunter: Er habe gehört, das Startup habe vollen Admin-Zugriff auf Anthropics Slack-Workspace gehabt, also jede Nachricht lesen und sich als beliebige Nutzer anmelden können. Die Aussage stammt aus zweiter Hand, bestätigt haben sie weder Anthropic noch Cathedral. Gegenüber der Washington Post hat Anthropic nur Zugriff auf eine begrenzte Zahl von Vertriebs-, HR- und IT-Systemen bestätigt, Claude-Konversationen, Quellcode und Modellgewichte seien nicht betroffen gewesen, den Zugang habe man noch am selben Tag gekappt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/willdepue/status/2115236836092313988",
+        "handle": "willdepue",
+        "date": "2026-10-28"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2115268061498388751",
+          "handle": "kimmonismus",
+          "date": "2026-10-28"
+        }
+      ],
+      "original": {
+        "url": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/",
+        "label": "Washington Post"
+      }
+    },
+    {
+      "id": "fable-5-5-november",
+      "headline": "AndrewCurran_ vermutet Fable 5.5 ab dem 9. November",
+      "status": "rumor",
+      "summary": "Fable 5.5 ist am 27. Oktober trotz der Teaser nicht erschienen, das „Tomorrow.“ von Artificial Analysis galt dem Index v5. AndrewCurran_ nennt seine Einschätzung ausdrücklich eine Vermutung: Fable 5.5 sei fertig und könne jederzeit erscheinen, das Paper zur Exponential Time Hypothesis habe wohl ein Mythos 5.5 geschrieben, und Anthropic werde es zusammen mit Fable 5.5 im Rahmen einer großen Medienkampagne zum Börsengang vorstellen. Die Kampagne startet angeblich am Montag, 9. November, Anthropic hat sich dazu nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2115145074132898110",
+        "handle": "AndrewCurran_",
+        "date": "2026-10-27"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2115163928003215463",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "qwen-4-kerria",
+      "headline": "Alibaba testet offenbar Qwen 4 in der Arena",
+      "status": "rumor",
+      "summary": "Laut abhinavflac läuft in der Arena ein anonymes Modell namens „kerria“, offenbar eine verbesserte Version der älteren „kalmia“-Checkpoints; „kalmia“ ist am 26. Oktober aus der Arena verschwunden, am 27. Oktober kam ein zweiter Checkpoint dazu. Dass dahinter Qwen 4 steckt, ist eine Vermutung aus der Community, Alibaba hat das nicht bestätigt. Aryan_Ali_Pro zitiert einen Alibaba-Cloud-Mitarbeiter, der zur Apsara Conference in Amsterdam am Donnerstag, 29. Oktober, schreibt: „Maybe Qwen 4? Trust me, there will be good stuff to share.“",
+      "take": "",
+      "source": {
+        "url": "https://x.com/abhinavflac/status/2115023921619825068",
+        "handle": "abhinavflac",
+        "date": "2026-10-27"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/abhinavflac/status/2115129006005875045",
+          "handle": "abhinavflac",
+          "date": "2026-10-27"
+        },
+        {
+          "url": "https://x.com/Aryan_Ali_Pro/status/2114969810216075452",
+          "handle": "Aryan_Ali_Pro",
+          "date": "2026-10-27"
+        }
+      ]
+    }
+  ]
+}
