@@ -1,0 +1,189 @@
+{
+  "issue": "2026-10-29",
+  "number": 13,
+  "title": "Google stellt Gemini 4 Carbon vor, GitHub bringt Copilot Fusion, OpenAI verteilt API-Guthaben",
+  "published": "2026-10-29",
+  "intro": "Google hat Gemini 4 Carbon vorgestellt, Sundar Pichai rechnet mit weiterer Beschleunigung durch rekursive Selbstverbesserung, GitHub bringt Copilot Fusion, und OpenAI gibt Pro- und Business-Kunden API-Guthaben und will Chat und Work in ChatGPT zusammenführen. Unbestätigt sind dagegen ein Bericht von The Information, wonach Moonshot AI und DeepSeek GPT-6 Astra destilliert haben sollen, ein Hinweis auf ein weiteres unveröffentlichtes Gemini-Modell und Spekulationen über den Eintrag „Obsidian 3“ in den Daten von FrontierCode 2.0. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "gemini-4-carbon",
+      "headline": "Google stellt Gemini 4 Carbon vor",
+      "status": "confirmed",
+      "summary": "Google DeepMind hat zwei Wochen nach Argon Gemini 4 Carbon vorgestellt: Laut Google ist das Modell State of the Art bei Cybersecurity und Long-Horizon-Aufgaben, im Intelligence Index v5 von Artificial Analysis liegt es mit 59 Punkten auf Platz 1, in der Text Arena ebenfalls. Wie schon Argon wird Carbon zunächst an ausgewählte Nutzer ausgerollt, als Erstes an Cyber-Verteidiger, öffentlich verfügbar ist es noch nicht; der Preis liegt wie bei Argon bei 4 bzw. 20 Dollar pro Million Input- bzw. Output-Tokens, zum Start mit 50 Prozent Rabatt ohne bestätigtes Enddatum, das Kontextfenster bei 1 Million Tokens. Artificial Analysis misst 7,76 Dollar pro Index-Aufgabe, rund 23 Prozent weniger als bei Claude Opus 5.5 (max), im Coding Agent Index liegt Carbon mit 59 Punkten 3 Punkte hinter Claude Code mit Opus 5.5 (max, 62), die Halluzinationsrate in AA-Omniscience steigt gegenüber Argon aber von 4 auf 11 Prozent.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2115489356437651654",
+        "handle": "GoogleDeepMind",
+        "date": "2026-10-28"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2115494553780367384",
+          "handle": "ArtificialAnlys",
+          "date": "2026-10-28"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2115499832877977969",
+          "handle": "testingcatalog",
+          "date": "2026-10-28"
+        },
+        {
+          "url": "https://x.com/arena/status/2115495002998751262",
+          "handle": "arena",
+          "date": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "gemini-next",
+      "headline": "Google-Mitarbeiter deutet weiteres Gemini-Modell an",
+      "status": "rumor",
+      "summary": "Auf einen Post mit „Fable 5.5 isn't yet here though“ antwortete Google-Mitarbeiter Zachary Nado mit „Gemini [redacted] isn't yet here though“. Andrew Curran tippt wegen der Element-Namen Argon und Carbon auf „Krypton“, kimmonismus liest aus dem Post, dass Google ein weiteres unveröffentlichtes Modell hat, das noch besser als Carbon ist. Mehr als diese vage Andeutung gibt es nicht: Name, Termin und technische Daten sind nicht bestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/zacharynado/status/2115501213873516911",
+        "handle": "zacharynado",
+        "date": "2026-10-28"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2115521194464248072",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-28"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2115626170897109454",
+          "handle": "kimmonismus",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "pichai-rsi",
+      "headline": "Sundar Pichai erwartet Beschleunigung durch rekursive Selbstverbesserung",
+      "status": "confirmed",
+      "summary": "Andrew Curran zitiert Sundar Pichai aus Alphabets Earnings Call: KI helfe Google inzwischen dabei, schneller zu trainieren und Modelle schneller zu veröffentlichen, und für die nächsten zwölf Monate erwarte er wegen RSI eine weitere Beschleunigung. RSI steht für Recursive Self-Improvement, also rekursive Selbstverbesserung. kimmonismus schreibt, Pichai habe damit wahrscheinlich offiziell RSI ausgerufen, das ist aber seine eigene Lesart.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2115546957909533157",
+        "handle": "AndrewCurran_",
+        "date": "2026-10-28"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2115565090506407993",
+          "handle": "kimmonismus",
+          "date": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "copilot-fusion",
+      "headline": "GitHub bringt Copilot Fusion mit Modellen von Anthropic und OpenAI",
+      "status": "confirmed",
+      "summary": "GitHub hat auf der GitHub Universe '26 neben Copilot Projects auch Copilot Fusion veröffentlicht, das in GitHub Copilot zwischen Modellen von Anthropic und OpenAI orchestriert, darunter Claude Opus 5.5, Claude Sonnet 5.5, GPT-6 Astra und GPT-6 Sol. Im Coding Agent Index von Artificial Analysis liegt Fusion 2 Punkte hinter Claude Code mit Opus 5.5, kostet mit 5,59 Dollar pro Aufgabe aber nur etwa halb so viel wie Claude Code mit Opus 5.5 (max), das auf 11,42 Dollar kommt. In Terminal-Bench 4.0 führt Fusion mit 71 Punkten und verbraucht 7,2 Millionen Tokens pro Aufgabe.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ArtificialAnlys/status/2115477376981508419",
+        "handle": "ArtificialAnlys",
+        "date": "2026-10-28"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2115582968265670692",
+          "handle": "testingcatalog",
+          "date": "2026-10-29"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2115568792772432016",
+          "handle": "kimmonismus",
+          "date": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "openai-api-credits",
+      "headline": "OpenAI gibt ChatGPT-Pro- und Business-Kunden monatlich API-Guthaben",
+      "status": "confirmed",
+      "summary": "Berechtigte Abonnenten von ChatGPT Pro und Business können ab sofort bis zu 500 Dollar API-Guthaben pro Monat abrufen, um damit Apps und Agents zu bauen. Bei Pro sind es je nach Stufe 100, 200 oder 500 Dollar im Monat. Business-Pläne bekommen 20 Dollar pro bezahltem Standard-Seat oder 100 Dollar pro bezahltem Premium-Seat, zusammengelegt bis maximal 500 Dollar pro Workspace.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAIDevs/status/2115583698074755078",
+        "handle": "OpenAIDevs",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2115586101444329948",
+          "handle": "testingcatalog",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-chat-work",
+      "headline": "OpenAI will Chat und Work in ChatGPT zusammenführen",
+      "status": "confirmed",
+      "summary": "Auf einen Screenshot mit dem Hinweis „ChatGPT is unifying Chat and Work“ hin stellt Tibo (thsottiaux) von OpenAI klar, dass das Team zwar daran arbeitet, die Änderung aber noch nicht ausgerollt wird. Geplant ist, die besten Funktionen von Chat und Work irgendwann in diesem Jahr zusammenzuführen, OpenAI will dabei aber vorsichtig vorgehen und sich Zeit lassen. Laut testingcatalog haben einige Nutzer versehentlich schon ein Pop-up zu der Änderung angezeigt bekommen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2115588390414581916",
+        "handle": "thsottiaux",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2115599706843758927",
+          "handle": "testingcatalog",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "kimi-distill-astra",
+      "headline": "Bericht: Moonshot und DeepSeek haben GPT-6 Astra destilliert",
+      "status": "rumor",
+      "summary": "Moonshot AI hat bei der Entwicklung von Kimi K3.1 Pro, das letzte Woche erschienen ist, offenbar OpenAIs GPT-6 Astra destilliert, das berichtet The Information mit Verweis auf drei anonyme Quellen mit direkter Kenntnis. Zwei weitere Quellen sagen dasselbe über DeepSeeks V4.1-Flash 1017, ein Upgrade von V4.1-Flash vom 17. Oktober; bis vor Kurzem waren laut dem Bericht Anthropics Claude-Modelle das wichtigste Ziel chinesischer Distillation-Versuche. Moonshot hat sich nicht geäußert, DeepSeek hat auf eine Anfrage nicht reagiert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2115610660470186480",
+        "handle": "kimmonismus",
+        "date": "2026-10-29"
+      }
+    },
+    {
+      "id": "obsidian-3",
+      "headline": "Cognition listet verstecktes Modell „Obsidian 3“ in FrontierCode 2.0",
+      "status": "rumor",
+      "summary": "In der Datendatei von Cognitions FrontierCode 2.0 steht ein versteckter Eintrag „Obsidian 3“, der auf Effort-Stufe high 46,8 Prozent bei 8,62 Dollar pro Aufgabe erreicht, Claude Opus 5.5 (max) kommt auf 45,5 Prozent bei 12,82 Dollar; mit xhigh und max liegt Obsidian 3 bei 45,9 bzw. 45,5 Prozent, als Harness ist claude-code eingetragen. kimmonismus hält das Modell für sehr wahrscheinlich Fable 5.5, schränkt in den Antworten aber selbst ein, es könne auch nur ein früher Checkpoint gewesen sein. Dagegen spricht, worauf srcbuild und teortaxesTex hinweisen: Der Eintrag hat in der Datei die Farbe von MiniMax statt Anthropic, und der Score steigt über high hinaus nicht mehr; Anthropic, MiniMax und Cognition haben sich nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2115426857634210237",
+        "handle": "kimmonismus",
+        "date": "2026-10-28",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/chetaslua/status/2115346539459825777",
+          "handle": "chetaslua",
+          "date": "2026-10-28"
+        },
+        {
+          "url": "https://x.com/srcbuild/status/2115348246071828821",
+          "handle": "srcbuild",
+          "date": "2026-10-28"
+        },
+        {
+          "url": "https://x.com/teortaxesTex/status/2115349939295322379",
+          "handle": "teortaxesTex",
+          "date": "2026-10-28"
+        }
+      ],
+      "original": {
+        "url": "https://cognition.com/data/frontier-code-2.0/data.json",
+        "label": "Cognition FrontierCode 2.0 (Daten)"
+      }
+    }
+  ]
+}
