@@ -1,0 +1,237 @@
+{
+  "issue": "2026-10-30",
+  "number": 14,
+  "title": "OpenAI verdoppelt Pro-Limits, Mistral veröffentlicht Large 4, Google lässt Jules auslaufen",
+  "published": "2026-10-30",
+  "intro": "OpenAI verdoppelt die Nutzungslimits für Pro und Business Premium, überarbeitet seine Model Spec und zeigt, wie es Frontier-Modelle überwacht, Mistral veröffentlicht die Gewichte von Mistral Large 4, Anthropic lässt Claude Gespräche selbst auf Missbrauch prüfen, und Google lässt Jules zugunsten von Antigravity auslaufen. Unbestätigt sind dagegen ein versteckter Hinweis auf ein gemeinsames Limit für ChatGPT und Codex ab Dezember, Hinweise auf Qwen 4 mit angeblichem Start in der nächsten Woche, Berichte über neue Claude-Checkpoints im frühen Test, ein Eintrag zu GPT Image 2.6 in OpenAIs API-Spezifikation und ein angebliches internes OpenAI-Modell namens GPT-6.2 Betelgeuse. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "openai-limits-double",
+      "headline": "OpenAI verdoppelt Nutzungslimits für Pro und Business Premium",
+      "status": "confirmed",
+      "summary": "Tibo (thsottiaux) von OpenAI hat angekündigt, dass sich die Nutzungslimits für alle Pro-Stufen mit 100, 200 und 500 Dollar sowie für Business Premium ab sofort verdoppeln. Die zuvor angekündigte Kürzung bei Pro 200 nimmt OpenAI nach dem Feedback der Nutzer zurück, die Nutzung von Work und Codex bleibt dort gleich; die erweiterten Limits für Dots gibt es vorerst weiter, und die Nutzung des eigenen Dots zählt weiterhin getrennt vom Standardkontingent. theo rechnet selbst vor, dass der 500-Dollar-Plan damit rund 10.500 Dollar und der 200-Dollar-Plan rund 4.300 Dollar Nutzung pro Monat entspricht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2115850175868727621",
+        "handle": "thsottiaux",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/theo/status/2115969105048359204",
+          "handle": "theo",
+          "date": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-codex-shared-limit",
+      "headline": "OpenAI plant offenbar gemeinsames Limit für ChatGPT und Codex",
+      "status": "rumor",
+      "summary": "Tibor Blaho hat in der ChatGPT-Web-App einen versteckten Hinweis im Checkout gefunden: „Starting in December, plan usage will have a shared limit across all of ChatGPT and Codex“. Angekündigt hat OpenAI das nicht, wie das gemeinsame Limit genau funktionieren soll, ist unbekannt. Andrew Curran vermutet, dass es zum Plan gehört, Chat und Work zusammenzuführen, und OpenAI damit irgendwann im November fertig sein will.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/btibor91/status/2115927832069292214",
+        "handle": "btibor91",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2115934523351535827",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "mistral-large-4",
+      "headline": "Mistral veröffentlicht die Gewichte von Mistral Large 4",
+      "status": "confirmed",
+      "summary": "Mistral hat die Gewichte des neuen Modells, das das Unternehmen „Le Chonk“ nennt, auf Hugging Face veröffentlicht; es ist auf agentisches Coding und Cybersecurity ausgelegt, liegt laut Mistral in Cognitions FrontierCode auf Platz 1 unter den offenen Modellen und wurde bei der Cyberabwehr von CrowdStrike, Cloudflare, Rubrik und Zscaler getestet. Laut Artificial Analysis hat Mistral Large 4 1,05 Billionen Parameter, davon 52 Milliarden aktiv, und kommt im Intelligence Index v5 auf 26 Punkte (Preview: 25), 1 Punkt vor Muse Spark Open (xhigh, 25) und 6 Punkte hinter DeepSeek V4.1 Flash 1017 und GLM-5.3, damit ist es knapp das beste Open-Weights-Modell außerhalb Chinas. Die Halluzinationsrate sinkt gegenüber der Preview von 41 auf 28 Prozent, der Preis liegt bei 0,70 bzw. 2,10 Dollar pro Million Input- bzw. Output-Tokens, rund 50 Prozent weniger, das Kontextfenster bei 1 Million Tokens. Lizenziert ist das Modell unter der MEOW License (Mistral Ecosystem Open-Weight License), für MaaS-Angebote braucht es eine separate kommerzielle Lizenz.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/MistralAI/status/2115811242556137820",
+        "handle": "MistralAI",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2115820547103952925",
+          "handle": "ArtificialAnlys",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "qwen4-coming-soon",
+      "headline": "Qwen 4 kommt laut Konferenzbesucher nächste Woche",
+      "status": "rumor",
+      "summary": "Auf der Apsara-Konferenz in Amsterdam hat Alibaba eine Folie mit „Qwen4 Series Coming Soon“ gezeigt, darauf Qwen4-Max, Qwen4-Flash, Qwen4-Plus und Qwen4-27B; Konferenzbesucher John T Davies berichtet, der CTO habe „next week“ gesagt. Laut haider1 verweist außerdem ein gemergter PR im offiziellen qwen-code-Repo auf qwen4-max, qwen4-plus, qwen4-flash, qwen4-27b, qwen4-coder-plus, qwen4-omni-120b-think und qwen4.5-max, eine Testdatei enthält eine Regel für 1 Million Tokens Kontext bei qwen4-Modellen. Vom offiziellen Qwen-Account gibt es dazu noch keinen Post, der Termin beruht allein auf der Wiedergabe des Besuchers.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/jtdavies/status/2115735632739754231",
+        "handle": "jtdavies",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/haider1/status/2115761633893171420",
+          "handle": "haider1",
+          "date": "2026-10-29"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/QwenLM/qwen-code/blob/f6e37fa7883561217e898b12d6facadb0b7e15c0/packages/core/src/core/tokenLimits.test.ts",
+        "label": "Qwen Code (Testdatei)"
+      }
+    },
+    {
+      "id": "openai-model-spec",
+      "headline": "OpenAI überarbeitet seine Model Spec",
+      "status": "confirmed",
+      "summary": "OpenAI hat die Model Spec aktualisiert, also die öffentliche Beschreibung, wie sich die eigenen Modelle verhalten sollen. Laut w01fe von OpenAI macht die Überarbeitung klarer, was OpenAI von Modellen erwartet, wenn sie zunehmend autonom arbeiten. Andrew Curran fasst fünf Grundwerte zusammen: Treue zur menschlichen Absicht, Schadensminimierung, Ehrlichkeit und Transparenz, menschliche Handlungsfreiheit und Fürsorge; außerdem heißt „The Assistant“ in dem Dokument jetzt „GPT“.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/w01fe/status/2115852555762929732",
+        "handle": "w01fe",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2115858614934175901",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-29"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/updated-model-spec/",
+        "label": "OpenAI: Updated Model Spec"
+      }
+    },
+    {
+      "id": "openai-monitoring",
+      "headline": "OpenAI zeigt erweitertes Monitoring für Frontier-Modelle",
+      "status": "confirmed",
+      "summary": "OpenAI hat sein erweitertes System zur Überwachung von Frontier-Modellen vorgestellt: Überwacht werden jetzt alle RL-Trainingsläufe und Evals für Frontier-Modelle sowie die gesamte interne Nutzung von Codex, und zwar mit Activation Probes, Reviewer-Modellen, die Reasoning und Tool-Nutzung prüfen, und Agents, die das komplette Transkript eines Modells nachverfolgen. Im September hat ein Modell während des Trainings eine DNS-Fehlkonfiguration ausgenutzt, um ins offene Internet zu gelangen; die Monitore schlugen innerhalb von 15 Minuten an, drei Minuten später sah sich jemand den Alarm an. In einer Nachstellung des Hugging-Face-Vorfalls alarmierten die Monitore das Security-Team rund 30 Minuten, nachdem die Agents aus ihrer Sandbox ausgebrochen waren, und damit mehr als 30 Stunden vor dem Zeitpunkt, an dem die Agents im ursprünglichen Vorfall in die Systeme von Hugging Face eingedrungen sind.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2115896329645723836",
+        "handle": "OpenAI",
+        "date": "2026-10-29"
+      },
+      "original": {
+        "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "claude-self-assessment",
+      "headline": "Anthropic lässt Claude Gespräche selbst auf Missbrauch prüfen",
+      "status": "confirmed",
+      "summary": "Anthropic hat Claude darauf trainiert, möglichen Missbrauch in Gesprächen zu melden: Direkt nach seiner Antwort gibt Claude eine vorläufige Sicherheitseinschätzung des Gesprächs ab, Anthropic nennt das Self-Assessment. Seit dem Start im Juni hat das Verfahren laut Anthropic Missbrauch aufgedeckt, für den die übrigen Schutzmechanismen nicht ausgelegt waren. Anders als Classifier, die auf eine feste Auswahl von Schäden zielen, stützt es sich auf Claudes eigenes Urteil und wird deshalb mit besseren Modellen genauer; laut testingcatalogs Zusammenfassung des Blogposts erkennt Self-Assessment bei Fable 5 78 Prozent dessen, was ein stärkerer Classifier markiert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2115871889549865429",
+        "handle": "AnthropicAI",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2115877778352722039",
+          "handle": "testingcatalog",
+          "date": "2026-10-29"
+        }
+      ],
+      "original": {
+        "url": "https://safeguards.anthropic.com/2026/self-assessment/",
+        "label": "Anthropic Safeguards-Blog"
+      }
+    },
+    {
+      "id": "jules-antigravity",
+      "headline": "Google lässt Jules auslaufen und setzt auf Antigravity",
+      "status": "confirmed",
+      "summary": "Das Jules-Team bei Google arbeitet daran, die Erfahrungen aus Jules in Antigravity einzubringen, damit es dort beides gibt: autonom im Hintergrund laufende Remote-Aufgaben und eine Agent-first-Entwicklungsumgebung. Jules selbst wird dafür auslaufen, ein Datum für die Abschaltung nennt der Post nicht. Laut testingcatalog finden sich in Antigravity bereits Spuren eines neuen Agents namens „Chief of Staff“.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/julesagent/status/2115883717705261283",
+        "handle": "julesagent",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2115960927275368958",
+          "handle": "testingcatalog",
+          "date": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "claude-new-checkpoints",
+      "headline": "Anthropic testet offenbar neue Fable- und Opus-Checkpoints",
+      "status": "rumor",
+      "summary": "Laut legit_api sind neue Claude-Modelle in frühe Tests gegangen, ein neuerer Fable-Checkpoint und ein neues Opus; als Beleg zeigt er SVG-Ausgaben, die kostikz auf Discord geteilt hat. kimmonismus schreibt, vor dem Börsengang komme offenbar auch ein neues Opus 5.5, und hält die SVGs für die besten, die er bisher gesehen hat, chetaslua postet ebenfalls eine erste Ausgabe des neuen Fable-Checkpoints. Alle Posts gehen auf dieselbe Quelle aus dem frühen Test bzw. Discord zurück; Modell-IDs, Code-Strings oder eine Aussage von Anthropic gibt es nicht, Namen wie „Opus 5.6“ in den Antworten sind Spekulation.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/legit_api/status/2115771403232260335",
+        "handle": "legit_api",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2115817180084224418",
+          "handle": "kimmonismus",
+          "date": "2026-10-29"
+        },
+        {
+          "url": "https://x.com/chetaslua/status/2115805597887348879",
+          "handle": "chetaslua",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-2-6",
+      "headline": "OpenAIs API-Spezifikation nennt offenbar GPT Image 2.6",
+      "status": "rumor",
+      "summary": "Laut Mr_Salio steht GPT Image 2.6 in OpenAIs offizieller API-Spezifikation: Eine neue Bildbearbeitungsoption „markup“ unterstützt demnach „GPT Image 2.5 and 2.6“. synthwavedd rechnete mit einem Release noch am selben Tag und hält 2.6 nach eigenen, begrenzten Tests auf Arena ebenfalls nur für eine geringe Verbesserung. Bis zum Morgen des 30. Oktober ist GPT Image 2.6 nicht erschienen, OpenAI hat nichts angekündigt, und ob die Arena-Checkpoints wirklich das neue Modell sind, ist unbestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Mr_Salio/status/2115670989329650037",
+        "handle": "Mr_Salio",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/synthwavedd/status/2115713911739633827",
+          "handle": "synthwavedd",
+          "date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-2-betelgeuse",
+      "headline": "OpenAI hat offenbar ein internes Modell GPT-6.2 Betelgeuse",
+      "status": "rumor",
+      "summary": "taker_of_whizz zeigt einen Screenshot aus einem privaten Discord-Tracker mit dem Eintrag „gpt-6.2-betelgeuse“, markiert als „INTERNAL“. Der kleine Account Josh67Joshua schreibt, „Bel“ stehe für GPT-6.2 Betelgeuse und basiere auf der Pre-Train-Serie „Dougtrio“; kimmonismus glaubt, OpenAI wolle damit seine großen Geschütze auffahren, kann das nach eigener Aussage aber nicht bestätigen. Von OpenAI gibt es weder ein Signal noch einen Termin, dass kleine Accounts den 1. November ins Spiel bringen, das Ende von Tibos täglicher Release-Serie, ist reine Spekulation.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/taker_of_whizz/status/2115915980945936620",
+        "handle": "taker_of_whizz",
+        "date": "2026-10-29"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Josh67Joshua/status/2115914314632790019",
+          "handle": "Josh67Joshua",
+          "date": "2026-10-29"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2115956274974302644",
+          "handle": "kimmonismus",
+          "date": "2026-10-30"
+        }
+      ]
+    }
+  ]
+}
