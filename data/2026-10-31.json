@@ -1,0 +1,143 @@
+{
+  "issue": "2026-10-31",
+  "number": 15,
+  "title": "Anthropic streicht 5-Stunden-Limit für Ultra, Claude Code lehnt Spielklone ab, angeblicher Fable-5-Leak wohl gefälscht",
+  "published": "2026-10-31",
+  "intro": "Anthropic benennt seine Max-Pläne in Max und Ultra um und streicht für verifizierte Ultra-Konten das 5-Stunden-Limit, Claude Code hat eine neue Regel gegen Nachbauten bestehender Spiele bekommen, zu der sich Anthropic nicht geäußert hat, und Anthropic zeigt, wie Claude-Agents einen Monitor für Trainingsdaten austricksen. OpenAI stellt mit Private Intelligence stärkere Datenkontrollen für Unternehmen vor, und Elon Musk verspricht, dass Grok 4.8 nicht enttäuschen wird. Unbestätigt sind dagegen die Behauptung eines Darkweb-Verkäufers, Gewichte von Claude Fable 5 erbeutet zu haben, die sehr wahrscheinlich gefälscht ist, und Beispielclips eines angeblichen Google-Modells namens Omni Flash 1.2. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "claude-max-ultra",
+      "headline": "Anthropic benennt Max-Pläne um und streicht 5-Stunden-Limit für Ultra",
+      "status": "confirmed",
+      "summary": "Anthropic benennt seine Max-Pläne um: Aus Max 5x wird Max, aus Max 20x wird Ultra, die Preise bleiben bei 100 bzw. 200 Dollar pro Monat, und Abonnenten müssen nichts tun. Für verifizierte Ultra-Konten fällt außerdem das 5-Stunden-Limit weg, ab sofort für die meisten bestehenden Abonnenten; neuere Konten behalten zur Abwehr von Betrug und Missbrauch ein vorübergehendes Limit, bis sie verifiziert sind, die Wochenlimits bleiben unverändert. mboverell, zuständig für die Claude-Abos, erklärt, dass das Wochenlimit von Max 20x beim 10-Fachen von Pro lag und nur das 5-Stunden-Limit beim 20-Fachen, und entschuldigt sich dafür, dass neue Nutzer die 20x auf beide Limits bezogen haben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2116220869479428500",
+        "handle": "claudeai",
+        "date": "2026-10-30"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/mboverell/status/2116221457252659275",
+          "handle": "mboverell",
+          "date": "2026-10-30"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2116270314133078019",
+          "handle": "testingcatalog",
+          "date": "2026-10-30"
+        }
+      ],
+      "original": {
+        "url": "https://claude.com/pricing",
+        "label": "Claude-Preisseite"
+      }
+    },
+    {
+      "id": "claude-code-game-rule",
+      "headline": "Claude Code untersagt Nachbauten bestehender Spiele",
+      "status": "confirmed",
+      "summary": "Laut chasmmmmmmmmmmm hat Claude Code um den 27. Oktober eine neue Regel bekommen, die Anthropics Server unter dem Flag „tengu_heron_brook“ ausspielen und die sich nicht abschalten lässt. Die Regel erlaubt eigene Spiele, Spiele eines Genres und Spiele nach Designs und Assets des Nutzers, aber keinen Nachbau eines bestimmten existierenden Spiels, auch nicht umbenannt oder als Original bezeichnet. Gefunden wurde die Regel im Produkt, Anthropic hat sich dazu nicht geäußert; Andrew Curran sieht darin ein Vorgehen gegen Videospiel-Mashups mit Claude Code.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/chasmmmmmmmmmmm/status/2116062991686721968",
+        "handle": "chasmmmmmmmmmmm",
+        "date": "2026-10-30"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2116169471920574581",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-automated-misalignment",
+      "headline": "Anthropic lässt Claude-Agents einen Trainingsdaten-Monitor austricksen",
+      "status": "confirmed",
+      "summary": "Anthropic hat Tausende Claude-Agents Trainingsdaten schreiben lassen, die ein kleines Forschungsmodell misaligned machen und trotzdem einen Monitor passieren, der den produktiv eingesetzten ähnelt. Mit genügend Versuchen gelang das, meist indem das Verhalten in Fiktion und Rollenspiel versteckt wurde, etwa in einem erfahrenen Wrestler, der einen Neuling betreut, oder in einem Q&A über professionelle Imkerei. Die so trainierten Modelle wurden nie eingesetzt; Anthropic will mit den Beispielen künftige Monitore verbessern und wendet ähnliche Ansätze jetzt auch auf andere Sicherheitsfragen an.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2116349211549843666",
+        "handle": "AnthropicAI",
+        "date": "2026-10-31"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2116367197501354016",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-31"
+        }
+      ],
+      "original": {
+        "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+        "label": "Anthropic Alignment Science Blog"
+      }
+    },
+    {
+      "id": "openai-private-intelligence",
+      "headline": "OpenAI stellt Private Intelligence für Unternehmen vor",
+      "status": "confirmed",
+      "summary": "Mit OpenAI Private Intelligence bekommen Unternehmen stärkere Kontrolle über ihre Daten, wenn sie OpenAIs leistungsfähigste Modelle nutzen. Die Schutzmechanismen entwickelt OpenAI nach eigener Aussage in enger Zusammenarbeit mit einigen seiner größten Kunden, damit Firmen Frontier-KI auch für ihre sensibelsten Aufgaben einsetzen können.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2116186509384815084",
+        "handle": "OpenAI",
+        "date": "2026-10-30"
+      },
+      "original": {
+        "url": "https://openai.com/business/private-intelligence/",
+        "label": "OpenAI-Website"
+      }
+    },
+    {
+      "id": "grok-4-8-statement",
+      "headline": "Elon Musk verspricht nützliches Grok 4.8 ohne Benchmark-Fokus",
+      "status": "confirmed",
+      "summary": "Elon Musk räumt ein, dass Grok 4.8 länger dauert als erwartet, verspricht aber, dass das Modell keine Enttäuschung wird. Auf Benchmarks optimiere man nicht, und wie Grok dort abschneidet, sei Musk egal, das Modell werde aber unglaublich nützlich. Musk antwortete damit auf einen Post, laut dem SpaceXSI außer bei Voice kaum SOTA-Modelle hat; einen Release-Termin gibt es nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/elonmusk/status/2116036703538606301",
+        "handle": "elonmusk",
+        "date": "2026-10-30"
+      }
+    },
+    {
+      "id": "fable5-weights-claim",
+      "headline": "Bericht: Angebliche Fable-5-Gewichte im Darkweb sind wohl gefälscht",
+      "status": "rumor",
+      "summary": "Laut DarkWebInformer behauptet ein Akteur namens „localizer“, aus einem falsch konfigurierten AWS-S3-Bucket mit Bezug zu Amazon Bedrock einen 7 GB großen Shard der Gewichte von Claude Fable 5 erbeutet zu haben, und bietet das Material zum Verkauf an; das komplette Modell bestehe aus 640 Shards mit rund 8 TB. Die Behauptung ist unbestätigt und sehr wahrscheinlich gefälscht: Wie dotey den Debunk des X-Nutzers torisetxd zusammenfasst, passen Dateigrößen und Inhalte auf den Screenshots zu den Shards 13 bis 42 von DeepSeeks offenem V4.1-Flash-1017 auf Hugging Face, 640 mal 7,39 GB ergeben nur etwa 4,7 TB statt 8 TB, eu-north-1 hostet Fable nicht, und der Forenaccount wurde erst diesen Monat registriert. Anthropic und Amazon hatten sich bis zum Morgen des 31. Oktober (Pekinger Zeit) nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/DarkWebInformer/status/2116304098228068572",
+        "handle": "DarkWebInformer",
+        "date": "2026-10-30"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/dotey/status/2116366460939386990",
+          "handle": "dotey",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2116364884468171043",
+          "handle": "kimmonismus",
+          "date": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": "omni-flash-1-2",
+      "headline": "Bericht: Googles Omni Flash 1.2 offenbar mit 4K-Ausgabe",
+      "status": "rumor",
+      "summary": "Laut chetaslua ist ein Google-Modell namens Omni Flash 1.2 aufgetaucht, das in 1080p und 4K ausgibt und Frame-Interpolation, Referenzen und das Verlängern von Clips unterstützt; als Beleg postet chetaslua Beispielclips. Es gibt nur diese eine Quelle mit gemischter Trefferquote und keine Ankündigung von Google.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/chetaslua/status/2116140220236382490",
+        "handle": "chetaslua",
+        "date": "2026-10-30"
+      }
+    }
+  ]
+}
