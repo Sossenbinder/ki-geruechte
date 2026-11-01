@@ -1,0 +1,140 @@
+{
+  "issue": "2026-11-01",
+  "number": 16,
+  "title": "OpenAI bestätigt gemeinsames Limit für ChatGPT und Codex, Grok-API bekommt Wasserzeichen, DeepSeek testet offenbar Cybersecurity-Modell",
+  "published": "2026-11-01",
+  "intro": "OpenAI bestätigt, dass sich ChatGPT und Codex ab Dezember ein Nutzungskontingent teilen, begrenzt bezahlte Konten pro Gerät und listet gpt-6-astra-law auf seiner API-Preisseite. SpaceXSI versieht Textausgaben seiner API ab dem 7. November mit einem Wasserzeichen und OpenCode unterstützt jetzt Claude-Abos; unbestätigt sind dagegen Hinweise auf ein Cybersecurity-Modell von DeepSeek und ein Bericht, wonach Z.ai mit GLM 5.5 schon weit im Post-Training ist. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "chatgpt-codex-shared-limit-confirmed",
+      "headline": "OpenAI bestätigt gemeinsames Limit für ChatGPT und Codex",
+      "status": "confirmed",
+      "summary": "OpenAI bestätigt jetzt offiziell auf seiner Hilfeseite, was Tibor Blaho im ChatGPT-Checkout entdeckt hatte und worüber wir am 30. Oktober als Gerücht berichtet haben: Ab Dezember teilen sich ChatGPT und Codex in den Plänen Plus, Pro und Business ein gemeinsames Nutzungskontingent. Gemessen wird in Tokens: Wie viel verbraucht wird, hängt vom Modell und der Aufgabe ab, Instant-Chats werden nicht angerechnet. OpenAI erwartet, dass die meisten Nutzer nicht öfter auf einen Reset warten müssen als bisher; das verbleibende Kontingent und die Reset-Zeiten stehen unter Settings → Usage, wer das Limit erreicht, kann warten, den Plan upgraden oder Credits kaufen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/TokenGremlin/status/2116609772396920937",
+        "handle": "TokenGremlin",
+        "date": "2026-10-31"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2116620449019007408",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-31"
+        }
+      ],
+      "original": {
+        "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+        "label": "OpenAI Help Center"
+      }
+    },
+    {
+      "id": "chatgpt-device-limits",
+      "headline": "OpenAI begrenzt bezahlte ChatGPT-Konten pro Gerät",
+      "status": "confirmed",
+      "summary": "ChatGPT begrenzt, wie viele bezahlte Konten sich auf einem Gerät nutzen lassen, und kann den Kauf eines neuen Abos blockieren, wenn zu viele Abos mit derselben Zahlungskarte oder demselben Gerät verknüpft sind. Das gilt für Go, Plus, Pro 100, Pro 200 und Pro 500, Free sowie die Workspace-Pläne Business, Enterprise und Edu zählen nicht mit; wie viele Konten pro Gerät erlaubt sind, nennt OpenAI nicht. Erscheint „Device limit reached“ beim Anmelden oder nach einer späteren Prüfung, lässt sich das Konto auf diesem Gerät nicht mehr nutzen, und Credits oder ein Usage-Reset helfen nicht – laut CodexUpdate kann sich so aussperren, wer mehrere bezahlte Konten auf einem Rechner für mehr Codex-Nutzung stapelt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/CodexUpdate/status/2116476292904161624",
+        "handle": "CodexUpdate",
+        "date": "2026-10-31"
+      },
+      "original": {
+        "url": "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt",
+        "label": "OpenAI Help Center"
+      }
+    },
+    {
+      "id": "grok-api-watermark",
+      "headline": "SpaceXSI markiert Textausgaben der Grok-API mit Wasserzeichen",
+      "status": "confirmed",
+      "summary": "Ab dem 7. November enthalten laut SpaceXSI-Dokumentation die Antworten von grok-4.7, grok-4.6, grok-4.5, grok-4.3, grok-4.20-reasoning, grok-4.20-non-reasoning und grok-4.20-multi-agent standardmäßig ein Wasserzeichen, um den EU AI Act einzuhalten; das gilt für die Responses API und die Chat Completions API, auch für Structured Outputs und Tool-Call-Argumente. Das Wasserzeichen ist unsichtbar und fügt keine Zeichen hinzu, sondern beeinflusst leicht, welche Tokens das Modell wählt; ob es aktiv ist, zeigt der Response-Header „x-watermark“, Team-Admins können es in der SpaceXSI Console pro Modell abschalten, und Zugang zur Detection-API gibt es auf Antrag. Für Andrew Curran war xAI der letzte Anbieter, der noch nicht mitgezogen hatte: Soweit er weiß, ist damit nur noch ChatGPT ohne Text-Wasserzeichen, und das nur in Nordamerika.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/XFreeze/status/2116585881457119513",
+        "handle": "XFreeze",
+        "date": "2026-10-31"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2116654648082022668",
+          "handle": "AndrewCurran_",
+          "date": "2026-10-31"
+        }
+      ],
+      "original": {
+        "url": "https://docs.x.ai/developers/advanced-api-usage/watermarking",
+        "label": "SpaceXSI-Dokumentation"
+      }
+    },
+    {
+      "id": "gpt-6-astra-law-api",
+      "headline": "OpenAI listet gpt-6-astra-law auf der API-Preisseite",
+      "status": "confirmed",
+      "summary": "Auf OpenAIs API-Preisseite steht jetzt gpt-6-astra-law, dort als „Legal model configuration“ bezeichnet, zu 10, 50 bzw. 1 Dollar pro Million Tokens für Input, Output und Cached Input, also zu denselben Preisen wie GPT-6 Astra. Der Aktionspreis gilt mindestens bis zum 31. Dezember 2026, laut TokenGremlin tauchte das Modell um 4:01 Uhr US-Ostküstenzeit auch in OpenAIs API-Modellliste auf. Vorgestellt hatte OpenAI GPT-6 Astra for Law am 17. September, eine offizielle Ankündigung für die API gibt es noch nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2116443618659455284",
+        "handle": "testingcatalog",
+        "date": "2026-10-31"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/TokenGremlin/status/2116441683080429785",
+          "handle": "TokenGremlin",
+          "date": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": "opencode-claude-subscription",
+      "headline": "OpenCode unterstützt jetzt Claude-Abos",
+      "status": "confirmed",
+      "summary": "In OpenCode lässt sich jetzt ein Claude-Abo nutzen: Version 2.2.3 bringt den neuen Provider „Claude Agent“, über den Pro- und Max-Abos von Claude mit der eigenen Claude-Code-Installation und dem Claude Agent SDK laufen. Anthropic hat sich dazu nicht geäußert, in den Antworten auf den Post wird über die Nutzungsbedingungen und ein mögliches Sperrrisiko diskutiert. Theo hatte damit nicht gerechnet und sieht darin ein Zeichen, dass Anthropic beim Abo die Zügel etwas lockert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/opencode/status/2116198602523513081",
+        "handle": "opencode",
+        "date": "2026-10-30"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/theo/status/2116428268224299277",
+          "handle": "theo",
+          "date": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-cyber",
+      "headline": "DeepSeek testet offenbar Cybersecurity-Modell namens Cyber",
+      "status": "rumor",
+      "summary": "Wie Pandaily mit Verweis auf IT Home berichtet, haben Entwickler im Frontend-Code der DeepSeek-Website Hinweise auf ein Cybersecurity-Modell namens „Cyber“ gefunden: eine Antragsseite hinter einem Feature Gate, Oberflächen zum Erstellen eines „Cyber Key“ und zum Verwalten des Kontingents sowie die Modell-IDs cyber-personal-v3 und cyber-enterprise-v4. Für Privatpersonen sind Ausweisdaten und eine Gesichtsverifizierung vorgesehen, für Unternehmen Klarnamen-Unterlagen, Gewerbelizenz und Vollmacht; außerdem braucht man eine Registrierung und Telefonnummer in Festland-China und darf in den vergangenen 90 Tagen keine Verstöße haben. Einige Nutzer sehen in einem offenbar begrenzten Test einen API-Bereich „DeepSeek Flash Cyber“ auf der Nutzungsseite; DeepSeek hat das Modell nicht angekündigt, und Start, Zugang und Preise sind unklar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thePandaily/status/2116381618105471276",
+        "handle": "thePandaily",
+        "date": "2026-10-31"
+      }
+    },
+    {
+      "id": "glm-5-5",
+      "headline": "Bericht: Z.ai ist mit GLM 5.5 weit im Post-Training",
+      "status": "rumor",
+      "summary": "Laut LuminaBench ist GLM 5.5 bereits weit im Post-Training; Z.ai hat offenbar interne Modelle mit 32B, 122B und 256B trainiert, die zum nächsten Basismodell GLM 5.5 zusammengeführt werden sollen. LuminaBench postet dazu einen Screenshot und hofft auf ein baldiges Release, weil GLM 5.3 schon ein paar Monate zurückliegt; auch kimmonismus schreibt, ein Release werde bald erwartet. Z.ai hat sich nicht geäußert, einen Termin gibt es nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/LuminaBench/status/2116478610332926227",
+        "handle": "LuminaBench",
+        "date": "2026-10-31"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2116526049722843218",
+          "handle": "kimmonismus",
+          "date": "2026-10-31"
+        }
+      ]
+    }
+  ]
+}
