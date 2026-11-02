@@ -1,0 +1,114 @@
+{
+  "issue": "2026-11-02",
+  "number": 17,
+  "title": "Anthropic-Website nannte kurzzeitig Claude Mythos 5.5, OpenAI testet offenbar GPT-6.2 Astra, Codex-Aktion endet mit zweitem Banked Reset",
+  "published": "2026-11-02",
+  "intro": "Auf Anthropics Website stand kurzzeitig Claude Mythos 5.5 im Seitencode, und in der Codex-Nutzungsübersicht einiger Accounts erscheint offenbar gpt-6.2-astra; offiziell bestätigt ist beides nicht, ebenso wenig wie Berichte über einen Antigravity-Agenten mit Gemini Live und DeepSeek V4.1 Pro in einem Benchmark-Skript. Bestätigt ist dagegen der zweite Banked Reset, mit dem die 28-tägige Codex-Aktion von Tibo endet. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "claude-mythos-5-5",
+      "headline": "Anthropic-Website nannte kurzzeitig Claude Mythos 5.5 im Seitencode",
+      "status": "rumor",
+      "summary": "Auf Anthropics Mythos-Seite stand am 1. November „Claude Mythos 5.5“ im Seitencode, und zwar in einer versteckten Überschrift und im Alt-Text des Schriftzugs, während Titel, Text und Preise auf der sichtbaren Seite weiter Mythos 5.1 beschrieben. Wir haben das gegen 17:05 Uhr selbst geprüft, gegen 21 Uhr war der Eintrag wieder entfernt; laut AiBattle_ fehlte er im Snapshot vom 23. Oktober noch. testingcatalog zitiert die versteckte Zeile „Claude Mythos 5.5 - Our most capable model class for cybersecurity and biology research.“ und spekuliert, dass Mythos 5.5 für Cyberabwehr schon nächste Woche kommt, eventuell zusammen mit Fable 5.5; Anthropic hat sich nicht geäußert, offiziell bestätigt ist das Modell nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2116914141017370972",
+        "handle": "kimmonismus",
+        "date": "2026-11-01"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2116915996850074008",
+          "handle": "testingcatalog",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://x.com/AiBattle_/status/2116923441270190146",
+          "handle": "AiBattle_",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2116921967433621750",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-01"
+        }
+      ],
+      "original": {
+        "url": "https://www.anthropic.com/claude/mythos",
+        "label": "Anthropic-Website"
+      }
+    },
+    {
+      "id": "gpt-6-2-astra",
+      "headline": "OpenAI testet offenbar GPT-6.2 Astra in Codex",
+      "status": "rumor",
+      "summary": "Bei einigen Accounts listet die Codex-Nutzungsübersicht gpt-6.2-astra offenbar als eigenen Eintrag, obwohl im Model Picker weiter GPT-6 Astra steht; TokenGremlin spricht von einem A/B-Test, Mr_Salio sieht den Namen in der Aufschlüsselung der API-Antworten, ein anderer Nutzer fand in seinem Account nur gpt-6-astra. Screenshots, in denen „codex --model gpt-6.2-astra“ in der Codex CLI angeblich funktioniert, beweisen dagegen nichts: Wie synthwavedd zeigt, übernimmt Codex optisch jeden eingetippten Modellnamen. kimmonismus rechnet mit einem baldigen Release und hält das Modell für OpenAIs neues „bel“-Flaggschiff als Antwort auf Fable 5.5; OpenAI hat sich nicht geäußert, am 30. Oktober hatte ein Discord-Tracker bereits gpt-6.2-betelgeuse als internes Modell gezeigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/TokenGremlin/status/2116834891744600291",
+        "handle": "TokenGremlin",
+        "date": "2026-11-01"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Mr_Salio/status/2116840248336437394",
+          "handle": "Mr_Salio",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2116846125126693368",
+          "handle": "kimmonismus",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://x.com/synthwavedd/status/2116978443472577018",
+          "handle": "synthwavedd",
+          "date": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "codex-banked-reset",
+      "headline": "OpenAI schließt Codex-Aktion mit zweitem Banked Reset ab",
+      "status": "confirmed",
+      "summary": "Tibo, der bei OpenAI Codex leitet, hat in der Nacht zum 2. November „Day 28/ Banked 2/2“ gepostet; laut TokenGremlin ist der zweite Banked Reset inzwischen für alle ChatGPT-Nutzer ausgerollt. Den ersten gab es an Tag 27 („Banked 1/2“), angekündigt hatte Tibo beide an Tag 26. Damit endet seine 28-tägige Aktion, bei der es vom 5. Oktober bis 1. November jeden Tag eine Verbesserung oder einen Reset gab.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2117035794678546764",
+        "handle": "thsottiaux",
+        "date": "2026-11-02"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/TokenGremlin/status/2117039183147540509",
+          "handle": "TokenGremlin",
+          "date": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "antigravity-chief-of-stuff",
+      "headline": "Bericht: Antigravity-Agent „Chief of Stuff“ bekommt Gemini Live",
+      "status": "rumor",
+      "summary": "Laut testingcatalog bekommt ein kommender KI-Agent für Antigravity Unterstützung für Gemini Live: „Chief of Stuff“, so der aktuelle Name, soll Antigravity selbstständig bedienen und für Teilaufgaben weitere Agenten starten können. Als Beispiele zeigt testingcatalog, offene Unterhaltungen der letzten 3 Tage mit Handlungsbedarf durchzugehen, CLs, die Aufmerksamkeit brauchen, in ihren Unterhaltungen zu fixen, aus dem Verlauf persönliche Regeln zu erzeugen und passende Skills und Plugins zu finden. Öffentlich verfügbar ist der Agent noch nicht, Google hat ihn nicht angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2116885887313133576",
+        "handle": "testingcatalog",
+        "date": "2026-11-01"
+      }
+    },
+    {
+      "id": "deepseek-v4-1-pro",
+      "headline": "Benchmark-Skript führt offenbar DeepSeek V4.1 Pro als Zielmodell",
+      "status": "rumor",
+      "summary": "LuminaBench meldet DeepSeek V4.1 Pro in Benchmark-Setups und zeigt dazu den Screenshot eines Skripts, in dem deepseek-v4.1-pro als Zielmodell für den SearchQA-Benchmark eingetragen ist, mit v4.1-flash als Worker. DeepSeek-V4.1-Flash ist Mitte Oktober erschienen; zur Pro-Version hat sich DeepSeek nicht geäußert, einen Termin gibt es nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/LuminaBench/status/2116829310992454015",
+        "handle": "LuminaBench",
+        "date": "2026-11-01"
+      }
+    }
+  ]
+}
