@@ -1,0 +1,154 @@
+{
+  "issue": "2026-11-03",
+  "number": 18,
+  "title": "Anthropic meldet 16,96 Milliarden Dollar Quartalsumsatz, GPT-6 Astra bearbeitet Modellgewichte, SemiAnalysis startet GDPx",
+  "published": "2026-11-03",
+  "intro": "Laut Andrew Curran nennt Anthropic in der aktualisierten Fassung seines S-1 einen Quartalsumsatz von 16,96 Milliarden Dollar. Außerdem geht es um einen MIT-CSAIL-Blogpost, in dem GPT-6 Astra die Gewichte von Qwen3.5-0.8B direkt bearbeitet, um den Agent-Benchmark GDPx von SemiAnalysis, um LongCat-2.5 von Meituan und um drei Meldungen von OpenAI zu Security, Git und dem Benchmark LifeVal. Heute ist alles bestätigt; wie immer ist jeder Beitrag als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "anthropic-s1-q3",
+      "headline": "Anthropic meldet im S-1 16,96 Milliarden Dollar Quartalsumsatz",
+      "status": "confirmed",
+      "summary": "Laut Andrew Curran weist die aktualisierte Fassung von Anthropics S-1 für den Börsengang einen Umsatz von 16,96 Milliarden Dollar im dritten Quartal aus, ein Plus von 1.127 Prozent gegenüber dem Vorjahr. Für die ersten neun Monate nennt das Dokument demnach 33,2 Milliarden Dollar Umsatz, die kumulierten Kauf- und Leasingverpflichtungen liegen bei 895,4 Milliarden Dollar. Den Antrag selbst haben wir nicht eingesehen, die Zahlen stammen aus Currans Post.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2117268002454507902",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-02"
+      }
+    },
+    {
+      "id": "semianalysis-gdpx",
+      "headline": "SemiAnalysis veröffentlicht Agent-Benchmark GDPx",
+      "status": "confirmed",
+      "summary": "SemiAnalysis hat mit GDPx einen Benchmark veröffentlicht, der agentische Fähigkeiten in den wertvollsten Bereichen misst, darunter Chipdesign, Cyber und Bio statt etwa Verwaltung, Immobilien oder Versicherungen. Im Schnitt über 11 Bereiche liegt Claude Opus 5.5 mit 12,0 Prozent vorn (51,41 Dollar pro Aufgabe), dahinter folgen Gemini 4 Carbon mit 10,9 Prozent (16,29 Dollar) und GPT-6 Astra mit 9,6 Prozent (53,99 Dollar); DeepSeek 4.1 Flash kommt mit 5,4 Prozent für 0,94 Dollar auf Platz 10 und ist das einzige chinesische Modell in den Top 10. Laut SemiAnalysis drücken bei Opus 5.5 und GPT-6 Astra die Safety-Klassifikatoren das Gesamtergebnis, zusätzlich gibt es ein Ranking ohne Cyber, Biologie und Alignment.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/SemiAnalysis_/status/2117075900575477855",
+        "handle": "SemiAnalysis_",
+        "date": "2026-11-02"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/SemiAnalysis_/status/2117075906099298410",
+          "handle": "SemiAnalysis_",
+          "date": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "weight-space-programming",
+      "headline": "GPT-6 Astra repariert Qwen3.5-0.8B direkt in den Gewichten",
+      "status": "confirmed",
+      "summary": "In einem Blogpost von MIT CSAIL zeigen Rikiya Takehi, Jayden Teoh, Alex Zhang und Omar Khattab, wie GPT-6 Astra Qwen3.5-0.8B ohne Gradienten besser in Mathe macht: Astra findet in den Gewichten die Ursache für Reasoning-Schleifen und behebt sie, indem es 0,016 Prozent der Gewichte direkt ändert. Bei gleichen Sampling-Einstellungen steigt MATH-500 von 7,9 auf 48,1 Prozent, der IFEval-Wert verdreifacht sich; Trainingsschleifen durfte Astra nicht schreiben. Alex Krentsel hat die Ergebnisse nach eigenen Angaben reproduziert, Andrew Curran postete knapp „Reproduced.“, und kimmonismus hält das für einen riesigen Schritt in Richtung rekursiver Selbstverbesserung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/rikiyatakehi/status/2117313742891327994",
+        "handle": "rikiyatakehi",
+        "date": "2026-11-02"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AlexKrentsel/status/2117376683724660898",
+          "handle": "AlexKrentsel",
+          "date": "2026-11-02"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2117399530610241776",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-03"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2117375878900621755",
+          "handle": "kimmonismus",
+          "date": "2026-11-02"
+        }
+      ],
+      "original": {
+        "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+        "label": "MIT-CSAIL-Blogpost"
+      }
+    },
+    {
+      "id": "longcat-2-5",
+      "headline": "Meituan veröffentlicht multimodales Agent-Modell LongCat-2.5",
+      "status": "confirmed",
+      "summary": "Meituan hat LongCat-2.5 vorgestellt, ein nativ multimodales Agent-Modell mit 1,6 Billionen Parametern, von denen rund 48 Milliarden aktiv sind. Es ist für lange agentische Aufgaben gebaut und bringt laut Meituan besseres Bildverständnis und stärkeres agentisches Coding mit, von komplexen Coding-Projekten bis zu visuellem Coding wie kreativem Design und 3D. Laut Berichten, unter anderem von TechNode, hat das Modell 1 Million Tokens Kontext, ist ab sofort per Chat und API verfügbar und wurde mit Rechenkapazität aus China trainiert; im September war bereits eine Preview von LongCat-2.5 erschienen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Meituan_LongCat/status/2117264311714537633",
+        "handle": "Meituan_LongCat",
+        "date": "2026-11-02"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/technodechina/status/2117113615874412759",
+          "handle": "technodechina",
+          "date": "2026-11-02"
+        }
+      ],
+      "original": {
+        "url": "https://longcat.ai/blog/longcat-2.5/",
+        "label": "LongCat-Blog"
+      }
+    },
+    {
+      "id": "openai-cathedral-security",
+      "headline": "OpenAI plant Security-Sprint mit Cathedral Systems, erhöht Bug-Bounty",
+      "status": "confirmed",
+      "summary": "OpenAI plant den nächsten internen Security-Sprint und arbeitet dafür mit Cathedral Systems zusammen, deren Forscher gemeinsam mit OpenAIs Teams und mit OpenAIs Modellen die eigene Abwehr auf die Probe stellen sollen. Außerdem erhöht OpenAI die Bug-Bounty-Prämien, für kritische Funde auf mehr als das Vierfache; außergewöhnliche Funde bringen inklusive Boni bis zu 172.000 Dollar. Laut Andrew Curran ist Cathedral Systems das von ehemaligen DOGE-Mitarbeitern gegründete Cybersecurity-Startup, das erst kürzlich Anthropics Slack gehackt hat.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2117444048227123277",
+        "handle": "OpenAI",
+        "date": "2026-11-03"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2117449875675889821",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-03"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "openai-pando",
+      "headline": "OpenAI baut eigenes Git-Backend Pando für sein Monorepo",
+      "status": "confirmed",
+      "summary": "OpenAI hat mit Pando ein neues Git-Backend für sein Monorepo gebaut, das mehr Pushes und Fetches verkraftet, ohne dass Entwickler und Agenten Git anders benutzen müssen. Pando hat die Push-Latenz um rund 80 Prozent gesenkt und liefert inzwischen fast ein Petabyte Git-Daten pro Tag aus. Damit kann OpenAI die Git-Kapazität mit der Agent-Nutzung mitwachsen lassen; Tibo, der Codex leitet, freut sich, dass das Team endlich ein bisschen darüber reden darf.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+        "handle": "OpenAIDevs",
+        "date": "2026-11-03"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2117412956950638872",
+          "handle": "thsottiaux",
+          "date": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "openai-lifeval",
+      "headline": "OpenAI stellt Alltags-Benchmark LifeVal vor",
+      "status": "confirmed",
+      "summary": "OpenAI hat LifeVal vorgestellt, einen Benchmark für Alltagsaufgaben, bei denen sich ChatGPT-Nutzer am meisten Hilfe von einem persönlichen Assistenten wünschen. Grundlage ist das Feedback tausender Nutzer, die Beispiele reichen von der Suche nach Kinderbetreuung über den Zugang zu staatlichen Leistungen bis zu den eigenen Finanzen. Im vergangenen Jahr hat OpenAI mit LifeVal gemessen und verbessert, wie gut die eigenen Modelle solche Aufgaben erledigen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2117307611338997846",
+        "handle": "OpenAI",
+        "date": "2026-11-02"
+      },
+      "original": {
+        "url": "https://openai.com/index/lifeval/",
+        "label": "OpenAI-Blog"
+      }
+    }
+  ]
+}
