@@ -1,0 +1,101 @@
+{
+  "issue": "2026-11-04",
+  "number": 19,
+  "title": "OpenAI listete offenbar kurz neue API-Modelle, Anthropic stellt FlashProve vor, Bericht: Anthropic entwickelt KI-Chips mit Claude",
+  "published": "2026-11-04",
+  "intro": "In OpenAIs API-Modellliste standen offenbar kurz zwei neue Modelle, und laut einem Bericht von The Information entwickelt Anthropic mit Claude eigene KI-Chips; hinter dem Stealth-Modell Crouton Alpha auf OpenRouter steckt nach einer Analyse von aitrackerbot offenbar Meta. Bestätigt sind OpenAIs BenchCAD-Ergebnisse für ein internes Modell und Anthropics FlashProve, mit dem sich prüfen lässt, ob eine Antwort von einem bestimmten Modell stammt. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "openai-rc-models",
+      "headline": "OpenAI listete offenbar kurz zwei neue Modelle in der API",
+      "status": "rumor",
+      "summary": "LuminaBench hat am Abend des 3. November per Screenshot aus seinem Discord-Tracker zwei neue OpenAI-Modelle mit den IDs rc-ada-or-vm und rc-ada-sh-vm gemeldet; laut aitrackerbot standen beide in OpenAIs API-Modellliste, waren wenige Minuten später wieder verschwunden und lassen sich nicht aufrufen. kimmonismus sieht darin schon GPT-6.2, das ist aber Spekulation. TokenGremlin rechnet mit drei neuen OpenAI-Modellen, einem Bildmodell, einem kleinen, sehr effizienten und einem größeren, deutlich stärkeren und teureren, und liest „rc“ als Release Candidate, OpenAI habe also noch nicht unbedingt entschieden, was wann erscheint; OpenAI hat sich nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/LuminaBench/status/2117690597914075605",
+        "handle": "LuminaBench",
+        "date": "2026-11-03"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/aitrackerbot/status/2117692415004086730",
+          "handle": "aitrackerbot",
+          "date": "2026-11-03"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2117693162856538292",
+          "handle": "kimmonismus",
+          "date": "2026-11-03"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2117767862706110773",
+          "handle": "TokenGremlin",
+          "date": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "openai-benchcad-internal-model",
+      "headline": "Internes OpenAI-Modell übertrifft GPT-6 Astra bei BenchCAD 2.0",
+      "status": "confirmed",
+      "summary": "OpenAI zeigt in einem Blogpost, wie ChatGPT und Codex bei Maschinenbau, Elektrotechnik und Simulation helfen: Im Benchmark BenchCAD 2.0, der die Rekonstruktion von 3D-Teilen und Baugruppen sowie Verbindungen auf Leiterplatten prüft, kommt ein neueres internes Modell im Schnitt auf 0,875, GPT-6 Astra auf der höchsten Reasoning-Stufe auf 0,594. Laut BenchCAD erreicht das interne Modell schon in der günstigsten Einstellung etwa 0,76 und liegt damit bei etwa gleichen Kosten über Astras bestem Wert; Herstellbarkeit misst der Benchmark allerdings nicht, und ein Gerät zum Sprechen mit Codex, das zwei Leute als Nebenprojekt mit Astra in unter einer Woche entworfen haben, brauchte vor der Fertigung noch mehrere Review-Runden. Die Token-Nutzung der Hardware-Teams ist laut OpenAI seit Februar 23-fach gestiegen; zum internen Modell nennt OpenAI keine Details und keinen Namen, „GPT-Aeon“ ist nur Andrew Currans Bezeichnung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2117692475775258785",
+        "handle": "OpenAI",
+        "date": "2026-11-03"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2117694967858725049",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-03"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "anthropic-flashprove",
+      "headline": "Anthropic stellt FlashProve für überprüfbare Modellantworten vor",
+      "status": "confirmed",
+      "summary": "Anthropic hat mit FlashProve einen Forschungsprototyp vorgestellt, mit dem Entwickler per zkSNARKs nachweisen können, dass eine Antwort von einem bestimmten Modell stammt, ohne die Gewichte offenzulegen; der Code ist Open Source. So soll sich erkennen lassen, ob ein Routing-Dienst oder ein Angreifer, der den Token-Stream manipuliert, ein anderes Modell untergeschoben hat, und Safety-Evaluatoren können prüfen, ob sie dasselbe Modell testen, das Kunden bekommen. Bei Llama 4 Maverick (400 Milliarden Parameter, Mixture of Experts) mit 4-Bit-quantisierten Gewichten erzeugt eine einzelne H100 Beweise mit rund 110 Tokens pro Sekunde und rund 19 MB pro Anfrage mit 1.024 Tokens; das entspricht etwa der 70- bis 95-fachen GPU-Zeit, die das Modell selbst auf vLLM braucht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+        "handle": "AnthropicAI",
+        "date": "2026-11-03"
+      },
+      "original": {
+        "url": "https://www.anthropic.com/research/provable-inference",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "anthropic-chip-team",
+      "headline": "Bericht: Anthropic entwickelt eigene KI-Chips mit Claude",
+      "status": "rumor",
+      "summary": "Laut einem Bericht von The Information, den kimmonismus weitergibt, nutzt Anthropics Chipdesign-Team mit 15 Personen Claude, um eigene KI-Chips zu entwickeln. Claude beschleunigt die Arbeit demnach gegenüber den eigenen Schätzungen für klassische Chipdesign-Abläufe; OpenAI hat bereits einen eigenen Chip mit dem Codenamen „Jalapeño“ entworfen. Den Artikel hinter der Paywall haben wir nicht gelesen, Anthropic hat sich nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2117684177340612833",
+        "handle": "kimmonismus",
+        "date": "2026-11-03"
+      }
+    },
+    {
+      "id": "crouton-alpha",
+      "headline": "Stealth-Modell Crouton Alpha auf OpenRouter stammt offenbar von Meta",
+      "status": "rumor",
+      "summary": "OpenRouter listet das neue Stealth-Modell stealth/crouton-alpha mit 1.048.576 Tokens Kontext, beschrieben als leichtgewichtiges Modell für Coding, agentische und multimodale Workflows, etwa für Teilaufgaben von Agenten, Tool-Nutzung und Dokumentanalyse; laut Recap-Accounts ist es eine Woche lang kostenlos auf OpenCode und OpenRouter nutzbar. aitrackerbot hält Meta für den Anbieter: OpenCodes Seite zum Modell nennt dieselben 21 gesperrten Länder wie Metas Modell-API, das Modell scheitert wie alle Meta-Muse-Modelle an einem seltenen japanischen Wort, an dem 93 andere Modelle nicht scheitern, und von 454 Modellen auf OpenRouter haben nur Metas Muse-Einträge dieselben Effort-Einstellungen. Bestätigt ist das nicht, offiziell ist nicht bekannt, wer hinter dem Modell steckt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2117715857237258558",
+        "handle": "aitrackerbot",
+        "date": "2026-11-03"
+      }
+    }
+  ]
+}
