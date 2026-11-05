@@ -1,0 +1,153 @@
+{
+  "issue": "2026-11-05",
+  "number": 20,
+  "title": "OpenAI bringt ChatGPT Images 2.6 und findet 948 Kernel-Lücken, GPT-6.2 offenbar bald",
+  "published": "2026-11-05",
+  "intro": "OpenAI hat ChatGPT Images 2.6 veröffentlicht, will die Pierre Computer Company übernehmen und zeigt eine Pipeline, die mit einem noch unveröffentlichten Cyber-Modell 948 Lücken zur lokalen Rechteausweitung im Linux-Kernel gefunden hat. Mit Cat Wu und Austin Lau sind zudem zwei frühere Anthropic-Leute jetzt bei OpenAI; nicht bestätigt sind dagegen Berichte, nach denen GPT-6.2 Astra und GPT-6.2 Sol kurz vor dem Start stehen und Google Gemini 4 Flash alias „Hydrogen“ testet. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet.",
+  "items": [
+    {
+      "id": "gpt-6-2-astra-sol",
+      "headline": "GPT-6.2 Astra und Sol offenbar in Google Cloud Console gelistet",
+      "status": "rumor",
+      "summary": "AiBattle hat einen Screenshot gepostet, der GPT-6.2 Astra und GPT-6.2 Sol auf der Quotas-Seite der Google Cloud Console zeigt, testingcatalog meldet dasselbe; prüfen konnten wir das nicht. AiBattle und TokenGremlin rechnen mit einem Release am Donnerstag, TokenGremlin hält aber auch Freitag für möglich, und laut The Information könnten neue Sol-, Astra- und Cyber-Modelle von OpenAI schon am Freitag kommen, wobei sich der Zeitplan noch ändern kann. OpenAI hat GPT-6.2 nicht angekündigt, jeder Termin ist bisher Spekulation.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AiBattle_/status/2118123362245587208",
+        "handle": "AiBattle_",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2118125584320721402",
+          "handle": "testingcatalog",
+          "date": "2026-11-05"
+        },
+        {
+          "url": "https://x.com/steph_palazzolo/status/2117997555778744815",
+          "handle": "steph_palazzolo",
+          "date": "2026-11-04"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2118171039330959379",
+          "handle": "TokenGremlin",
+          "date": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-images-2-6",
+      "headline": "OpenAI veröffentlicht ChatGPT Images 2.6 mit GIFs und Referenzbildern",
+      "status": "confirmed",
+      "summary": "Images 2.6 ist ab heute weltweit in ChatGPT und Codex für alle Abo-Stufen verfügbar und erzeugt Bilder laut OpenAI 50 Prozent schneller; neu sind GIFs aus einem Prompt oder Bild, bei denen sich Tempo und einzelne Frames anpassen lassen, sowie gespeicherte Referenzbilder, die man per @Name wiederverwendet. In die API kommen zwei neue Modelle: GPT-Image-2.6 Flare braucht bei niedriger Qualität nur sechs Sekunden und soll Layouts für Poster und Produktbilder besser hinbekommen, GPT-Image-2.6 Sunburst liefert bei mittlerer und hoher Qualität bessere Bilder und bleibt über mehrere Bearbeitungen konsistenter. Außerdem bekommt die API Image Markup, SVG-Export und den Parameter „complexity“, der festlegt, wie viel das Modell vorab plant; synthwavedd findet 2.6 auf X schlechter als 2.5, das ist aber eine persönliche Einschätzung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2118124944928432327",
+        "handle": "OpenAI",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/synthwavedd/status/2118141750015344949",
+          "handle": "synthwavedd",
+          "date": "2026-11-05"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/introducing-images-2-6/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "openai-cyber-linux",
+      "headline": "OpenAI findet mit KI-Pipeline 948 Lücken im Linux-Kernel",
+      "status": "confirmed",
+      "summary": "OpenAIs Security-Team hat eine autonome Pipeline gebaut, die Lücken sucht, dynamisch validiert, die Ausnutzbarkeit bewertet und Patches erzeugt; bevor etwas an die Maintainer geht, prüfen menschliche Forscher die Ergebnisse. In einem einzigen Lauf Mitte Oktober 2026 mit einem noch unveröffentlichten Cyber-Modell hat sie 2.308 Kandidaten analysiert, 1.724 Lücken reproduziert und 291 PoCs für Info-Leaks sowie 948 verschiedene funktionierende Exploits zur lokalen Rechteausweitung gebaut, getestet auf einer Standard-Desktop-Distribution in isolierten VMs; die API-Kosten lagen bei 1.213.430 Dollar, also 1.279 Dollar pro Exploit. Gegen den gehärteten kernelCTF kamen 21 Exploits für rund 32.936 Dollar zusammen, dazu zählt OpenAI mindestens zehn neue Exploit-Techniken; die Patches sind Vorschläge für die Maintainer und nicht gemergt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2118119451401048497",
+        "handle": "OpenAI",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2118146794362405231",
+          "handle": "thsottiaux",
+          "date": "2026-11-05"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "cat-wu-openai",
+      "headline": "Cat Wu wechselt von Anthropic zu OpenAI",
+      "status": "confirmed",
+      "summary": "Cat Wu, die laut ihrem Profil zuvor bei Anthropic an Claude Code gearbeitet hat, leitet bei OpenAI künftig das Produktmanagement für Core Products und arbeitet dort mit Tibo (thsottiaux) zusammen. Auch Austin Lau, bei Anthropic am Aufbau des Growth-Bereichs beteiligt, ist vor Kurzem zu OpenAI gekommen, für Andrew Curran der zweite Wechsel von Anthropic zu OpenAI an einem Tag.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/_catwu/status/2118137612577968402",
+        "handle": "_catwu",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2118138648214585591",
+          "handle": "thsottiaux",
+          "date": "2026-11-05"
+        },
+        {
+          "url": "https://x.com/helloitsaustin/status/2118161804463595931",
+          "handle": "helloitsaustin",
+          "date": "2026-11-05"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2118175375243264142",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "openai-pierre",
+      "headline": "OpenAI will die Pierre Computer Company übernehmen",
+      "status": "confirmed",
+      "summary": "Pierre entwickelt Code Storage, einen Dienst, mit dem Apps Code speichern und die Historie per Git verwalten, dazu Open-Source-Tools; die Libraries Trees und Diffs stecken schon in der Codex-App, etwa zum Durchsuchen von Dateien und zum Review von Änderungen. OpenAI will auf Git-Workflows aufbauen und sie an Teams anpassen, die mit Coding-Agents arbeiten, und hatte Anfang der Woche bereits Pando beschrieben, sein internes Source-Control-Backend. Die Open-Source-Projekte bleiben Open Source und Code-Storage-Kunden können den Dienst weiter nutzen; abgeschlossen ist die Übernahme erst nach den behördlichen Freigaben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAINewsroom/status/2117999237745049883",
+        "handle": "OpenAINewsroom",
+        "date": "2026-11-04"
+      },
+      "original": {
+        "url": "https://openai.com/index/openai-to-acquire-pierre/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "gemini-4-flash-hydrogen",
+      "headline": "Google testet offenbar Gemini 4 Flash „Hydrogen“",
+      "status": "rumor",
+      "summary": "lyraxana hat einen Screenshot gepostet, nach dem Gemini 4 Flash mit dem Codenamen Hydrogen in AI Studio und auf LMArena im A/B-Test läuft. chetaslua zählt fünf neue Checkpoints von Hydrogen mit 300 bis 500 Tokens pro Sekunde, pankajkumar_dev nennt einen Arena-Checkpoint dagegen „Gemini 4 Carbon H“, lobt ihn bei Three.js, sieht ihn nah an Opus 5.5 und rechnet mit einem Release Mitte November, was reine Spekulation ist. Google hat sich nicht geäußert, und die Namen in den Posts sind uneinheitlich.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/lyraxana/status/2118052883589669103",
+        "handle": "lyraxana",
+        "date": "2026-11-04"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/chetaslua/status/2118067237492040173",
+          "handle": "chetaslua",
+          "date": "2026-11-04"
+        },
+        {
+          "url": "https://x.com/pankajkumar_dev/status/2118058662350766542",
+          "handle": "pankajkumar_dev",
+          "date": "2026-11-04"
+        }
+      ]
+    }
+  ]
+}
