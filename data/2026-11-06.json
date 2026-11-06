@@ -1,0 +1,99 @@
+{
+  "issue": "2026-11-06",
+  "number": 21,
+  "title": "GPT-6 Cyber, Gemini Omni 1.2 Flash, Finanzfunktion in Claude und METR-Bericht zu Anthropic",
+  "published": "2026-11-06",
+  "intro": "OpenAI hat mit GPT-6 Cyber ein Modell für Sicherheitsforschung vorgestellt, Google macht das Videomodell Gemini Omni 1.2 Flash allgemein verfügbar und Anthropic startet Personal Finance in Claude als Beta in den USA. Außerdem hat METR einen Bericht veröffentlicht, wie stark KI die Entwicklung bei Anthropic beschleunigt. Jeder Beitrag ist als bestätigt oder Gerücht gekennzeichnet, heute sind alle vier bestätigt.",
+  "items": [
+    {
+      "id": "gpt-6-cyber",
+      "headline": "OpenAI veröffentlicht GPT-6 Cyber für ausgewählte Daybreak-Red-Kunden",
+      "status": "confirmed",
+      "summary": "GPT-6 Cyber ist darauf trainiert, ausnutzbare Schwachstellen in einem vorgegebenen Scope zu finden und zu validieren; das Modell steckt hinter den 948 Exploits zur lokalen Rechteausweitung im Linux-Kernel vom 4. November und hat in Firefox 81 neue Lücken mit hoher Schwere gefunden. In ExploitGym erreicht es 48,5 Prozent, GPT-5.6 Cyber kam auf 32,1 Prozent, und im Preparedness Framework stuft OpenAI das Modell als Critical ein statt wie bisher High. Im Honeypot-Test hat es Dienste außerhalb des Scopes in 99,93 Prozent der Fälle gemieden, mit Deployment-Prompt in 100 Prozent; Zugang gibt es zunächst per API und Codex für ausgewählte Daybreak-Red-Kunden, OpenAI will ihn nach und nach ausweiten.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2118390190246879554",
+        "handle": "OpenAI",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2118402103907655903",
+          "handle": "thsottiaux",
+          "date": "2026-11-05"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "gemini-omni-1-2-flash",
+      "headline": "Google bringt Gemini Omni 1.2 Flash mit längeren Clips und niedrigerem Preis",
+      "status": "confirmed",
+      "summary": "Das Videomodell gemini-omni-1.2-flash ist allgemein über die Gemini API und Google Cloud verfügbar und erzeugt nativ Clips mit bis zu 15 Sekunden, Omni 1.1 schaffte 10. Mit 0,07 Dollar pro Sekunde bei 720p ist es 30 Prozent günstiger als der Vorgänger. Clips lassen sich jetzt im Gespräch über mehrere Runden bearbeiten, Sprache und Lippensynchronität wirken natürlicher, und Entwürfe in 360p oder 720p können auf 1080p oder 4K hochskaliert werden.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleAIStudio/status/2118390015382454491",
+        "handle": "GoogleAIStudio",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/GoogleAIStudio/status/2118407948187643978",
+          "handle": "GoogleAIStudio",
+          "date": "2026-11-05"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "claude-personal-finance",
+      "headline": "Anthropic startet Personal Finance in Claude als Beta in den USA",
+      "status": "confirmed",
+      "summary": "Wer in den USA Pro, Max oder Ultra nutzt, kann Bank- und Kartenkonten über Plaid verbinden und Claude dann Fragen zu Kontoständen und Umsätzen stellen; die Beta wird diese Woche ausgerollt. Claude hat nur Lesezugriff, sieht das Bankpasswort nicht und kann kein Geld bewegen, verwalten oder anlegen. Werbung oder gesponserte Empfehlungen gibt es nicht, Anthropic bietet keine Kreditkarten, Kredite oder Sparkonten an, und Anlageberatung ist nicht vorgesehen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2118403114890137895",
+        "handle": "claudeai",
+        "date": "2026-11-05"
+      },
+      "original": {
+        "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+        "label": "Anthropic"
+      }
+    },
+    {
+      "id": "metr-anthropic-rd-acceleration",
+      "headline": "METR: Anthropic verbessert seine Modelle etwa doppelt so schnell wie zuvor",
+      "status": "confirmed",
+      "summary": "METR hatte von August bis Oktober Zugriff auf interne Informationen von Anthropic und schätzt, dass das Unternehmen die Fähigkeiten seiner Modelle bei klar definierten Aufgaben inzwischen etwa 2× so schnell verbessert wie zwischen März 2024 und Oktober 2025, hält aber auch 1,3× bis 3× für möglich. Den Großteil davon führt METR auf den intensiven Einsatz von KI in der Forschung zurück, geschätzt rund 80 Prozent bei hoher Unsicherheit; die Werte im AECI-Benchmark steigen 1,9-mal so schnell wie vor Oktober 2025, das 95-Prozent-Konfidenzintervall reicht von 1,5× bis 2,8×. Anthropic hat den Großteil der aussagekräftigsten Belege geschwärzt; Mitgründer Sam McCandlish stimmt vielen Schlussfolgerungen zu und kündigt eine eigene Analyse für die kommenden Wochen an.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/METR_Evals/status/2118412183860351084",
+        "handle": "METR_Evals",
+        "date": "2026-11-05"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2118420279882092681",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-05"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2118466929887502748",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-05"
+        }
+      ],
+      "original": {
+        "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+        "label": "METR-Blog"
+      }
+    }
+  ]
+}
