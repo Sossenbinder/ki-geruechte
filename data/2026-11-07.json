@@ -1,0 +1,118 @@
+{
+  "issue": "2026-11-07",
+  "number": 22,
+  "title": "Qwen-4-Teaser, GPT-6.2 offenbar erst nächste Woche, BioBasicsBench, RSA-Schwächen und Agent-Memory",
+  "published": "2026-11-07",
+  "intro": "Alibaba postet einen Teaser, die Community erwartet Qwen 4. GPT-6.2 Astra und Sol kommen laut X-Posts offenbar erst nächste Woche, dafür hat OpenAI den Labor-Benchmark BioBasicsBench veröffentlicht. Dazu zeigt DeepMind zwei Schwächen in 1024-Bit-RSA und Anthropic erklärt „Dreaming“ für Agent-Memory; jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "qwen-4-teaser",
+      "headline": "Alibaba postet Qwen-Teaser, Community erwartet Qwen 4",
+      "status": "rumor",
+      "summary": "Der offizielle Qwen-Account hat am Freitag „The becoming begins“ gepostet, dazu ein Poster mit dem Fisch Kun aus dem Zhuangzi – Modellname, Datum, Benchmarks, Weights oder API nennt der Post nicht. testingcatalog erwartet Qwen4-Max, Qwen4-Flash, Qwen4-Plus und Qwen4-27B; laut kimmonismus hat Alibaba-Cloud-CTO Feifei Li am 29. Oktober auf der Apsara-Konferenz in Amsterdam „Qwen4 next week“ gesagt, das ist aber nur aus zweiter Hand überliefert. Bis Samstagmorgen gibt es keinen Launch-Post, keine Modellseite, keine Weights auf Hugging Face und keine öffentliche API.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Alibaba_Qwen/status/2118674834632978755",
+        "handle": "Alibaba_Qwen",
+        "date": "2026-11-06"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/QwenDevs/status/2118716745372532865",
+          "handle": "QwenDevs",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2118720949965271489",
+          "handle": "kimmonismus",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2118680407680209172",
+          "handle": "testingcatalog",
+          "date": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-2-astra-sol-slip",
+      "headline": "Bericht: GPT-6.2 Astra und Sol kommen offenbar erst nächste Woche",
+      "status": "rumor",
+      "summary": "Das Freitagsfenster aus Ausgabe 20 ist verstrichen, ohne dass OpenAI GPT-6.2 Astra oder GPT-6.2 Sol veröffentlicht hat. StatsWire schreibt auf X, beide Modelle kämen nächste Woche; offiziell bestätigt ist das nicht. Am Morgen hatten ein Codex-CLI-Screenshot von Layton_Gott mit `gpt-6.2-astra xhigh` und Tibos Antwort „Basement is full of wonders“ für Spekulationen gesorgt, am Abend postete OpenAI dann aber BioBasicsBench statt eines Modells.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2118785589558538488",
+        "handle": "kimmonismus",
+        "date": "2026-11-06"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/StatsWire/status/2118762717389398341",
+          "handle": "StatsWire",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/Layton_Gott/status/2118566452878004595",
+          "handle": "Layton_Gott",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2118567451596300778",
+          "handle": "thsottiaux",
+          "date": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "openai-biobasicsbench",
+      "headline": "OpenAI stellt BioBasicsBench für Laboraufgaben von Agents vor",
+      "status": "confirmed",
+      "summary": "Der Benchmark prüft mit 100 Aufgaben aus echten Experimenten, ob Agents Rohdaten aus dem Nasslabor wie Gele, Platten oder Mikroskopiebilder auswerten, Fehler finden und erkennen, wenn die Daten eine Schlussfolgerung nicht stützen. Entwickelt hat OpenAI ihn mit Ligo, einem Biotech-Unternehmen für Enzymdesign. Bei Reasoning-Effort xhigh kommt GPT-6 Astra auf 66,7 Prozent mittleren Reward, GPT-6.1 Sol auf 62,0 Prozent und GPT-5.6 Sol auf 43,8 Prozent.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2118782708767965238",
+        "handle": "OpenAI",
+        "date": "2026-11-06"
+      },
+      "original": {
+        "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "deepmind-rsa-1024",
+      "headline": "Google DeepMind findet mit KI-Agenten zwei Schwächen in 1024-Bit-RSA",
+      "status": "confirmed",
+      "summary": "Von Menschen angeleitete Agents haben zwei Angriffe auf ältere RSA-Systeme mit 1024-Bit-Schlüsseln gefunden; Schlüssel mit 2048 Bit oder mehr bleiben laut DeepMind sicher. Bei Signaturen mit kurzem 32-Byte-Fingerprint ist der neue Algorithmus nach theoretischen Schätzungen etwa 1.600-mal besser als der bisher beste, beim Batch-Faktorisieren sinken die durchschnittlichen Kosten pro zusätzlichem Schlüssel um etwa das 30-Fache. Details stehen in einem X-Artikel von DeepMind-VP-Science Pushmeet und in zwei verlinkten Papers.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+        "handle": "GoogleDeepMind",
+        "date": "2026-11-06"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/pushmeet/status/2118752095859794390",
+          "handle": "pushmeet",
+          "date": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-agent-memory-dreaming",
+      "headline": "Anthropic erklärt, wie „Dreaming“ das Gedächtnis von Claude ordnet",
+      "status": "confirmed",
+      "summary": "Im Engineering-Blog beschreibt Anthropic, wie Agents Wissen als Memory-Notizen über Sessions hinweg behalten und beim „Dreaming“ offline ihre Logs durchgehen, Fehler korrigieren, Notizen schreiben und Repräsentationen wie ein Wiki aufbauen. Auf einem Stainless-Korpus mit rund 350.000 Dateien stieg der Anteil erfüllter Bewertungskriterien bei 25 Fragen von 13 auf 48 Prozent, als Dreaming von 2 auf 128 Sessions skaliert wurde. Wiki plus Suche stieg von 54 auf 61 Prozent und sparte gegenüber reiner Suche rund 20.000 Tokens pro Frage.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2118814753154064501",
+        "handle": "AnthropicAI",
+        "date": "2026-11-06"
+      },
+      "original": {
+        "url": "https://www.anthropic.com/research/components-of-agent-memory",
+        "label": "Anthropic-Blog"
+      }
+    }
+  ]
+}
