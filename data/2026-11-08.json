@@ -1,0 +1,96 @@
+{
+  "issue": "2026-11-08",
+  "number": 23,
+  "title": "Stealth-Modell Qoduck, offenbar neue OpenAI- und Anthropic-Modelle in Devin CLI, Vals CyberOffense",
+  "published": "2026-11-08",
+  "intro": "Alibaba Cloud bringt das Stealth-Modell Qoduck in Qoder und lässt Einzelnutzer es vorerst täglich kostenlos testen. In einem Build der Devin CLI stehen laut X-Posts neue Codenamen, die offenbar zu OpenAI und Anthropic gehören. Außerdem hat Vals AI den Benchmark CyberOffense veröffentlicht, in dem KI-Agenten simulierte Firmennetze angreifen; jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "qoder-qoduck",
+      "headline": "Alibaba Cloud bringt Stealth-Modell Qoduck in Qoder",
+      "status": "confirmed",
+      "summary": "Alibaba Cloud hat in Qoder das Stealth-Modell Qoduck freigeschaltet; um welches Modell es sich handelt, sagt auch die Qoder-Dokumentation nicht. Einzelnutzer von Qoder International bekommen seit dem 7. November ein tägliches Freikontingent, in dem der Credit-Faktor von 0,5× auf 0,0× sinkt, Teams- und Enterprise-Kunden sind ausgenommen und ein Enddatum steht noch nicht fest. In der Community vermuten viele eine frühe Version von Qwen 4, offiziell bestätigt ist das nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/alibaba_cloud/status/2118992047613080032",
+        "handle": "alibaba_cloud",
+        "date": "2026-11-07"
+      },
+      "original": {
+        "url": "https://docs.qoder.com/events/qoduck-free",
+        "label": "Qoder-Dokumentation"
+      }
+    },
+    {
+      "id": "openai-cactus-kraken",
+      "headline": "Devin CLI listet offenbar neue OpenAI-Modelle cactus und kraken",
+      "status": "rumor",
+      "summary": "StatsWire hat in der Modelltabelle von Devin CLI 3000.12.17 zwei neue Codenamen gefunden, die bei den OpenAI-Modellen einsortiert sind: cactus und kraken, jeweils mit fünf Reasoning-Stufen von low bis max. Laut abhinavflac stecken dahinter die Modelle aurora-alpha und halo-alpha. LuminaBench und abhinavflac spekulieren über GPT-6.2 Astra und Sol, allerdings stehen beide Einträge in der Tabelle zwischen GPT-6 Luna und GPT-6 Astra, und OpenAI selbst hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2119045885996802157",
+        "handle": "StatsWire",
+        "date": "2026-11-07"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/LuminaBench/status/2119064517397111078",
+          "handle": "LuminaBench",
+          "date": "2026-11-07"
+        },
+        {
+          "url": "https://x.com/abhinavflac/status/2119069232327725094",
+          "handle": "abhinavflac",
+          "date": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-silicon-donut",
+      "headline": "Devin CLI verweist offenbar auf neue Anthropic-Modellfamilie Silicon",
+      "status": "rumor",
+      "summary": "Der X-Nutzer chetaslua hat Devin CLI 3000.12.17 reverse-engineert: Der Parser ordnet claude-donut-eap dem Modell silicon-high zu, claude-onigiri-eap dagegen obsidian-3-high. Laut chetaslua ist Silicon eine neue Familie mit den Stufen low, medium, high, xhigh und max, also nicht das Obsidian-3-Modell, das einige für Fable 5.5 gehalten hatten. Dass Anthropic dahintersteckt, leitet chetaslua aus Devins Präfix claude- ab; von Anthropic gibt es weder eine Bestätigung noch einen Zeitrahmen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/chetaslua/status/2119024292595749136",
+        "handle": "chetaslua",
+        "date": "2026-11-07"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/StatsWire/status/2118966914202693680",
+          "handle": "StatsWire",
+          "date": "2026-11-07"
+        },
+        {
+          "url": "https://x.com/LuminaBench/status/2119070590854197517",
+          "handle": "LuminaBench",
+          "date": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "id": "vals-cyberoffense",
+      "headline": "Vals AI testet KI-Agenten bei Angriffen auf Firmennetze",
+      "status": "confirmed",
+      "summary": "Vals AI hat den Benchmark CyberOffense veröffentlicht, in dem KI-Agenten ohne menschliche Hilfe zwei simulierte Firmennetze angreifen. Vorne liegt GPT-6 Sol Daybreak aus OpenAIs eingeschränktem Daybreak-Cyberprogramm mit 80,8 Prozent der Ziele, das Open-Weight-Modell DeepSeek V4.1 Flash 1017 kommt auf 72,8 Prozent und liegt auf Nova mit 16,3 zu 15,7 von 21 Zielen sogar knapp vorn, laut Vals für unter 3 Dollar pro Lauf statt etwa 22 Dollar. Auf Lighthouse schafft Daybreak 27 von 31 Zielen, DeepSeek 21 von 31; die letzten Ziele dieses Szenarios mit zwei Firmennetzen hat kein Modell erreicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ValsAI/status/2118801439879528884",
+        "handle": "ValsAI",
+        "date": "2026-11-06"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ValsAI/status/2118801444891734384",
+          "handle": "ValsAI",
+          "date": "2026-11-06"
+        }
+      ],
+      "original": {
+        "url": "https://www.vals.ai/benchmarks/cyber_offense",
+        "label": "Vals-CyberOffense"
+      }
+    }
+  ]
+}
