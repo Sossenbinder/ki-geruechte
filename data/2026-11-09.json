@@ -1,0 +1,105 @@
+{
+  "issue": "2026-11-09",
+  "number": 24,
+  "title": "ChatGPT routet offenbar auf neues Sol-Modell, OpenAI-Teaser für Supply Co., PSI-Beweis mit Anthropic-Modell, Googles Krypton und Hyperion laut X-Posts",
+  "published": "2026-11-09",
+  "intro": "Mehrere Nutzer berichten, dass ChatGPT Anfragen an GPT-6.1 Sol offenbar an ein neueres Modell weiterleitet, außerdem teasert OpenAI für heute einen Launch in seinem Merch-Shop Supply Co. PSI hat einen Beweis der Aaronson-Ambainis-Vermutung veröffentlicht, der laut PSI mit einem nicht öffentlichen Anthropic-Modell entstanden ist. Zu Google gibt es zwei Gerüchte, den internen Checkpoint Krypton und die Modellfamilie Hyperion in Devin CLI; jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "gpt-6-2-sol-routing",
+      "headline": "ChatGPT routet GPT-6.1 Sol offenbar auf ein neueres Modell",
+      "status": "rumor",
+      "summary": "Mehrere Nutzer, darunter TokenGremlin und kimmonismus, berichten auf X, dass ChatGPT Anfragen an GPT-6.1 Sol bei ihnen an ein neueres Modell weiterleitet; die Community tippt auf GPT-6.2 Sol. AiBattle_ schlägt als Test die Frage vor, wer am 7. Juni 2026 die Tony Awards moderiert hat, ohne Websuche: Kommt P!nk als Antwort, spricht das für einen neueren Knowledge Cutoff. OpenAI hat nichts bestätigt, einen Modellstring gibt es nicht, und HarshithLucky3 hält dagegen, es sei schlicht GPT-6.1 Sol.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AiBattle_/status/2119453769989517629",
+        "handle": "AiBattle_",
+        "date": "2026-11-08"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/TokenGremlin/status/2119371334878744648",
+          "handle": "TokenGremlin",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2119543483048268179",
+          "handle": "kimmonismus",
+          "date": "2026-11-08"
+        }
+      ]
+    },
+    {
+      "id": "openai-supply-co-teaser",
+      "headline": "OpenAI kündigt Launch im Merch-Shop Supply Co. an",
+      "status": "confirmed",
+      "summary": "OpenAIDevs hat zu einem 16-sekündigen Video nur „Tomorrow.“ geschrieben; im Video sind ein eingeblendeter X-Post („one of my best mates vibe coded a video game“), eine Box und der Hinweis „NOVEMBER 9 ON SUPPLY CO.“ zu sehen, Supply Co. ist OpenAIs Merch-Shop. TestingCatalog geht davon aus, dass es um den ModRetro Chromatic geht, einen Retro-Handheld für Game-Boy- und Game-Boy-Color-Spiele, den OpenAI auf dem DevDay in einer limitierten transparenten Edition verteilt hat. Auf ein neues Modell deutet der Teaser nicht hin, auch wenn viele in den Antworten auf GPT-6.2 gehofft hatten; einen Preis gibt es noch nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAIDevs/status/2119521359185478140",
+        "handle": "OpenAIDevs",
+        "date": "2026-11-08"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2119525387688374726",
+          "handle": "testingcatalog",
+          "date": "2026-11-08"
+        }
+      ]
+    },
+    {
+      "id": "psi-aaronson-ambainis",
+      "headline": "PSI beweist Aaronson-Ambainis-Vermutung mit unveröffentlichtem Anthropic-Modell",
+      "status": "confirmed",
+      "summary": "Physical Superintelligence (PSI) hat einen Beweis der Aaronson-Ambainis-Vermutung veröffentlicht, die seit 2008 offen war und die Frage betrifft, wann Quantencomputer exponentiell schneller sein können als normale Rechner. Laut PSI lief das intern entwickelte Forschungssystem mit einem nicht öffentlichen Anthropic-Modell, hatte am dritten Tag einen vollständigen Beweis, und der Proof-Assistant Lean hat ihn akzeptiert; Paper und Lean-4-Code liegen auf GitHub. Welches Modell es war, ist offen, Anthropic hat sich dazu nicht geäußert, ein unabhängiges Review gibt es noch nicht, und ob die Lean-Formulierung genau der ursprünglichen Vermutung entspricht, muss noch ein Mensch prüfen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/mark_k/status/2119484626368426368",
+        "handle": "mark_k",
+        "date": "2026-11-06",
+        "via": true
+      },
+      "original": {
+        "url": "https://psi.inc/research/aaronson-ambainis/",
+        "label": "PSI-Forschungsseite"
+      }
+    },
+    {
+      "id": "google-krypton",
+      "headline": "Google testet offenbar internen Checkpoint Krypton",
+      "status": "rumor",
+      "summary": "Der X-Nutzer lyraxana schreibt, Google habe einen neuen internen Checkpoint namens Krypton, der bisher sogar besser abschneide als Carbon. Zahlen, Benchmark-Screenshots oder eine Stellungnahme von Google gibt es nicht, LuminaBench und ai_for_success greifen nur diesen Post auf. Gemini 4 Carbon selbst ist bislang nur eingeschränkt für Cyberverteidiger und Partner verfügbar, öffentlich ist Gemini 4 Argon.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/lyraxana/status/2119562817384964486",
+        "handle": "lyraxana",
+        "date": "2026-11-08"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/LuminaBench/status/2119566553905782894",
+          "handle": "LuminaBench",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://x.com/ai_for_success/status/2119616669383618877",
+          "handle": "ai_for_success",
+          "date": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "google-hyperion-devin",
+      "headline": "Devin CLI listet offenbar neue Google-Modellfamilie Hyperion",
+      "status": "rumor",
+      "summary": "StatsWire hat in Devin CLI 3000.12.17 die Einträge hyperion, hyperion-minimal, hyperion-low, hyperion-medium und hyperion-high gefunden, also Googles übliche Thinking-Stufen von minimal bis high. In der Liste steht Hyperion direkt zwischen Gemini 3.5 Flash Lite und Gemini 4 Argon, StatsWire vermutet dahinter Gemini 4 Flash. Es ist derselbe Build, in dem auch cactus, kraken und claude-donut-eap standen; ob Hyperion etwas mit dem Gemini-4-Flash-Test Hydrogen in AI Studio zu tun hat, ist unklar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2119491762221727815",
+        "handle": "StatsWire",
+        "date": "2026-11-08"
+      }
+    }
+  ]
+}
