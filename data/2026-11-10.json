@@ -1,0 +1,139 @@
+{
+  "issue": "2026-11-10",
+  "number": 25,
+  "title": "Anthropic veröffentlicht Claude Fable 5.2 und Mythos 5.2, Meta bringt Muse Ember, Google testet laut X-Posts Krypton und Hydrogen",
+  "published": "2026-11-10",
+  "intro": "Anthropic hat Claude Fable 5.2 und Mythos 5.2 veröffentlicht, Artificial Analysis setzt Fable 5.2 in seinem Intelligence Index auf Platz eins, und Meta bringt mit Muse Ember sein bisher kleinstes Modell. Zu Google gibt es drei Gerüchte: erste Tester-Outputs von Krypton, eine laut lyraxana gestartete private EAP für Gemini 4 Hydrogen und PRs in den Gemini-SDKs, die offenbar eine neue Thinking-Stufe xhigh vorbereiten. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "claude-fable-mythos-5-2",
+      "headline": "Anthropic veröffentlicht Claude Fable 5.2 und Mythos 5.2",
+      "status": "confirmed",
+      "summary": "Anthropic hat Claude Fable 5.2 und Claude Mythos 5.2 veröffentlicht, es ist also Version 5.2 und nicht das lange gerüchtete Fable 5.5. Beide sind dasselbe Modell, Fable hat aber strenge Safeguards für Cybersecurity und Biologie und steht allen offen, Mythos 5.2 bekommen nur geprüfte Organisationen über Anthropics Verifizierungsprogramme für Life Sciences und Cyber; die Modelle geben bis zu 30 Prozent schneller aus als die 5.1-Versionen und kosten 8 bzw. 40 Dollar pro Million Input- bzw. Output-Tokens, im optionalen Fast Mode mit bis zu 2,5-mal schnellerer Generierung 16 bzw. 80 Dollar. Fable 5.2 ist auf allen Plattformen inklusive AWS, Google Cloud und Azure als claude-fable-5-2 verfügbar und bis zum 16. November mit bis zu 50 Prozent der Plan-Limits in den Plänen enthalten, danach über Usage Credits; nach Angaben von Anthropic hat das Modell im Prerelease-Test unter anderem drei funktionierende elektronische Geräte entworfen, zwei offene Probleme aus der Physik schwarzer Löcher gelöst und den Beweis von Fermats letztem Satz in 30 Stunden formalisiert, für die meisten Coding- und Wissensaufgaben empfiehlt Anthropic aber, mit Claude Opus 5.5 anzufangen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2119867114450268322",
+        "handle": "claudeai",
+        "date": "2026-11-09"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2119930288130376050",
+          "handle": "testingcatalog",
+          "date": "2026-11-09"
+        }
+      ],
+      "original": {
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "label": "Anthropic-Ankündigung"
+      }
+    },
+    {
+      "id": "aa-fable-5-2-index",
+      "headline": "Artificial Analysis setzt Claude Fable 5.2 auf Platz eins",
+      "status": "confirmed",
+      "summary": "Im Artificial Analysis Intelligence Index v5 kommt Claude Fable 5.2 auf 65 Punkte und liegt damit vor Gemini 4 Carbon (high, 60), Claude Opus 5.5 (max, 59), GPT-6 Astra (max, 57) und Fable 5.1 (max, 49); mit high und xhigh effort sind es 62, und selbst damit liegt es vor jedem anderen Modell, egal auf welcher Effort-Stufe. Mit max effort kostet ein Task im Schnitt 26,5 Dollar, etwa 2,6-mal so viel wie bei Opus 5.5 (max, 10,0 Dollar), auf Terminal-Bench 4.0 liegt Fable 5.2 mit 60 Prozent gleichauf mit Opus 5.5. Theo schreibt nach eigenen Tests, ein Fishslop-Run habe 76 Minuten gedauert und rund 42 Dollar an Tokens gekostet und sei einer der besten, die er gesehen habe, aber nicht deutlich besser als Opus 5.5, vor allem gemessen am Preis; später schrieb er, Fable 5.2 mache viele dumme Fehler, die er von Opus so nicht erwartet hätte.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ArtificialAnlys/status/2119878995386982508",
+        "handle": "ArtificialAnlys",
+        "date": "2026-11-09"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/theo/status/2119926277801144695",
+          "handle": "theo",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://x.com/theo/status/2119988540708896897",
+          "handle": "theo",
+          "date": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "meta-muse-ember",
+      "headline": "Meta veröffentlicht Muse Ember, sein bisher kleinstes Modell",
+      "status": "confirmed",
+      "summary": "Meta hat Muse Ember veröffentlicht, sein bisher kleinstes Modell und das erste, das mit Muse Wonder Full trainiert wurde; laut Alexandr Wang liefert es fast die Intelligenz von Muse Spark 1.3 (max) zu einem 17-mal niedrigeren Preis, wobei er sich auf Zahlen von Artificial Analysis stützt. Im Intelligence Index von Artificial Analysis kommt Ember auf 36 Punkte, so viel wie Claude Haiku 5.5 (max) bei einem Drittel der Kosten pro Task (0,14 Dollar), schwach ist es vor allem beim Wissen: Bei 64 Prozent der AA-Omniscience-Fragen verweigert es die Antwort. Die API kostet 0,10 Dollar pro Million Input-Tokens, 0,004 Dollar für Cached Input und 0,50 Dollar für Output, verfügbar ist Ember über Metas eigene API und Muse Code, und laut TestingCatalog sind Muse Wonder, Muse Spark 1.3 und Muse Ember jetzt außerdem als Public Preview auf GCP.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/alexandr_wang/status/2119857909098283406",
+        "handle": "alexandr_wang",
+        "date": "2026-11-09"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2119854348587123007",
+          "handle": "ArtificialAnlys",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2119914321245577334",
+          "handle": "testingcatalog",
+          "date": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "google-krypton-hands-on",
+      "headline": "Tester zeigt erste Outputs von Googles Krypton-Checkpoint",
+      "status": "rumor",
+      "summary": "Zum gestern gemeldeten Krypton gibt es jetzt mehr als lyraxanas Einzelbehauptung: Der X-Nutzer chetaslua hat Outputs von Gemini Krypton, Carbon und Argon zum selben Prompt nebeneinandergestellt und schreibt, Krypton brauche doppelt so lange und schreibe doppelt so viel Code, nach seinen Angaben ist es der erste Checkpoint einer Version krypton-a. In einem weiteren Post zeigt er ein PS-Logo als SVG und schreibt, Krypton denke sehr viel; koltregaskes meint, Krypton sei echt, der erste Checkpoint sehe gut aus und es klinge nach einem großen Modell. Google hat sich nicht geäußert, Benchmarks gibt es keine, und wie die Tester an das Modell gekommen sind, ist offen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/chetaslua/status/2119674579711087021",
+        "handle": "chetaslua",
+        "date": "2026-11-09"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/chetaslua/status/2119695384843108458",
+          "handle": "chetaslua",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://x.com/koltregaskes/status/2119678120924201150",
+          "handle": "koltregaskes",
+          "date": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-hydrogen-eap",
+      "headline": "Bericht: Google startet private EAP für Gemini 4 Hydrogen",
+      "status": "rumor",
+      "summary": "Laut lyraxana hat die private Early-Access-Phase (EAP) für Gemini 4 Hydrogen mit der Modell-ID gemini-4-hydrogen offiziell begonnen, der Release sei bald zu erwarten. Hydrogen lief bereits in A/B-Tests in AI Studio als mutmaßliches Gemini 4 Flash, und lyraxana hatte am 21. Oktober geschrieben, sie halte Gemini 4 Flash für Googles eigentliches Comeback, nicht Argon. Es gibt nur diese eine Quelle, Google hat nichts bestätigt, und sowohl die Modell-ID als auch das Flash-Label stammen von lyraxana bzw. aus der Community.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/lyraxana/status/2119856544682594352",
+        "handle": "lyraxana",
+        "date": "2026-11-09"
+      }
+    },
+    {
+      "id": "gemini-api-xhigh",
+      "headline": "Google bereitet offenbar Thinking-Stufe xhigh für Gemini-API vor",
+      "status": "rumor",
+      "summary": "Wie aitrackerbot gefunden hat, fügen neue PRs in allen vier offiziellen Gemini-SDKs (Python, JS, Go, Java) und in der Gemini API CLI den Thinking-Levels der Interactions API die Stufe xhigh hinzu, beschrieben als „Extra high thinking level, above high“. Der PR #3320 in googleapis/python-genai wurde am 8. November geöffnet und ist noch offen, angekündigt hat Google die Stufe aber nicht, und ein Modell wird nirgends genannt. thtbee_ vermutet, dass xhigh für Gemini 4 Carbon gedacht ist, das vielleicht nächste Woche erscheint, belegt ist das nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/aitrackerbot/status/2119614685389418693",
+        "handle": "aitrackerbot",
+        "date": "2026-11-09"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thtbee_/status/2119652829065564445",
+          "handle": "thtbee_",
+          "date": "2026-11-09"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/googleapis/python-genai/pull/3320",
+        "label": "GitHub-PR im Gemini-SDK"
+      }
+    }
+  ]
+}
