@@ -1,0 +1,189 @@
+{
+  "issue": "2026-11-11",
+  "number": 26,
+  "title": "Alibaba bringt Qwen4-Max als Preview, Google gibt Gemini 4 Carbon frei, Anthropic startet IPO-Roadshow",
+  "published": "2026-11-11",
+  "intro": "Alibaba hat Qwen4-Max als Preview freigeschaltet, Google macht Gemini 4 Carbon für Ultra-Abonnenten und zahlende Entwickler verfügbar, und Anthropic hat die Roadshow für seinen Börsengang gestartet. Gerüchte gibt es zu GPT-6.2, nachdem ein OpenAI-Mitarbeiter vage „coming soon“ geschrieben hat, und zu Grok 4.8, das Elon Musk nach eigenen Plänen noch diese Woche ausrollen will. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "qwen4-max-preview",
+      "headline": "Alibaba startet Preview von Qwen4-Max",
+      "status": "confirmed",
+      "summary": "Alibaba hat Qwen4-Max als Preview im Token Plan freigeschaltet, Early Access gibt es außerdem in QwenWork, Qoder, der Qwen App und QwenStudio. Qwen4 selbst „kommt“ laut Alibaba erst noch und soll mehr Wissen, ein besseres Weltverständnis und stärkere Coding- und Agent-Fähigkeiten mitbringen; Benchmarks, Kontextfenster, API-Preis oder Weights hat Alibaba nicht veröffentlicht, die Modell-ID qwen4-max-preview stammt aus Nutzerposts. Qoder bestätigt, dass das Stealth-Modell Qoduck, über das wir am 8. November berichtet haben, vier Tage lang ein Qwen-Testbuild war; jetzt läuft dort Qwen4-Max-Preview in allen Produkten und Plänen inklusive Teams und Enterprise, für begrenzte Zeit mit 80 Prozent Rabatt (0,1x Credits).",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Alibaba_Qwen/status/2120335993643684315",
+        "handle": "Alibaba_Qwen",
+        "date": "2026-11-11"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/qoder_ai_ide/status/2120343731673108936",
+          "handle": "qoder_ai_ide",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/AlibabaGroup/status/2120337179666968829",
+          "handle": "AlibabaGroup",
+          "date": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-carbon-available",
+      "headline": "Google schaltet Gemini 4 Carbon breiter frei",
+      "status": "confirmed",
+      "summary": "Google hat Gemini 4 Carbon freigegeben, das am 28. Oktober angekündigt wurde und bis dahin nur ausgewählten Cyber-Verteidigern und Partnern im Fairwind-Programm offenstand; Google nennt es sein stärkstes Modell für Long-Horizon-Aufgaben und mehrstufiges Reasoning, Argon sei für komplexe Aufgaben gut, Carbon für die schwierigsten Probleme. Carbon gibt es in AI Studio, der Gemini API, Antigravity, der Gemini-App und im AI Mode der Google-Suche, laut TokenGremlin aber nur für Google-AI-Ultra-Abonnenten und zahlende Entwickler, Pro-Abonnenten gehen leer aus. Der Einführungspreis liegt laut Googles Blogpost vom 28. Oktober wie bei Argon bei 2 bzw. 10 Dollar pro Million Input- bzw. Output-Tokens; Logan schrieb in einer Antwort an Sundar Pichai, das Team sei „still cooking“, mehr sagt er dazu nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Google/status/2120186185423159331",
+        "handle": "Google",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2120219371473617099",
+          "handle": "GoogleDeepMind",
+          "date": "2026-11-10"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2120187239850209287",
+          "handle": "TokenGremlin",
+          "date": "2026-11-10"
+        },
+        {
+          "url": "https://x.com/OfficialLoganK/status/2120190783622095098",
+          "handle": "OfficialLoganK",
+          "date": "2026-11-10"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "anthropic-ipo-roadshow",
+      "headline": "Anthropic startet Roadshow für den Börsengang",
+      "status": "confirmed",
+      "summary": "Anthropic hat die Roadshow für seinen geplanten Börsengang gestartet. Angeboten werden 825 Millionen Class-A-Aktien, davon 801.351.354 von Anthropic selbst und 23.648.646 von bestehenden Aktionären, dazu kommt eine 30-tägige Option auf bis zu 123,75 Millionen weitere Aktien; Anthropic rechnet mit einem Ausgabepreis von 70 bis 78 Dollar pro Aktie und will unter dem Kürzel ANT am Nasdaq Global Select Market notieren. kimmonismus kommt nach eigener Rechnung auf eine voll verwässerte Bewertung von etwa 1,24 bis 1,38 Billionen Dollar, weniger als die zuvor erwarteten rund 1,5 Billionen; die Registrierung ist noch nicht wirksam, und einen Termin für die Preisfestsetzung nennt Anthropic nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2120117722230968385",
+        "handle": "AnthropicAI",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2120124103688348122",
+          "handle": "kimmonismus",
+          "date": "2026-11-10"
+        }
+      ],
+      "original": {
+        "url": "https://www.anthropic.com/news/roadshow-launch",
+        "label": "Anthropic-Ankündigung"
+      }
+    },
+    {
+      "id": "claude-sheets-whiteboards-data",
+      "headline": "Anthropic bringt Claude Sheets, Whiteboards und Data",
+      "status": "confirmed",
+      "summary": "Anthropic rollt seit gestern Claude Whiteboards, Claude Sheets und Claude Data aus, drei neue Artifact-Typen: Pläne auf einem Board durchdenken, Tracker in einer Tabelle bauen und mit Daten eine Geschichte erzählen. Laut TestingCatalog sind sie auf allen bezahlten Plänen verfügbar, außerdem bekommen Claude Web und Desktop interaktive Connectors.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2120206365759094857",
+        "handle": "claudeai",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2120220122170159158",
+          "handle": "testingcatalog",
+          "date": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "stripe-openrouter",
+      "headline": "Stripe schließt Übernahme von OpenRouter ab",
+      "status": "confirmed",
+      "summary": "Stripe hat die Übernahme von OpenRouter abgeschlossen, vereinbart war der Deal bereits im August. Stripe will zusammen mit OpenRouter Unternehmen dabei helfen, neue Modelle auszuprobieren und Token-Routing und -Verbrauch zu optimieren; OpenRouter betont, an der Neutralität ändere sich nichts, Modelle und Provider konkurrierten weiter über Qualität, Zuverlässigkeit und Preis. Nach eigenen Angaben nutzen mehr als 10 Millionen Entwickler und Unternehmen OpenRouter, der Katalog umfasste im August laut Stripe mehr als 400 Modelle von mehr als 80 Anbietern; einen Kaufpreis haben beide Firmen nicht genannt, Bloomberg hatte im August von mehr als 7 Milliarden Dollar berichtet.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/stripe/status/2120240651778355306",
+        "handle": "stripe",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2120245174752137605",
+          "handle": "testingcatalog",
+          "date": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "antigravity-swarm",
+      "headline": "Google bringt /swarm für parallele Agents in Antigravity",
+      "status": "confirmed",
+      "summary": "Google hat für Antigravity den Slash-Command /swarm vorgestellt, der spezialisierte Agents parallel orchestriert, sowohl in der Desktop-App als auch in der CLI. Aus einem einzelnen Prompt wird so ein Multi-Agent-Workflow, in dem die Agents auf einem Live-Message-Board gemeinsam planen, bauen und prüfen. TestingCatalog hatte den Agent-Swarm-Modus am selben Tag im Code entdeckt, inzwischen ist er verfügbar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/antigravity/status/2120279327589773639",
+        "handle": "antigravity",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2120311786675019824",
+          "handle": "testingcatalog",
+          "date": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "openai-cyber-keynote-gpt-6-2",
+      "headline": "OpenAI-Mitarbeiter deutet baldigen Release von GPT-6.2 an",
+      "status": "rumor",
+      "summary": "OpenAI hat für Donnerstag, 12. November, um 19 Uhr deutscher Zeit die Live-Keynote „Cyber at the Frontier“ mit neuen Cyber-Ankündigungen angesetzt, ein Modell nennt OpenAI dafür nicht. In einem Thread über das Warten auf GPT-6.2 antwortete Victor Nunez, der bei OpenAI an ChatGPT und Codex arbeitet, nur „brutal 💀 but coming soon“, GPT-6.2 nennt er in der Antwort selbst nicht. TokenGremlin liest daraus, dass GPT-6.2 Astra und Sol noch diese Woche kommen könnten; das ist Spekulation, offiziell gibt es weder Termin noch Bestätigung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/victornunez/status/2120203134114881744",
+        "handle": "victornunez",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OpenAI/status/2120202353907486826",
+          "handle": "OpenAI",
+          "date": "2026-11-10"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2120207527095001352",
+          "handle": "TokenGremlin",
+          "date": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-8-rollout",
+      "headline": "Musk will Grok 4.8 noch diese Woche ausrollen",
+      "status": "rumor",
+      "summary": "Elon Musk schreibt, xAI habe JAX und SGLang aufgegeben und den kompletten RL- und Inference-Stack in C/C++ neu geschrieben, deshalb dauere Grok 4.8 länger. Laut Musk ist das Pre-Training abgeschlossen, jetzt läuft das RL, und die Evals ziehen langsam an; für später in dieser Woche plant er einen Soft-Rollout an Grok-Nutzer, und 4.8 werde mit 4.7 nichts gemein haben. In einem weiteren Post schreibt Musk, Grok 4.8 werde schlechter als Claude Opus 5.5, Grok 5 dagegen könne Opus 5.5 übertreffen, vielleicht in 2 oder 3 Monaten; das ist ein angekündigter Plan, kein Release, und Musks Zeitpläne verschieben sich oft.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/elonmusk/status/2120088070443655190",
+        "handle": "elonmusk",
+        "date": "2026-11-10"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/elonmusk/status/2120099798078656909",
+          "handle": "elonmusk",
+          "date": "2026-11-10"
+        }
+      ]
+    }
+  ]
+}
