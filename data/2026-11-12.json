@@ -1,0 +1,174 @@
+{
+  "issue": "2026-11-12",
+  "number": 27,
+  "title": "Google veröffentlicht Gemini Decision 1, Nvidia-Board berät über Jensen Huang, GPT-6.2 offenbar heute",
+  "published": "2026-11-12",
+  "intro": "Google hat mit Gemini Decision 1 ein Modell veröffentlicht, das keinen Text generiert, sondern aus festen Antwortoptionen wählt. Bei Nvidia berät das Board über die Zukunft von CEO Jensen Huang, laut Wall Street Journal geht es um seine Absetzung; außerdem gibt es neue Hinweise auf GPT-6.2 und Gemini 4 Hydrogen sowie einen Bloomberg-Bericht, nach dem Anthropics Börsengang mehrfach überzeichnet ist. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "gemini-decision-1",
+      "headline": "Google veröffentlicht Entscheidungsmodell Gemini Decision 1",
+      "status": "confirmed",
+      "summary": "Google hat Gemini Decision 1 (gemini-decision-1) veröffentlicht, das Modell hinter der neuen Gemini Decisions API in AI Studio; das war der Gemini-Teaser, den Logan am Mittwochmorgen gepostet hatte, nicht Gemini 4 Hydrogen. Decision 1 ist kein Chat-Modell: Es wählt aus festen Antwortoptionen (Ja/Nein, Multiple Choice mit bis zu 255 Optionen, Rubrik-Bewertung) und gibt zu jeder Antwort eine Wahrscheinlichkeit aus, bis zu 1.000 Fragen zu Text, Bildern, Audio, Video und PDFs in einem Durchlauf bei 256K Kontext. Der Preis liegt bei 0,10 Dollar pro Million Input-Tokens, Output-Tokens kosten nichts; im Decision Index von Artificial Analysis kommt es auf 66 Punkte, die führenden Modelle Drex Max v1.1 und GLiDE v1.2 auf 73.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/sundarpichai/status/2120581155078729728",
+        "handle": "sundarpichai",
+        "date": "2026-11-11"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OfficialLoganK/status/2120581433639198885",
+          "handle": "OfficialLoganK",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2120582049522127205",
+          "handle": "ArtificialAnlys",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/_philschmid/status/2120581250582995318",
+          "handle": "_philschmid",
+          "date": "2026-11-11"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "nvidia-huang-board",
+      "headline": "Bericht: Nvidia-Board will Jensen Huang als CEO absetzen",
+      "status": "rumor",
+      "summary": "Das Nvidia-Board hat am Mittwoch bis in den Abend darüber beraten, ob CEO Jensen Huang gehen muss, das hat CNBC bestätigt; zuerst hatte das Wall Street Journal berichtet, das Board bereite seine Absetzung vor. Entschieden ist noch nichts, Nvidia hat nichts verkündet und Huang ist weiterhin CEO; laut Semafor wollen einige Board-Mitglieder Finanzchefin Colette Kress als Interims-CEO, die Aktie fiel nachbörslich um mehr als 9 Prozent. Hintergrund: Huang hatte am Sonntag in einem Brief an die Belegschaft eine Affäre mit Alice Huang zugegeben, Managerin bei Megaspeed, einem großen Nvidia-Kunden aus Singapur, die US-Geheimdienste verdächtigen, für China zu spionieren; die New York Times berichtete zudem über eine Beziehung zu Nvidia-Vizepräsidentin Kimberly Powell.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/synthwavedd/status/2120648563135021556",
+        "handle": "synthwavedd",
+        "date": "2026-11-11",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2120646832850354419",
+          "handle": "kimmonismus",
+          "date": "2026-11-11"
+        }
+      ],
+      "original": {
+        "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+        "label": "CNBC"
+      }
+    },
+    {
+      "id": "gpt-6-2-thursday",
+      "headline": "OpenAI bringt GPT-6.2 offenbar heute",
+      "status": "rumor",
+      "summary": "Nachtrag zu gestern: StatsWire hat in den Commits zu Codex 0.169.0-alpha.11 das versteckte Modell gpt-daybreak-red-latest mit einem Kontextfenster von 372.000 Tokens gefunden, 100K mehr als gpt-6-astra mit 272K, und liest das als GPT-6.2 Astra mit Release am Donnerstag. Tibo aus dem Codex-Team schreibt, der Donnerstag fühle sich „codexy“ an, und TokenGremlin behauptet, die GPT-6.2-Familie komme heute als Antwort auf Opus 5.5 und Fable 5.2. Angekündigt hat OpenAI GPT-6.2 nicht, fest steht nur die Keynote „Cyber at the Frontier“ mit Greg Brockman heute um 19:00 Uhr deutscher Zeit.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2120487347653398809",
+        "handle": "StatsWire",
+        "date": "2026-11-11"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2120410480204525936",
+          "handle": "thsottiaux",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2120530405547806742",
+          "handle": "TokenGremlin",
+          "date": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-hydrogen-helix",
+      "headline": "Bericht: Google bereitet Gemini 4 Hydrogen und Helix vor",
+      "status": "rumor",
+      "summary": "Laut StatsWire wird Gemini 4 Hydrogen das nächste Flash-Modell und Gemini 4 Helix das nächste Flash-Lite. Gefunden hat StatsWire das in v1beta/models, wo gemini-4-hydrogen-eap schon öffentlich gelistet ist, in der Mendel-Config von Antigravity und in einem internen Dogfood-Proxy, für Helix tauchen dort gemini-4-helix-{medium,high,tiered} auf; Hydrogen testen Google-Mitarbeiter angeblich schon intern auf der Plattform Jetski, ein ungenannter Google-Engineer nennt es „very capable, fast and efficient“. Erwartet wurde Hydrogen eigentlich am Mittwoch, Google hat dann aber Gemini Decision 1 veröffentlicht; StatsWire rechnet jetzt mit einem neuen Modell am Donnerstag oder Freitag, von Google gibt es dazu nichts.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2120434006432911450",
+        "handle": "StatsWire",
+        "date": "2026-11-11"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/StatsWire/status/2120573978343280834",
+          "handle": "StatsWire",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/StatsWire/status/2120696930267451725",
+          "handle": "StatsWire",
+          "date": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-ipo-oversubscribed",
+      "headline": "Bloomberg: Anthropics Börsengang ist mehrfach überzeichnet",
+      "status": "rumor",
+      "summary": "Für Anthropics Börsengang liegen ein Vielfaches mehr Orders vor, als Aktien angeboten werden, berichtet Bloomberg mit Verweis auf Personen, die mit der Sache vertraut sind. Anthropic und die Mitgründer wollen über den IPO und eine Privatplatzierung bis zu 90,4 Milliarden Dollar einsammeln, angepeilt ist eine voll verwässerte Bewertung von rund 1,4 Billionen Dollar. Es könnte der größte Börsengang aller Zeiten werden; Anthropic hat sich zu dem Bericht nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/business/status/2120509393313685818",
+        "handle": "business",
+        "date": "2026-11-11"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2120516589359345807",
+          "handle": "kimmonismus",
+          "date": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-carbon-epoch-speed",
+      "headline": "Gemini 4 Carbon überholt GPT-6 Astra im Epoch-Index",
+      "status": "confirmed",
+      "summary": "Im Capabilities Index von Epoch AI liegt OpenAI zum ersten Mal seit einem Jahr nur auf Platz drei: GPT-6 Astra steht hinter Fable 5.2 und Gemini 4 Carbon, wie synthwavedd per Screenshot zeigt. Theo findet Carbon im Alltag allerdings viel zu langsam: In seinem Test brauchte Gemini 4 Carbon low 22:21 Minuten, Opus 5.5 high 9:33 Minuten, bei Code Reviews sei Carbon viermal langsamer. Das liege fast komplett an Googles Inferenz, bis zur ersten Antwort vergingen 11 Sekunden, 20-mal länger als bei Fable; das sind Theos eigene Messungen auf seinen Aufgaben, kein standardisierter Benchmark.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/synthwavedd/status/2120622980443091334",
+        "handle": "synthwavedd",
+        "date": "2026-11-11"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/theo/status/2120597586298261543",
+          "handle": "theo",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/theo/status/2120618574834462935",
+          "handle": "theo",
+          "date": "2026-11-11"
+        },
+        {
+          "url": "https://x.com/theo/status/2120630844973101276",
+          "handle": "theo",
+          "date": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "alphagenome-2",
+      "headline": "Google DeepMind stellt AlphaGenome 2 vor",
+      "status": "confirmed",
+      "summary": "Google DeepMind hat AlphaGenome 2 vorgestellt, ein Forschungsmodell für die Genomik. Herz, Gehirn und Immunsystem haben dieselbe DNA-Sequenz, trotzdem kann eine Änderung an einem einzelnen Buchstaben in manchen Zellen eine Krankheit auslösen und andere verschonen. AlphaGenome 2 schaut sich deshalb gezielt einzelne Zelltypen an und soll Forschern helfen zu verstehen, was Krankheiten auslöst.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2120532824465805749",
+        "handle": "GoogleDeepMind",
+        "date": "2026-11-11"
+      }
+    }
+  ]
+}
