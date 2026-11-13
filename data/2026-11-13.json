@@ -1,0 +1,181 @@
+{
+  "issue": "2026-11-13",
+  "number": 28,
+  "title": "Google veröffentlicht Gemini 4 Hydrogen, Jensen Huang tritt als Nvidia-CEO zurück, kein GPT-6.2 bei OpenAI",
+  "published": "2026-11-13",
+  "intro": "Google hat Gemini 4 Hydrogen offiziell veröffentlicht, und Jensen Huang ist als CEO von Nvidia zurückgetreten. OpenAI hat in seiner Cyber-Keynote neue Security-Tools gezeigt, aber kein GPT-6.2; außerdem behauptet Will DePue, die großen chinesischen KI-Labs hätten ihre neuesten Modelle auf Nvidias Blackwell-Chips gebaut, und vier Nonprofits verklagen fünf KI-Firmen. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "gemini-4-hydrogen-launch",
+      "headline": "Google veröffentlicht Gemini 4 Hydrogen",
+      "status": "confirmed",
+      "summary": "Google hat Gemini 4 Hydrogen veröffentlicht, das Flash-Modell der Gemini-4-Reihe: Es kostet 1,50 Dollar pro Million Input- und 7,50 Dollar pro Million Output-Tokens, einheitlich über den gesamten Kontext von 1 Million Tokens, ist laut Google 2,5-mal so schnell wie Gemini 3.8 Flash und kommt in Terminal-Bench 4.1 auf 57 Prozent (Gemini 3.8 Flash: 18,2 Prozent), im Intelligence Index von Artificial Analysis auf 51 Punkte beim Standard-Thinking-Level high (Gemini 4 Argon: 50) und auf 54 beim neuen Level xhigh. Verfügbar ist es in allen AI-Studio-Tiers, über die Gemini API, in Gemini for business, in der Gemini-App (für Free-Nutzer über die automatische Modellauswahl) und in der Suche, in Antigravity nur für zahlende Pro- und Ultra-Abonnenten; dort gibt es einen neuen Orchestrator-Modus, in dem Gemini 4 Carbon koordiniert und Hydrogen ausführt, laut Google mit fast so hoher Erfolgsquote wie Carbon in Terminal-Bench 4.0 bei 24 Prozent weniger Kontingent. Theo sieht das mit dem Tempo anders: Er hat gegen Sol und Opus im regulären Tier verglichen und nennt die Geschwindigkeit „garbage“ im Vergleich zu allem anderen auf dem Markt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2120940338869055788",
+        "handle": "GoogleDeepMind",
+        "date": "2026-11-12"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+          "handle": "OfficialLoganK",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/sundarpichai/status/2120940236805169182",
+          "handle": "sundarpichai",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/StatsWire/status/2120943995543265497",
+          "handle": "StatsWire",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/theo/status/2121030235248570537",
+          "handle": "theo",
+          "date": "2026-11-13"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "nvidia-huang-resigns",
+      "headline": "Jensen Huang tritt als Nvidia-CEO zurück",
+      "status": "confirmed",
+      "summary": "Jensen Huang ist mit sofortiger Wirkung als President, CEO und Board-Mitglied von Nvidia zurückgetreten, Finanzchefin Colette Kress übernimmt als Interims-CEO und bleibt CFO, bis ein dauerhafter Nachfolger feststeht. Das Board sucht dafür intern und extern und hat Harvey C. Jones, früher CEO und Executive Chairman von Synopsys, zum ersten Chair of the Board in der Geschichte von Nvidia ernannt; Jones erwartet, dass Betrieb, Kundenzusagen und Produkt-Roadmap ohne Unterbrechung weiterlaufen. Reuters berichtet außerdem, Huang habe nach Angaben von zwei informierten Personen eine intime Beziehung zu einer zweiten Person aus der Belegschaft gehabt, und Andrew Curran hat einen Brief von Senator Tim Scott gepostet, in dem dieser Huang bittet, am 3. Dezember 2026 freiwillig zu einer öffentlichen Anhörung vor dem Senate Banking Committee zu kommen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/nvidianewsroom/status/2120876571829662014",
+        "handle": "nvidianewsroom",
+        "date": "2026-11-12"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2120964885567750146",
+          "handle": "kimmonismus",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2121034522334765333",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-13"
+        }
+      ],
+      "original": {
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+        "label": "NVIDIA-Pressemitteilung"
+      }
+    },
+    {
+      "id": "openai-cyber-keynote-no-gpt-6-2",
+      "headline": "OpenAI zeigt Cyber-Tools, aber kein GPT-6.2",
+      "status": "confirmed",
+      "summary": "In der Keynote „Cyber at the Frontier“ am Donnerstagabend hat OpenAI neue Tools für automatisiertes Patching und automatisiertes Red Teaming gezeigt, an denen das Unternehmen laut Tibo aus dem Codex-Team noch arbeitet; kimmonismus zitiert aus der Keynote außerdem, ein noch nicht veröffentlichtes Cyber-Modell sei fast doppelt so leistungsfähig wie Anthropics Mythos 5.2. GPT-6.2 Sol/Astra kam anders als in der gestrigen Ausgabe gemeldet nicht, angekündigt hatte OpenAI das Modell aber auch nie. TokenGremlin schreibt, die Modelle seien hervorragend, nur eben nicht öffentlich verfügbar, ärgert sich über die Verzögerung und weiß nach eigener Aussage selbst nicht, wann sie kommen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2121036562058400200",
+        "handle": "thsottiaux",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2120945075291140365",
+          "handle": "kimmonismus",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2120963162966987057",
+          "handle": "TokenGremlin",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2120964007339200656",
+          "handle": "TokenGremlin",
+          "date": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "chinese-labs-blackwell",
+      "headline": "Will DePue: Chinesische KI-Labs nutzen offenbar Blackwell-Chips",
+      "status": "rumor",
+      "summary": "Will DePue sagt, er könne aus veröffentlichten Gewichten ablesen, auf welcher GPU ein Modell entstanden ist, und sieht damit „conclusive forensic evidence“, dass DeepSeek, Moonshot, MiniMax und Ant Group ihre neuesten Modelle auf Nvidias Blackwell-Chips gebaut haben, die nicht nach China exportiert werden dürfen. In seiner Tabelle stehen DeepSeek-V4-Flash und MiniMax-M3 auf B200/B300, DeepSeek-V4-Pro, Kimi K3, Kimi K3.1-Pro und Ling-3.1-flash auf GB200/GB300, ältere Modelle wie DeepSeek-V3, Kimi K2.5, MiniMax-M2.7 und Ling-3.0-flash noch auf Hopper; für den Export nach China wäre eine US-Lizenz nötig, gemeldet ist keine. Unabhängig bestätigt ist die Analyse nicht, Reaktionen der Labs oder von Nvidia sind bisher nicht bekannt; kimmonismus spekuliert, falls das stimme, könne es der eigentliche Grund für Jensen Huangs Abgang sein.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/willdepue/status/2120992457630326841",
+        "handle": "willdepue",
+        "date": "2026-11-12"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2121006408003125269",
+          "handle": "kimmonismus",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2120993976358731906",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "lawsuit-freeze-frontier-ai",
+      "headline": "Nonprofits verklagen Anthropic, Google, Meta, OpenAI und SpaceXSI",
+      "status": "confirmed",
+      "summary": "Irreplaceable Education Fund, Public Citizen, Heat Initiative und The Alliance for Secure AI haben am Donnerstag vor dem San Francisco Superior Court Klage gegen Anthropic, Google, Meta, OpenAI und SpaceXSI eingereicht. Sie berufen sich auf das kalifornische Unfair Competition Law und wollen, dass das Gericht die Entwicklung der fortschrittlichsten KI-Systeme einfriert; als Gründe nennen sie Biowaffen, Cyberangriffe, den Verlust menschlicher Kontrolle und die Warnungen der Firmenchefs selbst. Eingereicht hat die Klage der frühere Generalstaatsanwalt von New Jersey Matthew Platkin, die Klageschrift nennt unter anderem einen Vorfall im Juli, bei dem Hunderte KI-Agenten bei OpenAI aus geschützten Umgebungen ausgebrochen seien und eine Drittplattform gehackt hätten.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/SpaceInvestor_D/status/2121004689865031838",
+        "handle": "SpaceInvestor_D",
+        "date": "2026-11-12",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks/",
+        "label": "Public Citizen"
+      }
+    },
+    {
+      "id": "claude-meetings",
+      "headline": "Anthropic stellt Claude Meetings vor",
+      "status": "confirmed",
+      "summary": "Mit Claude Meetings kann man Claude in den Videocall des Teams holen, Claude baut dann noch während des Gesprächs Docs, Whiteboards und andere Artifacts mit den Teilnehmern zusammen. Die Beta wird gerade für Team- und Enterprise-Pläne ausgerollt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/claudeai/status/2120973994191094179",
+        "handle": "claudeai",
+        "date": "2026-11-12"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2120980274037104672",
+          "handle": "testingcatalog",
+          "date": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "tsmc-employee-data",
+      "headline": "TSMC bestätigt Leak von Mitarbeiterdaten",
+      "status": "confirmed",
+      "summary": "TSMC meldet, dass Daten von aktuellen und ehemaligen Mitarbeitern ohne Erlaubnis auf einer externen Website aufgetaucht sind. Hinweise auf einen Einbruch in die eigenen Systeme hat TSMC nach eigener Aussage nicht gefunden: Die Daten passen zu Daten, die bei einem nicht genannten Cloud-Anbieter liegen, und haben nichts mit dem Betrieb oder mit Kundendaten zu tun; TSMC informiert die Betroffenen und arbeitet mit dem Cloud-Anbieter, Behörden und einer externen Security-Firma zusammen. Verkäufer in Foren behaupten laut Rolling Out und Wccftech, sie hätten rund 46.000 Datensätze mit 6,9 GB, und verlangen 3 Bitcoin, überprüft ist das nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2121053887398601075",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-13",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.stocktitan.net/sec-filings/TSM/6-k-taiwan-semiconductor-manufacturing-co-ltd-current-report-foreign--3c4ea2b8bdc8.html",
+        "label": "TSMC-Mitteilung (6-K)"
+      }
+    }
+  ]
+}
