@@ -1,0 +1,186 @@
+{
+  "issue": "2026-11-14",
+  "number": 29,
+  "title": "Nvidia-Mitarbeiter wollen Huang zurück, OpenAI löst Robotik-Team auf und startet ChatGPT Wallet",
+  "published": "2026-11-14",
+  "intro": "Bei Nvidia sprechen sich in einem internen Kommentar-Thread viele Mitarbeiter für die Rückkehr von Jensen Huang aus, Elon Musk unterschreibt nach eigener Aussage eine Petition. OpenAI löst sein eigenständiges Robotik-Team auf und startet ChatGPT Wallet, Thinking Machines erklärt das 4-Bit-Training von Inkling 2 Small, und DeepSeek bringt die Funktionen seiner App in die API; dazu kommen Jacob Coxons Deutung einer Folie aus Anthropics IPO-Roadshow und ein möglicher Meta-Modellname in einem GitHub-PR. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "nvidia-reinstate-huang",
+      "headline": "Nvidia-Mitarbeiter wollen Jensen Huang als CEO zurück",
+      "status": "confirmed",
+      "summary": "Laut WIRED hat ein langjähriger Nvidia-Ingenieur noch vor Huangs Rücktritt einen Beitrag in die interne „Suggestion Box“ gestellt, in dem er das Board bittet, die Stimmung in der Belegschaft zu berücksichtigen; darunter stehen inzwischen mehr als 1.600 Kommentare, die meisten für Huangs Rückkehr („If you believe in the mission, bring back THE boss“), und ein Mitarbeiter hat eine Mail an die ganze Firma geschickt: „I stand by Jensen“. Eine formale Petition mit Unterschriften ist das nicht, Elon Musk schreibt trotzdem auf X, eine Petition laufe und er unterschreibe auch, und laut Andrew Curran hat er das inzwischen getan. Nvidia und der neue Board-Chair Harvey Jones haben WIRED nicht geantwortet, eine Reaktion des Boards ist nicht bekannt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/elonmusk/status/2121345211959804234",
+        "handle": "elonmusk",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2121425256225382552",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-14"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2121198851042238577",
+          "handle": "kimmonismus",
+          "date": "2026-11-13"
+        }
+      ],
+      "original": {
+        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+        "label": "WIRED"
+      }
+    },
+    {
+      "id": "openai-robotics-team-disbanded",
+      "headline": "OpenAI löst eigenständiges Robotik-Team auf",
+      "status": "confirmed",
+      "summary": "OpenAI hat Fortune bestätigt, dass es das eigenständige Robotik-Team aufgelöst hat: Die Forscher wechseln ins zentrale Research-Team unter Chief Research Officer Mark Chen, die Teams für angewandte Robotik und Hardware in die Applied-Organisation unter President Greg Brockman. Hintergrund ist, dass die Forscher überraschend gute Ergebnisse gesehen haben, als sie GPT-6 Astra direkt an Roboter angeschlossen haben; künftig sollen die allgemeinen Modelle die Roboter steuern, und OpenAI betont, Robotik bleibe zentral für die langfristige Vision und solle so schneller vorankommen. Den angemeldeten Stand #208 auf der CoRL in Austin fand Fortune diese Woche leer, Sam Altman will 2027 erstmals öffentlich einen humanoiden Roboter zeigen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/FortuneMagazine/status/2121347454922604726",
+        "handle": "FortuneMagazine",
+        "date": "2026-11-13"
+      },
+      "original": {
+        "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+        "label": "Fortune"
+      }
+    },
+    {
+      "id": "chatgpt-wallet",
+      "headline": "OpenAI startet ChatGPT Wallet, Google bringt Wallet in Gemini",
+      "status": "confirmed",
+      "summary": "Mit ChatGPT Wallet können die ChatGPT-Agenten (dots) Einkäufe bezahlen, ohne die echten Kartendaten zu sehen: Jeder Kauf braucht eine Bestätigung etwa per Face ID oder Fingerabdruck, danach stellt das Zahlungsnetzwerk ein Payment-Token mit Ersatzkartennummer, Sicherheitscode und Ablaufdatum aus; gebaut hat OpenAI das mit American Express, Mastercard und Visa, Kartenprämien und Käuferschutz bleiben erhalten. Der Rollout läuft seit dem 13. November in dots, zunächst für ChatGPT-Pro-Abonnenten in den USA ab 18 Jahren mit berechtigten, in den USA ausgegebenen Karten; später sollen Nutzer Käufe innerhalb von Limits für Betrag, Kategorie und Zeitraum an die Agenten abgeben können. Google hat am selben Tag Google Wallet zu den verbundenen Apps von Personal Intelligence in der Gemini-App hinzugefügt, etwa für Diagramme zu Cashflow und Budget oder um vergessene Abos und Preiserhöhungen zu finden, laut testingcatalog für alle Gemini-Nutzer in den USA.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/TheRealAdamG/status/2121267704040431852",
+        "handle": "TheRealAdamG",
+        "date": "2026-11-13",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Google/status/2121293823837921433",
+          "handle": "Google",
+          "date": "2026-11-13"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2121352761379860628",
+          "handle": "testingcatalog",
+          "date": "2026-11-13"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "inkling-2-small-4bit",
+      "headline": "Thinking Machines trainiert Inkling 2 Small durchgehend in 4 Bit",
+      "status": "confirmed",
+      "summary": "Thinking Machines hat die Gewichte von Inkling 2 Small am 12.11. unter Apache 2.0 auf Hugging Face veröffentlicht: ein MoE-Modell mit 594 Milliarden Parametern, davon 17 Milliarden aktiv (8 von 384 Experten pro Token), 48 Layern, Text- und Bild-Input und bis zu 1 Million Tokens Kontext; der NVFP4-Checkpoint braucht mindestens 500 GB VRAM, etwa 2x B300 oder 4x H200, der MXFP8-Checkpoint 800 GB. Im Blog beschreibt das Lab jetzt, dass der Forward Pass vom ersten Pretraining-Schritt bis zum letzten RL-Rollout nativ in 4 Bit (NVFP4) auf Nvidia GB300 lief und die Backward Passes in MXFP8 mit Stochastic Rounding; nach eigener Aussage ist es das größte ihm bekannte Modell, das durchgehend so trainiert wurde. Gegenüber reinem MXFP8 war das Pretraining 8 Prozent und RL 20 Prozent schneller, bei etwa 2 Prozent weniger Compute-Effizienz im Pretraining; das Pretraining dauerte 68 Stunden auf GB300-NVL72-Racks, ein ähnlich großer Lauf hat vor Monaten noch mehrere Wochen gebraucht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thinkymachines/status/2121353292878110868",
+        "handle": "thinkymachines",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thinkymachines/status/2120982625582195011",
+          "handle": "thinkymachines",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://x.com/miramurati/status/2121358640418635989",
+          "handle": "miramurati",
+          "date": "2026-11-13"
+        },
+        {
+          "url": "https://x.com/vercel_dev/status/2121061651646689510",
+          "handle": "vercel_dev",
+          "date": "2026-11-13"
+        }
+      ],
+      "original": {
+        "url": "https://thinkingmachines.ai/blog/end-to-end-4-bit-training",
+        "label": "Thinking-Machines-Blog"
+      }
+    },
+    {
+      "id": "deepseek-api-app-features",
+      "headline": "DeepSeek bringt Funktionen seiner App in die API",
+      "status": "confirmed",
+      "summary": "Was die DeepSeek-App kann, also Suche, Dateien, Links, Safety und Sprache, gibt es jetzt auch über die API. V4.1-Flash (deepseek-flash) unterstützt das in Messages, Responses und Chat Completions, Tool Calls und Kontextaufbau laufen serverseitig: Web- und Bildsuche mit Quellenangaben (im Non-Thinking-Modus), Deep Thinking Search, Dateien als PDF, Office-Dokument oder Bild, URL-Lesen und Safety-Checks, die öffentlich zugängliche Apps einschalten müssen. Search, Fetch, OCR, ASR und TTS gibt es auch als eigene APIs, für die Tools fallen Gebühren zusätzlich zu den Tokens an, und auf GitHub liegt mit chat-demo ein Open-Source-Frontend, das den Chatverlauf aus DeepSeek importieren kann.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/deepseek_ai/status/2121247896918253875",
+        "handle": "deepseek_ai",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/deepseek_ai/status/2121247899699036516",
+          "handle": "deepseek_ai",
+          "date": "2026-11-13"
+        }
+      ],
+      "original": {
+        "url": "https://api-docs.deepseek.com/guides/build_a_chatbot",
+        "label": "DeepSeek-API-Doku"
+      }
+    },
+    {
+      "id": "anthropic-roadshow-compute-slide",
+      "headline": "Jacob Coxon: Anthropic-Folie zeigt offenbar superexponentiellen Algorithmus-Fortschritt",
+      "status": "rumor",
+      "summary": "Jacob Coxon, den kimmonismus als ehemaligen Pretraining-Forscher bei Anthropic beschreibt, schreibt, eine Folie aus Anthropics IPO-Roadshow sei „a big factor in my decision to leave“ gewesen, und wundert sich, dass Anthropic sie öffentlich gemacht hat. Nach seiner Lesart zeigt sie die Compute-Effizienz des Pretrainings über die Zeit auf logarithmischer Skala (laut kimmonismus den Pretraining-Compute-Multiplikator für Code seit Juli 2024) und damit weiter „superexponential algorithmic progress“: Mythos sei keine einmalige Ausnahme gewesen, Anthropic könne Mythos schon jetzt mit einem Bruchteil des ursprünglich nötigen Computes neu trainieren; eine reine Software-Intelligenzexplosion folge daraus aber nicht zwingend, weil Anthropic auch mehr für R&D ausgibt. Anthropic hat sich dazu nicht geäußert; beim Roadshow-Gespräch mit JPMorgan-Chef Jamie Dimon sagte Dario Amodei: „We don't vague post about models ahead of time. We basically build the model, we make sure it's good, we release the model.“",
+      "take": "",
+      "source": {
+        "url": "https://x.com/hilbertspaess/status/2121331333654086124",
+        "handle": "hilbertspaess",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2121387152328061313",
+          "handle": "kimmonismus",
+          "date": "2026-11-14"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2121320139299688474",
+          "handle": "TokenGremlin",
+          "date": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "id": "meta-muse-spark-1-4",
+      "headline": "Meta-PR auf GitHub nennt Muse-Spark-1.4-internal",
+      "status": "rumor",
+      "summary": "In einem Meta-Pull-Request auf GitHub, einer kleinen Logging-Änderung am experimentellen „live tuning“ von RocksDB, steht „Muse-Spark-1.4-internal“, offenbar in automatisch generierten PR-Notes; laut LuminaBench meldet der PR auch einen echten Modellaufruf damit. Eine Ankündigung von Meta gibt es nicht. Unabhängig davon hat testingcatalog im Chrome Web Store eine Muse-Erweiterung gefunden, einen Agenten, der auf offenen Webseiten arbeitet („Your personal AI agent in Chrome. Hand off tasks, take busywork off your plate and stay in control.“).",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2121273038607929694",
+        "handle": "testingcatalog",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/LuminaBench/status/2121268413112758744",
+          "handle": "LuminaBench",
+          "date": "2026-11-13"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2121260921435623813",
+          "handle": "testingcatalog",
+          "date": "2026-11-13"
+        }
+      ]
+    }
+  ]
+}
