@@ -1,0 +1,136 @@
+{
+  "issue": "2026-11-15",
+  "number": 30,
+  "title": "Reuters: Huang hat Nvidia-Führung getäuscht, Dwarkesh Patel erwartet Superintelligenz bis 2030",
+  "published": "2026-11-15",
+  "intro": "Reuters berichtet, dass der frühere Nvidia-CEO Jensen Huang mehrere Führungskräfte über seine Beziehung zu Alice Huang getäuscht hat, und Dwarkesh Patel erklärt in einem Essay, warum er jetzt bis 2030 mit Superintelligenz rechnet. Google bringt Dynamic Workflows in Antigravity; dazu kommen Screenshots einer offenbar getesteten ChatGPT-Oberfläche, Katalogeinträge zu Gemini 4 Helix mit Platzhalterpreis und Spekulationen über die Verzögerung von GPT-6.2. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "nvidia-huang-reuters",
+      "headline": "Reuters: Ex-Nvidia-CEO Huang hat Führungskräfte über Affäre getäuscht",
+      "status": "confirmed",
+      "summary": "Reuters stützt sich auf zwei mit der Sache vertraute Personen und interne Nachrichten: Danach hat Jensen Huang mehrere Nvidia-Führungskräfte, darunter General Counsel Tim Teter und CMO Alison Wagonfeld, über seine Beziehung zur chinesischen Geschäftsfrau Alice Huang (nicht verwandt) getäuscht, mit der er eine Affäre hatte, und in zwei Nachrichten im Oktober die Kontakte als normale Geschäfte mit einer Kundin dargestellt; außerdem hat er die Rechtsabteilung gedrängt, ein Vorgehen gegen die New York Times zu prüfen, eine Klage gab es nicht. Alice Huang war Top-Managerin bei Megaspeed International, einem Nvidia-Kunden aus Singapur, US-Behörden verdächtigten sie der Spionage für China, Peking bestreitet das; Huangs Vertreter und Nvidia wollten sich nicht äußern. Laut Andrew Curran bitten Brad Gerstner (Altimeter Capital) und Gavin Baker (Atreides Management) das Board, eine Rückkehr Huangs in Betracht zu ziehen, die von Curran gepostete Petition „Return Jensen“ hat mehr als 104.000 Unterschriften; sein Kommentar: „Difficult, not impossible.“ Elon Musk schreibt, viele Deals seien per Handschlag mit Jensen gelaufen, ohne ihn gehe zumindest ein Teil der wichtigen Deals verloren.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2121634724573581389",
+        "handle": "kimmonismus",
+        "date": "2026-11-14"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2121666478466625950",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-14"
+        },
+        {
+          "url": "https://x.com/elonmusk/status/2121613402846204253",
+          "handle": "elonmusk",
+          "date": "2026-11-14"
+        }
+      ],
+      "original": {
+        "url": "https://www.reuters.com/5f374b32b07b/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/",
+        "label": "Reuters"
+      }
+    },
+    {
+      "id": "dwarkesh-superintelligence-2030",
+      "headline": "Dwarkesh Patel erwartet Superintelligenz bis 2030",
+      "status": "confirmed",
+      "summary": "In einem Essay erklärt Dwarkesh Patel, warum er seine Einschätzung in den letzten drei Monaten geändert hat: Für automatisierte KI-Forscher auf dem Niveau der besten menschlichen nennt er 2028 als Median, sofern die Labs nicht bewusst bremsen, mit 25 Prozent Wahrscheinlichkeit erst nach 2032, und bis 2030 erwartet er KI, die in jedem Fachgebiet mindestens so gut ist wie die besten menschlichen Experten. Sein Hauptargument: Der Fortschritt in verifizierbarer Mathematik (IMO-Gold 2025, ein Millennium-Problem vor etwa einem Monat in 88 Stunden gelöst) wiederholt sich in der KI-Forschung, die mit Pretraining-Loss, RL- und Inferenz-Effizienz eigene verifizierbare Proxys hat. Als Belege nennt er unter anderem METR, wonach Anthropic bei klar umrissenen Aufgaben doppelt so schnell vorankommt wie vor einem Jahr, die 10 Prozent der OpenAI-Forscher mit dem höchsten Verbrauch, die statt rund 1.000 inzwischen mehr als 7.000 Dollar pro Tag für interne Coding-Agenten ausgeben, und Anthropics Angabe, dass Claude Stand August mehr als 26 Prozent der eigenen KI-Forschung „leitet“ (Februar: unter 1 Prozent); den größten offenen Engpass sieht er beim Continual Learning.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/dwarkesh_sp/status/2121311524409225611",
+        "handle": "dwarkesh_sp",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2121723537207767397",
+          "handle": "kimmonismus",
+          "date": "2026-11-14"
+        }
+      ],
+      "original": {
+        "url": "https://www.dwarkesh.com/p/rsi",
+        "label": "Dwarkesh Patel"
+      }
+    },
+    {
+      "id": "antigravity-dynamic-workflows",
+      "headline": "Google bringt Dynamic Workflows in Antigravity",
+      "status": "confirmed",
+      "summary": "Google rollt in Antigravity Dynamic Workflows aus: Mit /run-workflow schreibt der Agent ein Python-Skript, das parallele und sequenzielle Subagents mit strukturierten Übergaben orchestriert. Laut Google bekommt man so deterministischen Control Flow statt Prompt Drift. Das Skript lässt sich vor dem Ausführen prüfen und speichern, um denselben Ablauf später noch einmal zu starten.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/antigravity/status/2121327669534933025",
+        "handle": "antigravity",
+        "date": "2026-11-13"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2121534991725113363",
+          "handle": "testingcatalog",
+          "date": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-nova-interface",
+      "headline": "OpenAI testet offenbar neue ChatGPT-Oberfläche mit Karten",
+      "status": "rumor",
+      "summary": "@oncescuradu hat zwei Screenshots einer neuen Web-Oberfläche für ChatGPT gepostet, die OpenAI nach seiner Darstellung gerade testet; sie hat eigene Karten für Content-Erstellung und Aktivitäten. Tibor Blaho glaubt, dass sie „Nova“ heißt. OpenAI hat nichts angekündigt, und es geht nur um die UI, nicht um ein neues Modell.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/btibor91/status/2121618563660439787",
+        "handle": "btibor91",
+        "date": "2026-11-14"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/oncescuradu/status/2121607170051682451",
+          "handle": "oncescuradu",
+          "date": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-helix-catalog",
+      "headline": "Drittanbieter-Tools listen gemini-4-helix mit Platzhalterpreis",
+      "status": "rumor",
+      "summary": "In Katalogen von Usage-Monitoren für Antigravity, die von Drittanbietern stammen, stehen die Model-IDs gemini-4-helix und gemini-helix mit den Varianten -low, -medium und -high, dazu 0,30 Dollar Input, 2,50 Dollar Output und 0,03 Dollar Cache pro Million Tokens. Laut StatsWire ist der Preis von 0,30 bzw. 2,50 Dollar aber nur ein geschätzter Platzhalter („3.5 Flash Lite placeholder estimate“) und kein offizieller Google-Preis. Über Helix wurde schon am 12. November berichtet, neu sind die Varianten-IDs und die Preisangaben; ob es die Flash-Lite-Stufe wird, ist Spekulation, und Google hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2121511491316613547",
+        "handle": "StatsWire",
+        "date": "2026-11-14"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/DrstaOne/status/2121483885515268172",
+          "handle": "DrstaOne",
+          "date": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-2-delay",
+      "headline": "kimmonismus spekuliert über GPT-6.5 statt GPT-6.2",
+      "status": "rumor",
+      "summary": "kimmonismus schreibt, mehrere Leute hätten ihm gesagt, dass keiner der Gründe aus seinem Post vom 13. November die Verzögerung von GPT-6.2 erklärt; nach seinem Bauchgefühl kommt GPT-6.2 vielleicht gar nicht, und OpenAI arbeitet stattdessen an GPT-6.5, um mit Fable 5.2 mitzuhalten, und braucht dafür mehr Zeit. Belege nennt er nicht, OpenAI hat sich nicht geäußert, und dass GPT-6.2 Astra schon in A/B-Tests in ChatGPT läuft, behaupten TokenGremlin und andere weiterhin ohne harte Belege. synthwavedd zählt 72 Tage seit OpenAIs letztem Frontier-Modell, die längste Pause seit der zwischen GPT-5 und 5.1 (August bis November 2025); kommt in den nächsten Wochen nichts, wäre es die längste seit o3 und GPT-5 (April bis August 2025).",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2121665631057777030",
+        "handle": "kimmonismus",
+        "date": "2026-11-14"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/synthwavedd/status/2121664924636074373",
+          "handle": "synthwavedd",
+          "date": "2026-11-14"
+        }
+      ]
+    }
+  ]
+}
