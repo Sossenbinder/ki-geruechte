@@ -1,0 +1,110 @@
+{
+  "issue": "2026-11-16",
+  "number": 31,
+  "title": "Alibaba veröffentlicht Qwen4-Max, FT: Huang spricht über Rückkehr zu Nvidia",
+  "published": "2026-11-16",
+  "intro": "Alibaba hat Qwen4-Max veröffentlicht, und OpenAI startet einen Science-Blog mit einem Beitrag des Physikers Nathaniel Craig, der mit GPT-6 Astra an einer Gitter-Definition des Standardmodells gearbeitet hat. Laut Financial Times spricht der abgesetzte Nvidia-CEO Jensen Huang mit Verbündeten über eine Rückkehr; dazu kommen unbestätigte Behauptungen auf X, dass GPT-6.2 schon über API-Reseller und in ChatGPT zu haben ist. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "qwen4-max-launch",
+      "headline": "Alibaba veröffentlicht Qwen4-Max",
+      "status": "confirmed",
+      "summary": "Qwen4-Max ist Alibabas neues multimodales Flaggschiff: neue MoE-Architektur mit nativer Vision und 1M-Token-Kontext, gedacht für Coding, Office-Arbeit, Frontend-Design und komplexe Agent-Aufgaben, mit Websuche, Tool Calling, Structured Outputs und kompatibel zu den APIs von OpenAI und Anthropic; eine qwen4-max-preview gab es schon seit dem 11. November im Token Plan. Laut Alibaba schlägt das Modell Qwen3.8-Max mit bis zu rund 50 Prozent weniger Tokens, die SCMP schreibt von 60 Prozent geringeren Kosten pro Aufgabe; im Intelligence Index von Artificial Analysis kommt es mit xhigh Reasoning auf 43 Punkte, 9 mehr als Qwen3.8 Max und 3 hinter Kimi K3.1 Pro bei rund 11 Prozent geringeren Kosten pro Aufgabe. Die Gewichte sind nicht offen, kleinere Versionen sollen bald folgen; offensive Cyberangriffsfähigkeiten hat Alibaba nach eigener Aussage gezielt aus den Trainingsdaten gefiltert, und Qwen 5 soll auf 5 bis 10 Billionen Parameter wachsen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+        "handle": "Alibaba_Qwen",
+        "date": "2026-11-16"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2122161629592953032",
+          "handle": "ArtificialAnlys",
+          "date": "2026-11-16"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2122158282622324913",
+          "handle": "kimmonismus",
+          "date": "2026-11-16"
+        }
+      ],
+      "original": {
+        "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "label": "Alibaba Cloud"
+      }
+    },
+    {
+      "id": "openai-science-blog-standard-model",
+      "headline": "OpenAI startet Science-Blog mit Gitter-Arbeit zum Standardmodell",
+      "status": "confirmed",
+      "summary": "Im ersten Gastbeitrag auf OpenAIs neuem Science-Blog beschreibt Nathaniel Craig (UC Santa Barbara, Kavli Institute for Theoretical Physics, Gastwissenschaftler bei OpenAI), wie er mit GPT-6 Astra einen Kandidaten für eine nichtperturbative Definition des Standardmodells auf einem Gitter entwickelt hat; das Preprint dazu erschien im Oktober. Das Problem: Das Standardmodell ist chiral, und die Phasenvorschrift für Overlap-Fermionen war für das volle Standardmodell seit mehr als 25 Jahren offen; Craigs Idee ist eine Folge immer feinerer Gitter, Astra hat laut Blog den passenden Weg vorgeschlagen, die Kraftfelder auf feinere Gitter zu übertragen, die Konvergenz gezeigt und beim detaillierten Beweis die Führung übernommen. Die Gittertheoretiker Maarten Golterman, Andreas Kronfeld und Yigal Shamir haben den Beweis geprüft; Craig selbst nennt das Ergebnis nur einen Kandidaten, „far more an answer in principle than an answer in practice“, und Fragen wie die Reflexionspositivität sind offen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2122123437141553630",
+        "handle": "OpenAI",
+        "date": "2026-11-16"
+      },
+      "original": {
+        "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "nvidia-huang-comeback",
+      "headline": "FT: Jensen Huang spricht über Rückkehr zu Nvidia",
+      "status": "confirmed",
+      "summary": "Bloomberg greift einen Bericht der Financial Times auf: Der abgesetzte Nvidia-CEO Jensen Huang spricht wenige Tage nach seinem Rauswurf durch das Board mit Verbündeten über ein mögliches Comeback. Laut FT stellt Huang dafür einen „War Room“ aus Tech-Managern zusammen, die seine Wiedereinsetzung unterstützen, wie Andrew Curran zusammenfasst. Finanzminister Scott Bessent sagte dagegen bei Fox News, Nvidia solle einen externen CEO holen und brauche einen „dramatic shakeup“; eine Stellungnahme von Nvidia gibt es in den Posts nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/business/status/2122048247225000173",
+        "handle": "business",
+        "date": "2026-11-15"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2122045860343361659",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-15"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2122042106965622968",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-15"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2122133752256049463",
+          "handle": "kimmonismus",
+          "date": "2026-11-16"
+        }
+      ],
+      "original": {
+        "url": "https://www.bloomberg.com/news/articles/2026-11-15/huang-discusses-comeback-as-nvidia-chief-with-allies-ft-says",
+        "label": "Bloomberg"
+      }
+    },
+    {
+      "id": "gpt-6-2-leak-claims",
+      "headline": "Bericht: GPT-6.2 Astra kursiert offenbar bei API-Resellern",
+      "status": "rumor",
+      "summary": "TokenGremlin behauptet, GPT-6.2 Astra werde nach einem offenbar großen Leak schon über API-Reseller verkauft, viele Nutzer würden es direkt in Codex mit dem offiziellen Harness betreiben; der Azure-Fund von vor ein paar Tagen könnte dabei eine Lücke geöffnet haben. chetaslua meint, ChatGPT liefere bereits still GPT-6.2 Sol aus, obwohl im Picker noch 6.1 Sol steht; als Test nennt er die Frage nach dem Release von Claude Fable 5 ohne Websuche, die Antwort „june 9“ deute auf 6.2. kimmonismus stellt als weitere Hypothese auf, dass OpenAI knappe Rechenleistung lieber für Forschung als für neue Modelle einsetzt; alle Aussagen stammen aus einzelnen Quellen ohne harte Belege, und OpenAI hat sich nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/TokenGremlin/status/2122067012671381775",
+        "handle": "TokenGremlin",
+        "date": "2026-11-15"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/chetaslua/status/2122037478760792070",
+          "handle": "chetaslua",
+          "date": "2026-11-15"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2122086237813244199",
+          "handle": "kimmonismus",
+          "date": "2026-11-15"
+        }
+      ]
+    }
+  ]
+}
