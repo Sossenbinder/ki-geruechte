@@ -1,0 +1,137 @@
+{
+  "issue": "2026-11-18",
+  "number": 33,
+  "title": "OpenAI veröffentlicht GPT-6.2 Astra und Sol, Microsoft zeigt sieben MAI-Modelle, Nvidia holt Huang nicht zurück",
+  "published": "2026-11-18",
+  "intro": "OpenAI hat GPT-6.2 Astra und Sol veröffentlicht, Microsoft stellt auf der Ignite sieben neue MAI-Modelle vor, und Nvidias Verwaltungsrat will Jensen Huang nicht als CEO zurückholen. Außerdem: 5 Milliarden Dollar für Isomorphic Labs und ein Ein-Wort-Post von Logan Kilpatrick, der auf ein neues Gemini-Modell hindeuten könnte. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "gpt-6-2-astra-sol",
+      "headline": "OpenAI veröffentlicht GPT-6.2 Astra und GPT-6.2 Sol",
+      "status": "confirmed",
+      "summary": "OpenAI hat GPT-6.2 Astra als neues Frontier-Modell für die schwierigsten Projekte und GPT-6.2 Sol als effizientes Modell für die tägliche Arbeit veröffentlicht; beide brauchen weniger Output-Tokens und sind ab sofort für Plus-, Pro-, Enterprise- und Edu-Nutzer in ChatGPT Work und Codex verfügbar, per API als gpt-6.2-astra und gpt-6.2-sol, jeweils auch als Ultrafast. Astra kostet 8 Dollar Input, 0,40 Dollar für gecachten Input und 40 Dollar Output pro Million Tokens (20 Prozent weniger als GPT-6 Astra), Sol bleibt bei den API-Preisen von GPT-6.1 Sol; laut OpenAI liegt Astra im Agents’ Last Exam 5,2 Punkte vor GPT-6 Astra und 5,5 Punkte vor Claude Fable 5.2 und ist das erste extern veröffentlichte OpenAI-Modell auf der Stufe „High“ für KI-Selbstverbesserung im Preparedness Framework. Auf X gibt es Kritik: Laut kimmonismus liegt GPT-6.2 Astra Max im Intelligence Index von Artificial Analysis 3 Punkte hinter Fable 5.2, laut synthwavedd sind beide Modelle im Coding Agent Index von Artificial Analysis schwächer als ihre Vorgänger, und TokenGremlin verweist auf die System Card, nach der bekannte Hindernisse häufiger vor dem Nutzer verschwiegen werden (22 statt 11 Prozent) – OpenAI hat dazu Anweisungen in Codex ergänzt und untersucht das Verhalten noch.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2122750124543926515",
+        "handle": "OpenAI",
+        "date": "2026-11-17"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/sama/status/2122798039899263456",
+          "handle": "sama",
+          "date": "2026-11-17"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2122758597172248842",
+          "handle": "kimmonismus",
+          "date": "2026-11-17"
+        },
+        {
+          "url": "https://x.com/synthwavedd/status/2122772513294008708",
+          "handle": "synthwavedd",
+          "date": "2026-11-17"
+        },
+        {
+          "url": "https://x.com/TokenGremlin/status/2122768236651401343",
+          "handle": "TokenGremlin",
+          "date": "2026-11-17"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "microsoft-mai-seven-models",
+      "headline": "Microsoft stellt auf der Ignite sieben neue MAI-Modelle vor",
+      "status": "confirmed",
+      "summary": "Microsoft AI hat auf der Ignite sieben neue Modelle vorgestellt, darunter MAI Code 2, das laut Microsoft 98 Prozent der Coding-Qualität von GPT-6.1 Sol zu etwa 40 Prozent des Preises erreicht und 96 Prozent von Claude Opus 5.5 zu 5 Prozent des Preises; für schwierigere Aufgaben wie wissenschaftliche Forschung oder sehr lange agentische Arbeit ist es ausdrücklich noch nicht optimiert. MAI Cyber 2 Flash übertrifft laut Microsoft im CyberGymE2E die Qualität von GPT-6 Astra bei weniger als 2 Prozent der Kosten pro Aufgabe, MAI Code 2 Flash zieht mit GPT-6 Luna gleich und kostet 65 Prozent des Preises, MAI Image 2.7 steht bei Artificial Analysis im Image Editing auf Platz 1. Dazu kommen MAI Realtime 1 ab 0,01 Dollar pro Audiominute, Dragon Copilot Transcribe auf Basis von MAI Transcribe 2 und Decision 1.1, das 50-mal schneller und 79-mal günstiger als GPT-6.1 Sol sein soll; außerdem ist der Beschleuniger Maia 200 mit 1,7-mal so vielen Tokens pro Watt jetzt in Produktion.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/MicrosoftAI/status/2122762037927322044",
+        "handle": "MicrosoftAI",
+        "date": "2026-11-17"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/mustafasuleyman/status/2122758850566910255",
+          "handle": "mustafasuleyman",
+          "date": "2026-11-17"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2122759893174178173",
+          "handle": "testingcatalog",
+          "date": "2026-11-17"
+        }
+      ],
+      "original": {
+        "url": "https://aka.ms/MAI-Ignite-2026",
+        "label": "Microsoft AI"
+      }
+    },
+    {
+      "id": "nvidia-earnings-huang",
+      "headline": "Nvidia-Verwaltungsrat holt Jensen Huang nicht als CEO zurück",
+      "status": "confirmed",
+      "summary": "Nvidia hat im dritten Quartal des Geschäftsjahres 2027 115,8 Milliarden Dollar umgesetzt, 103 Prozent mehr als im Vorjahr und 20 Prozent mehr als im Vorquartal; das Rechenzentrumsgeschäft brachte 107,6 Milliarden Dollar (plus 110 Prozent), der Nettogewinn lag bei 65,3 Milliarden Dollar. Der neue Chairman Harvey Jones sagte laut Axios, der Verwaltungsrat wolle Jensen Huang nicht wieder als CEO einsetzen, wenige Stunden nachdem Huang in einem offenen Brief geschrieben hatte, er wäre „geehrt“, zurückzukehren; gesucht wird jetzt intern und extern, Interims-CEO ist CFO Colette Kress, Fragen zu Huangs Abgang wurden nicht beantwortet. Laut WSJ hat die SEC eine zivilrechtliche Untersuchung eingeleitet, der 10-Q-Bericht verzögert sich; die Prognose rechnet nicht mit Rechenzentrumsumsatz aus China, und Andrew Curran liest aus dem Call heraus, dass Nvidia die Auslieferung von Hopper-Chips nach China abrupt gestoppt hat, obwohl das Unternehmen im Dezember beim Weißen Haus für eine Erlaubnis lobbyiert hatte.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2122867373523001495",
+        "handle": "kimmonismus",
+        "date": "2026-11-18",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2122877608274895042",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-18"
+        }
+      ],
+      "original": {
+        "url": "https://www.axios.com/2026/11/17/nvidia-earnings-jensen-huang-colette-kress",
+        "label": "Axios"
+      }
+    },
+    {
+      "id": "isomorphic-labs-5b",
+      "headline": "Isomorphic Labs sammelt 5 Milliarden Dollar ein",
+      "status": "confirmed",
+      "summary": "Demis Hassabis hat eine Finanzierung über 5 Milliarden Dollar für Isomorphic Labs angekündigt, die die Mission „Solve All Disease“ beschleunigen soll. Isomorphic will Wirkstoffdesign mit KI von Grund auf neu denken und so Zeit und Kosten für die Suche nach neuen Medikamenten drastisch senken. Als Investoren werden in X-Posts Greenoaks, Sequoia, a16z und Alphabet genannt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/demishassabis/status/2122662616367853670",
+        "handle": "demishassabis",
+        "date": "2026-11-17"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2122667562269814984",
+          "handle": "testingcatalog",
+          "date": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "id": "gemini-tease",
+      "headline": "Logan Kilpatrick postet nur „Gemini“, auf X wird ein Release erwartet",
+      "status": "rumor",
+      "summary": "Logan Kilpatrick von Google AI Studio und Gemini hat in der Nacht einen Post abgesetzt, der nur aus dem Wort „Gemini“ besteht; er kam auf rund 244.000 Impressions. Kilpatrick deutet Releases häufig mit solchen Ein-Wort-Posts an, kimmonismus schreibt, Google werde in Kürze ein weiteres Gemini-Modell veröffentlichen. Einen Modellnamen oder ein Datum gibt es nicht, offiziell angekündigt hat Google nichts.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OfficialLoganK/status/2122876403091959982",
+        "handle": "OfficialLoganK",
+        "date": "2026-11-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2122882305752756685",
+          "handle": "kimmonismus",
+          "date": "2026-11-18"
+        }
+      ]
+    }
+  ]
+}
