@@ -1,0 +1,144 @@
+{
+  "issue": "2026-11-19",
+  "number": 34,
+  "title": "Google veröffentlicht Gemini 4 Neon, Anthropic legt IPO-Preis auf 83 Dollar fest",
+  "published": "2026-11-19",
+  "intro": "Google hat Gemini 4 Neon veröffentlicht und damit den Ein-Wort-Post von Logan Kilpatrick aus der gestrigen Ausgabe aufgelöst, Anthropic hat den Preis für seinen Börsengang auf 83 Dollar pro Aktie festgelegt. Außerdem: neue OpenAI-Zahlen dazu, wie KI die eigene Forschung beschleunigt, OpenAI-Modelle im Chipdesign mit AMD, Genie 4 in Project Genie und ein Bericht, nach dem Elon Musk Gerüchte über ein Ende des Compute-Deals zwischen Anthropic und SpaceXAI zurückweist. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "gemini-4-neon",
+      "headline": "Google veröffentlicht Gemini 4 Neon",
+      "status": "confirmed",
+      "summary": "Google DeepMind rollt Gemini 4 Neon aus, ein Modell zwischen Carbon und Hydrogen für komplexes Software Engineering, Wissensarbeit und Wissenschaft; es ist für Google-AI-Pro- und -Ultra-Abonnenten in der Gemini-App verfügbar sowie in AI Studio, der Gemini API, Antigravity und Vertex AI, wo es schon einige Stunden vor der Ankündigung auftauchte. Neon hat 1 Million Tokens Kontext und vier Thinking-Stufen (low bis xhigh), kostet laut VentureBeat 3 Dollar Input, 0,15 Dollar für gecachten Input und 15 Dollar Output pro Million Tokens (Opus 5.5: 4 bzw. 20 Dollar) und ist auf der Standardstufe high laut Google pro Aufgabe 32 Prozent günstiger als Gemini 4 Carbon. Nach Googles eigenen Zahlen liegt Neon im Intelligence Index von Artificial Analysis mit 61 auf Platz 3 hinter größeren, langsameren Modellen (Claude Opus 5.5: 59, GPT-6.2 Sol: 57) und im Coding Agent Index mit 58,6 auf Platz 1, bei Terminal-Bench 4.1 (65,2 Prozent) und FrontierCode 2.0 (46,2 Prozent) liegt Opus 5.5 knapp vorn; theo zeigt sich auf X begeistert und wundert sich, dass kaum jemand über Neon spricht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2123167884411077030",
+        "handle": "GoogleDeepMind",
+        "date": "2026-11-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OfficialLoganK/status/2123167791922741362",
+          "handle": "OfficialLoganK",
+          "date": "2026-11-18"
+        },
+        {
+          "url": "https://x.com/demishassabis/status/2123168218743554465",
+          "handle": "demishassabis",
+          "date": "2026-11-18"
+        },
+        {
+          "url": "https://x.com/theo/status/2123237018813779970",
+          "handle": "theo",
+          "date": "2026-11-19"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "anthropic-ipo-priced",
+      "headline": "Anthropic legt IPO-Preis auf 83 Dollar pro Aktie fest",
+      "status": "confirmed",
+      "summary": "Anthropic hat den Preis für seinen Börsengang auf 83 Dollar pro Class-A-Aktie festgelegt, laut kimmonismus über der Spanne von 70 bis 78 Dollar. Angeboten werden 980.000.000 Aktien, davon 956.351.354 von Anthropic selbst und 23.648.646 von verkaufenden Altaktionären; die Konsortialbanken haben 30 Tage lang die Option auf bis zu 147.000.000 weitere Aktien. Der Handel am Nasdaq Global Select Market soll am 19.11.2026 unter dem Kürzel „ANT“ beginnen, der Abschluss ist für den 20.11.2026 geplant.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2123196808675405860",
+        "handle": "AnthropicAI",
+        "date": "2026-11-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2123197971940663679",
+          "handle": "kimmonismus",
+          "date": "2026-11-19"
+        }
+      ],
+      "original": {
+        "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        "label": "Anthropic"
+      }
+    },
+    {
+      "id": "openai-research-acceleration",
+      "headline": "OpenAI veröffentlicht Zahlen zu KI-Agenten in der eigenen Forschung",
+      "status": "confirmed",
+      "summary": "In dem Bericht „Research acceleration: The jagged frontier“ schätzt OpenAI, dass Agenten Aufgaben, für die Menschen 2 bis 4 Stunden brauchen, inzwischen in 46 Prozent der Fälle selbstständig lösen (März: 23 Prozent), bei 4 bis 8 Stunden in 35 Prozent (vorher 13 Prozent); beim Überwachen von Trainingsläufen sind es 79 Prozent, beim Starten von Trainingsläufen 35 Prozent und beim Schreiben von Inference- und Serving-Code 25 Prozent. Die tägliche Agent-Nutzung eines Forschers lag im Oktober zu API-Listenpreisen im Median bei 2.400 Dollar (plus 62 Prozent gegenüber September), beim 90. Perzentil bei 23.000 Dollar (plus 105 Prozent), und in einer Umfrage würden Forscher im Median 30 Prozent des Team-Computes oder 40 Prozent der Teamgröße abgeben, um Frontier-Coding-Agenten drei Monate lang zu behalten. OpenAI fordert, dass Labs Indikatoren für rekursive Selbstverbesserung (RSI) verpflichtend erfassen und öffentlich melden müssen, betont aber, dass Menschen ein zentraler Teil der KI-Forschung bleiben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2123191365983248653",
+        "handle": "OpenAI",
+        "date": "2026-11-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2123204842298785917",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-19"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2123195701786202603",
+          "handle": "kimmonismus",
+          "date": "2026-11-19"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/research-acceleration-jagged-frontier/",
+        "label": "OpenAI"
+      }
+    },
+    {
+      "id": "openai-amd-chip-design",
+      "headline": "OpenAI-Modelle verbessern GPU-Design von AMD um bis zu 14 Prozent",
+      "status": "confirmed",
+      "summary": "Laut OpenAI haben seine Modelle in Zusammenarbeit mit AMD in weniger als fünf Monaten bis zu 14 Prozent bessere PPA-Werte (Power, Performance, Area) für AMDs Flagship-GPU-IP gefunden, die AMD-Ingenieure zuvor schon jahrelang optimiert hatten. Mit demselben Ansatz hat OpenAI auch Jalapeño verbessert, seinen ersten eigenen Inference-Chip; die Gewinne wurden auf echtem Silizium bestätigt. Außerdem arbeitet OpenAI mit Synopsys daran, seine Modelle mit dessen EDA-Werkzeugen für Design und Validierung mehr Chipdesignern zugänglich zu machen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2123100386638877054",
+        "handle": "OpenAI",
+        "date": "2026-11-18"
+      },
+      "original": {
+        "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+        "label": "OpenAI"
+      }
+    },
+    {
+      "id": "genie-4",
+      "headline": "Google DeepMind bringt Genie 4 in Project Genie",
+      "status": "confirmed",
+      "summary": "Google DeepMind hat sein Weltmodell Genie 4 in einer neuen Version von Project Genie veröffentlicht. Genie 4 bringt nativen Ton, Bearbeitung in Echtzeit und einen Agenten, der beim Erstellen interaktiver virtueller Welten hilft. Zugriff haben vorerst berechtigte Abonnenten von Google AI Ultra.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GoogleDeepMind/status/2123117733709586849",
+        "handle": "GoogleDeepMind",
+        "date": "2026-11-18"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/demishassabis/status/2123130606162985350",
+          "handle": "demishassabis",
+          "date": "2026-11-18"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "musk-anthropic-compute",
+      "headline": "Bericht: Musk weist Gerüchte über Ende des Anthropic-Deals zurück",
+      "status": "rumor",
+      "summary": "Zuletzt gab es Gerüchte, Anthropic könnte seinen Compute-Deal mit SpaceXAI kündigen. Laut Andrew Curran hat Elon Musk diese in einem langen Interview auf dem DealBook Summit der New York Times zurückgewiesen und gesagt, Anthropic wolle wahrscheinlich 10 GW mehr. Das ist eine Zusammenfassung aus zweiter Hand, ein Transkript haben wir nicht geprüft, und Anthropic hat sich nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2123262399650415039",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-19"
+      }
+    }
+  ]
+}
