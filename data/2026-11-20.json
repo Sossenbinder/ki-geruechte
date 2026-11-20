@@ -1,0 +1,141 @@
+{
+  "issue": "2026-11-20",
+  "number": 35,
+  "title": "Anthropic-Aktie schließt 17 Prozent im Plus, Computer Use in der Gemini-App für Mac, Bloomberg: Apple baut eigenen KI-Agenten",
+  "published": "2026-11-20",
+  "intro": "Anthropic hat seinen ersten Handelstag an der Nasdaq 17 Prozent über dem Ausgabepreis von 83 Dollar beendet, und Google bringt Computer Use in die Gemini-App für Mac. Außerdem: OpenAI testet Dots mit Nutzern von ChatGPT Plus und bringt GPT-Live-1.1 in die API, Kaliforniens Generalstaatsanwalt untersucht Nvidia, und Bloomberg berichtet, dass Apple an einem eigenen KI-Agenten arbeitet. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "anthropic-first-trading-day",
+      "headline": "Anthropic-Aktie schließt ersten Handelstag 17 Prozent im Plus",
+      "status": "confirmed",
+      "summary": "Die Anthropic-Aktie (Nasdaq: ANT) ist am 19.11.2026 mit 111,50 Dollar in den Handel gestartet und hat bei 97,17 Dollar geschlossen, 17 Prozent über dem Ausgabepreis von 83 Dollar. Anthropic hat 81,3 Milliarden Dollar eingesammelt, laut CNBC der größte Börsengang aller Zeiten, noch vor dem SpaceX-Debüt im Juni; zum Handelsschluss lag die voll verwässerte Bewertung bei rund 1,8 Billionen Dollar, zwischenzeitlich über 2 Billionen Dollar. Gehandelt wurden mehr als 846 Millionen Aktien (SpaceX am ersten Tag: 522 Millionen), nachbörslich fiel die Aktie laut Investing.com (Reuters) um 6,3 Prozent auf 91,05 Dollar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2123461109948817508",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-19",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2123466131310870806",
+          "handle": "kimmonismus",
+          "date": "2026-11-19"
+        }
+      ],
+      "original": {
+        "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
+        "label": "CNBC"
+      }
+    },
+    {
+      "id": "gemini-mac-computer-use",
+      "headline": "Google bringt Computer Use in die Gemini-App für Mac",
+      "status": "confirmed",
+      "summary": "Die Gemini-App für Mac erledigt jetzt mehrstufige Aufgaben über lokale Dateien, Desktop-Apps und das Web hinweg, klickt, tippt, bedient Menüs und füllt Formulare aus. Das läuft in einem isolierten Fenster im Hintergrund mit Live-Vorschau im Chat, Bildschirm und Cursor bleiben frei; man legt fest, welche Apps Gemini nutzen darf, kann pausieren oder abbrechen und gibt wichtige Aktionen selbst frei, bei Logins und Zahlungen hält Gemini an. Die Funktion wird auf Englisch in den USA für Abonnenten von Google AI Plus, Pro und Ultra ausgerollt (private Konten, ab 18) und braucht einen Mac mit Apple Silicon und macOS Sequoia 15.0 oder neuer.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/GeminiApp/status/2123513203745538423",
+        "handle": "GeminiApp",
+        "date": "2026-11-19"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/joshwoodward/status/2123534862569324703",
+          "handle": "joshwoodward",
+          "date": "2026-11-19"
+        }
+      ],
+      "original": {
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+        "label": "Google-Blog"
+      }
+    },
+    {
+      "id": "chatgpt-dots-plus",
+      "headline": "OpenAI testet Dots mit ersten Nutzern von ChatGPT Plus",
+      "status": "confirmed",
+      "summary": "Dots, der ständig aktive, proaktive Assistent in ChatGPT, war bisher Pro, Business Premium und Enterprise vorbehalten. Laut Thibault Sottiaux testet OpenAI Dots jetzt mit einer kleinen Gruppe von Nutzern aus ChatGPT Plus, außerdem startet der Rollout für berechtigte Mitglieder von Business Standard in den USA (ein persönlicher Dot pro Mitglied, mit Nutzungslimits); im EWR inklusive EU, in Großbritannien und in der Schweiz gibt es Dots nicht. Parallel testet OpenAI laut The Verge ein neues Mobile-Design mit Tab-Leiste unten, eigenem Dot-Tab und anpinnbaren Einträgen für Codex, Projects und Images; es startet bei Pro-Nutzern, die einen Dot haben oder anlegen können, und lässt sich in den Einstellungen umschalten.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2123556256392847657",
+        "handle": "thsottiaux",
+        "date": "2026-11-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/thsottiaux/status/2123557171321561133",
+          "handle": "thsottiaux",
+          "date": "2026-11-20"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2123559153742303679",
+          "handle": "testingcatalog",
+          "date": "2026-11-20"
+        }
+      ],
+      "original": {
+        "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+        "label": "OpenAI-Hilfe"
+      }
+    },
+    {
+      "id": "gpt-live-1-1-api",
+      "headline": "OpenAI bringt GPT-Live-1.1 in die API",
+      "status": "confirmed",
+      "summary": "GPT-Live-1.1 (gpt-live-1.1) ist ein Full-Duplex-Sprachmodell für mehrsprachige Gespräche, es hört also zu, während es selbst spricht; gegenüber GPT-Live-1 transkribiert es genauer und hält Akzent und Stimme über Sprachen hinweg konsistenter. Es läuft nur über den Endpoint v1/live/sessions und wird nach Sitzungsdauer abgerechnet: 0,05 Dollar pro Minute aktiv und 0,02 Dollar pro Minute im Standby, Backend-Modell und Tools kosten extra. Der neue Standby-Modus für WebRTC-Sessions mit GPT-Live-1 und GPT-Live-1.1 pausiert die Inferenz nach 5 bis 60 Sekunden Leerlauf und macht weiter, sobald jemand spricht, Verbindung und Session bleiben dabei bestehen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAIDevs/status/2123506733524136446",
+        "handle": "OpenAIDevs",
+        "date": "2026-11-19"
+      },
+      "original": {
+        "url": "https://developers.openai.com/api/docs/models/gpt-live-1.1",
+        "label": "OpenAI-Doku"
+      }
+    },
+    {
+      "id": "nvidia-subpoena-california",
+      "headline": "Kaliforniens Generalstaatsanwalt untersucht Nvidia",
+      "status": "confirmed",
+      "summary": "Kaliforniens Generalstaatsanwalt Rob Bonta hat Nvidia am 19.11.2026 im Rahmen einer Untersuchung eine Subpoena zugestellt; Hintergrund sind die Meldungen über die Affäre des früheren Nvidia-CEO Jensen Huang mit einer mutmaßlichen chinesischen Spionin. Das kalifornische Justizministerium will klären, ob fortschrittliche Nvidia-Chips oder vertrauliche Informationen nach China gelangt sein könnten und ob Nvidia Investoren und Öffentlichkeit getäuscht hat, und prüft, ob Nvidia gegen kalifornisches Wertpapierrecht verstoßen hat. Bonta sagt, Unternehmen dürften ihre Investoren nicht täuschen; Anklage gibt es keine, es ist eine Untersuchung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2123552060641833126",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-19",
+        "via": true
+      },
+      "original": {
+        "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-serves-investigative-subpoena-nvidia",
+        "label": "Generalstaatsanwalt Kalifornien"
+      }
+    },
+    {
+      "id": "apple-ai-agent",
+      "headline": "Bericht: Apple arbeitet an eigenem KI-Agenten",
+      "status": "rumor",
+      "summary": "Laut Mark Gurman von Bloomberg entwickelt Apple einen eigenen autonomen KI-Agenten, der Code schreibt, im Web surft, Apps steuert und Geräte für den Nutzer bedient, als Konkurrenz zu Anthropic, Meta und anderen. Grundlage ist eine Stellenanzeige für einen „Senior Engineering Manager, Agentic AI – Proactive“ in Cupertino, die diese Woche online ging: Sie beschreibt Agenten, die einen Computer wie ein fähiger Mensch bedienen, mehrstufige Aufgaben über Apps, Browser, Kommandozeile, Code und APIs planen und Sub-Agents koordinieren, das Team arbeitet mit Siri, UI Frameworks und Apple Foundation Models zusammen. Nach Bloomberg-Informationen hat Apple einen Start frühestens Ende nächsten Jahres im Blick, die Arbeit steht aber noch am Anfang, und macOS 27.3 soll Warnungen zeigen, die davon abraten, Agenten von Drittanbietern vollen Zugriff zu geben; angekündigt hat Apple nichts.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2123540249506939355",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-19",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2123546896925094034",
+          "handle": "kimmonismus",
+          "date": "2026-11-19"
+        }
+      ],
+      "original": {
+        "url": "https://news.bloomberglaw.com/california-brief/apple-is-working-on-own-ai-agent-to-rival-openai-and-anthropic",
+        "label": "Bloomberg"
+      }
+    }
+  ]
+}
