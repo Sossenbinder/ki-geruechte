@@ -1,0 +1,196 @@
+{
+  "issue": "2026-11-21",
+  "number": 36,
+  "title": "Anthropic-Mathematiker meldet Riemann-Beweis mit Claude, Thinking Machines Lab veröffentlicht Inkling 2 Mini, Cursor wird offenbar zu Grok Build",
+  "published": "2026-11-21",
+  "intro": "Levent Alpöge, Mathematiker bei Anthropic, meldet einen Beweis der Riemannschen Vermutung zusammen mit Claude; die Lean-Formalisierung hat erste unabhängige Prüfungen bestanden, begutachtet ist der Beweis aber noch nicht. Außerdem: Thinking Machines Lab veröffentlicht Inkling 2 Mini, METR und OpenAI legen neue Forschung vor, Trump spricht über KI-Leitplanken mit Xi, und Code-Funde deuten darauf hin, dass Cursor zu Grok Build wird, dazu Hinweise auf Gemini-Abos in Drittanbieter-Tools ab 2. Dezember und auf Nano Banana Pro 2. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "riemann-claude-proof",
+      "headline": "Anthropic-Mathematiker meldet Beweis der Riemann-Vermutung mit Claude",
+      "status": "confirmed",
+      "summary": "Levent Alpöge, Mathematiker bei Anthropic, schreibt in einer vierseitigen Notiz vom 20.11.2026: „Ich glaube, ich habe zusammen mit Claude einen Beweis der Riemannschen Vermutung gefunden.“ Nach seiner Aussage löst die Methode auch die Verallgemeinerte Riemannsche Vermutung, und er und Claude haben die Argumente ohne Annahmen in Lean formalisiert; den Lean-Code hat er veröffentlicht. Andrew Sutherland (MIT) hat nachgeprüft: Der Code kompiliert ohne Fehler (175.187 Module), die fünf Haupttheoreme nutzen nur die drei Standard-Axiome von Lean, und die unabhängigen Kernel nanoda und con-leche akzeptieren den kompletten Export; der Lauf mit lake comparator war zum Stand seiner Prüfung noch nicht fertig. Begutachtet ist der Beweis noch nicht, Anthropic hat sich nicht geäußert, und die Vermutung von 1859 gehört zu den sieben Millennium-Problemen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2123977701556150480",
+        "handle": "kimmonismus",
+        "date": "2026-11-21",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2123857326591631411",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-20"
+        },
+        {
+          "url": "https://x.com/scaling01/status/2123852279216230527",
+          "handle": "scaling01",
+          "date": "2026-11-20"
+        }
+      ],
+      "original": {
+        "url": "https://alpo.ge/remark.pdf",
+        "label": "Notiz von Levent Alpöge"
+      }
+    },
+    {
+      "id": "inkling-2-mini",
+      "headline": "Thinking Machines Lab veröffentlicht Inkling 2 Mini als Open Weights",
+      "status": "confirmed",
+      "summary": "Inkling 2 Mini ist ein Looped Transformer mit 24 Layern, die mittleren 12 laufen pro Token dreimal durch; als Mixture-of-Experts hat das Modell 26,4 Milliarden Parameter, davon 3,4 Milliarden aktiv. Laut Thinking Machines Lab liegt es unter den Open-Weights-Modellen mit weniger als 100 Milliarden Parametern bei DeepSWE v1.1 (48,2 Prozent) und Vals Index v2.2 (46,5 Prozent) vorn, im AA Index kommt es auf 20,1. Es braucht rund 20 GB Speicher und läuft über Ollama auf Macs mit 32 GB RAM, auf Nvidias DGX Spark und auf Tinker.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thinkymachines/status/2123871643797995872",
+        "handle": "thinkymachines",
+        "date": "2026-11-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2123874600761303296",
+          "handle": "kimmonismus",
+          "date": "2026-11-20"
+        }
+      ],
+      "original": {
+        "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+        "label": "Thinking-Machines-Blog"
+      }
+    },
+    {
+      "id": "metr-q4-capability-update",
+      "headline": "METR: Zeithorizonte von Frontier-Modellen verdoppeln sich alle 3,6 Monate",
+      "status": "confirmed",
+      "summary": "METR hat seine Aufgaben zur Messung von Zeithorizonten erweitert, unter anderem um schwer überprüfbare Aufgaben und solche, die Urteilsvermögen verlangen, und öffentliche Modelle bis Opus 5.5 und GPT-6 Astra getestet. Über die TH1.1- und TH2-Aufgaben hinweg haben sich die Zeithorizonte der Frontier-Modelle etwa alle 3,6 Monate verdoppelt (95-Prozent-Konfidenzintervall: 2,1 bis 4,9 Monate). Bei Coding- und Optimierungsaufgaben sind die Modelle meist mindestens so gut wie erfahrene Menschen, bei Aufgaben ohne klares, schnelles Feedback wirkt ihr Urteilsvermögen aber schwächer als das von Fachleuten; eine drastische Beschleunigung der KI-Forschung in den nächsten Jahren kann METR mit den öffentlichen Daten nicht ausschließen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/METR_Evals/status/2123864988066668742",
+        "handle": "METR_Evals",
+        "date": "2026-11-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/scaling01/status/2123882452938871241",
+          "handle": "scaling01",
+          "date": "2026-11-20"
+        }
+      ],
+      "original": {
+        "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update",
+        "label": "METR-Blog"
+      }
+    },
+    {
+      "id": "openai-adversarial-distillation",
+      "headline": "OpenAI zeigt, wie es Distillation seiner Modelle abwehrt",
+      "status": "confirmed",
+      "summary": "Bei Adversarial Distillation trainiert jemand ohne Erlaubnis ein anderes Modell mit den Ausgaben eines Frontier-Modells, dem Ergebnis fehlen dann die Schutzmechanismen des Originals. OpenAI setzt dagegen auf Adversarial Testing, Training der Modelle, Classifier, Schutz auf API-Ebene und Untersuchungen koordinierter Versuche, ein Schwerpunkt ist die verborgene Chain of Thought. In einer internen Red-Teaming-Evaluation sank die Erfolgsquote von Angriffen, die das Reasoning extrahieren sollen, von 54,0 Prozent bei GPT-6 Astra mit den ursprünglichen Schutzmaßnahmen auf 0,2 Prozent bei GPT-6.2 Astra mit aktualisierten; Indikatoren teilt OpenAI auch mit anderen Anbietern.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2123862344422088794",
+        "handle": "OpenAI",
+        "date": "2026-11-20"
+      },
+      "original": {
+        "url": "https://openai.com/index/combatting-adversarial-distillation/",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "trump-ai-guardrails-xi",
+      "headline": "Trump spricht von gemeinsamen KI-Leitplanken mit Xi",
+      "status": "confirmed",
+      "summary": "Bei einem Live-Auftritt am 20.11.2026 sagte US-Präsident Trump, er und Xi Jinping hätten sich auf „gemeinsame Leitplanken“ für KI geeinigt; Details nannte er nicht, und China hat das nicht bestätigt. Außerdem drohte er US-Firmen, die Rechenzentren im Ausland bauen, mit „enormen Strafen“. Nvidia forderte er auf, Jensen Huang zurückzuholen, der Anfang des Monats als CEO zurückgetreten ist.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2123835536335049115",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2123837133509230821",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-20"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2123866971515293984",
+          "handle": "kimmonismus",
+          "date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "id": "cursor-grok-build",
+      "headline": "Cursor wird offenbar zu Grok Build",
+      "status": "rumor",
+      "summary": "Der X-Nutzer blankspeaker hat in der aktuellen Cursor CLI (2026.11.19) Code gefunden, der Grok Build aus einem neuen „unified“-Channel von x.ai herunterlädt und Nutzer darauf umstellt; dort liegt Grok Build 2.0.1. Beim ersten Start erscheint das Cursor-Logo, man meldet sich mit einem Cursor- oder Grok-Konto an und landet dann in der Oberfläche von Grok Build mit Cursors kompletter Modellliste (38 Modelle). Interne Nightly-Builds der macOS-Desktop-App heißen laut blankspeaker bereits Grok Build; Cursor und xAI/SpaceX haben bisher nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/blankspeaker/status/2123937054816195008",
+        "handle": "blankspeaker",
+        "date": "2026-11-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/blankspeaker/status/2123966867757051955",
+          "handle": "blankspeaker",
+          "date": "2026-11-21"
+        },
+        {
+          "url": "https://x.com/GrokInsider/status/2123867269553938671",
+          "handle": "GrokInsider",
+          "date": "2026-11-20"
+        },
+        {
+          "url": "https://x.com/mark_k/status/2123908808284205467",
+          "handle": "mark_k",
+          "date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "id": "gemini-subs-dec-2",
+      "headline": "Logan Kilpatrick deutet Gemini-Abos für Drittanbieter-Tools ab 2. Dezember an",
+      "status": "rumor",
+      "summary": "Auf die Bitte eines Nutzers, Gemini-Abos auch außerhalb von Googles eigenen Tools nutzen zu können, antwortete Logan Kilpatrick von Google: „Am 2. Dezember machen wir den ersten Schritt.“ Viele lesen das so, dass sich Gemini-Pro- und -Ultra-Abos ab dann in Coding-Tools und Harnesses von Drittanbietern verwenden lassen. Was genau kommt, hat Google nicht gesagt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OfficialLoganK/status/2123657759896007035",
+        "handle": "OfficialLoganK",
+        "date": "2026-11-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2123772646232105157",
+          "handle": "kimmonismus",
+          "date": "2026-11-20"
+        },
+        {
+          "url": "https://x.com/StatsWire/status/2123666307174519139",
+          "handle": "StatsWire",
+          "date": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "id": "nano-banana-pro-2-flow",
+      "headline": "Codefund in Google Flow deutet auf Nano Banana Pro 2 hin",
+      "status": "rumor",
+      "summary": "Im Produktionscode von Google Flow steht ein Modell mit dem Codenamen „paper-volcano“ als PAPER_VOLCANO_VERTEX, Anfang der Woche war es schon bei Google Cloud entdeckt worden. Beobachter halten es für Nano Banana Pro 2; Nano Banana Pro selbst ist am 20.11. ein Jahr alt geworden. Ob der Name stimmt und wann ein Release kommt, ist Spekulation, Google hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/StatsWire/status/2123648009024274744",
+        "handle": "StatsWire",
+        "date": "2026-11-20"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/mark_k/status/2123691757313348069",
+          "handle": "mark_k",
+          "date": "2026-11-20"
+        }
+      ]
+    }
+  ]
+}
