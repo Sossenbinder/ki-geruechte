@@ -1,0 +1,102 @@
+{
+  "issue": "2026-11-22",
+  "number": 37,
+  "title": "Lean-Community zertifiziert Alpöges Riemann-Beweis, Buckmaster und Alpöge melden Navier-Stokes-Beweis, Anthropic-Aktie gibt nach",
+  "published": "2026-11-22",
+  "intro": "Die Lean- und Mathlib-Community bestätigt in einer gemeinsamen Stellungnahme, dass Levent Alpöges Lean-Beweis der Riemannschen Vermutung korrekt ist; die klassische Begutachtung durch Mathematiker steht noch aus. Außerdem melden Tristan Buckmaster und Alpöge einen KI-gestützten Beweis zum Navier-Stokes-Problem ohne äußere Kraft, der noch nicht unabhängig geprüft ist, die Anthropic-Aktie schließt den zweiten Handelstag mit 8,5 Prozent Minus, Google setzt die Gemini-Kontingente in Antigravity zurück, und ein Commit gibt einen ersten Hinweis auf GLM-5.5. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "riemann-lean-certified",
+      "headline": "Lean-Community zertifiziert Alpöges Lean-Beweis der Riemann-Vermutung",
+      "status": "confirmed",
+      "summary": "Nachtrag zur gestrigen Meldung über Levent Alpöges Beweis: Die Lean- und Mathlib-Community hat eine gemeinsame Stellungnahme veröffentlicht, die das Lean FRO und die Mathlib Initiative mittragen. Darin heißt es: „Wir haben volles Vertrauen, dass Alpöges Beweis der Riemannschen Vermutung korrekt ist“ und „Hiermit zertifizieren wir, dass sowohl die Aussage als auch der Beweis der Riemannschen Vermutung korrekt sind.“ Alpöge hatte den Beweis am 20.11. als Lean-Bibliothek mit 17 Millionen Zeilen Code veröffentlicht, die nur von Mathlib abhängt. Zur Begründung: Die verwendete Aussage ist Mathlibs geprüfte Definition RiemannHypothesis, Dutzende Leute haben die Bibliothek fehlerfrei kompiliert und denselben Roh-Export erhalten, die Werkzeuge comparator und con-leche --compare bestätigen unabhängig voneinander, dass genau Mathlibs Aussage bewiesen wurde, und den Export akzeptierten Leans offizieller Kernel, die Checker con-leche und con-ron (mit formalem Beweis, relativ zur Mengenlehre, dass sie keinen falschen Beweis akzeptieren können) sowie mehrere Checker von Drittanbietern in anderen Sprachen. Zertifiziert ist damit die Lean-Formalisierung; die klassische Begutachtung der Mathematik steht noch aus, die Community hofft, dass Mathematiker die neuen Ideen des Beweises erklären.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/leanprover/status/2124159121645801562",
+        "handle": "leanprover",
+        "date": "2026-11-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2124178939287687297",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-21"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2124186049450529004",
+          "handle": "kimmonismus",
+          "date": "2026-11-21"
+        }
+      ],
+      "original": {
+        "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+        "label": "Stellungnahme der Lean- und Mathlib-Community"
+      }
+    },
+    {
+      "id": "navier-stokes-unforced",
+      "headline": "Buckmaster und Alpöge melden KI-gestützten Navier-Stokes-Beweis ohne äußere Kraft",
+      "status": "confirmed",
+      "summary": "NYU-Professor Tristan Buckmaster und Levent Alpöge von Anthropic haben einen KI-gestützten Beweis veröffentlicht (laut The Next Web 79 Seiten), nach dem die 3D-Navier-Stokes-Gleichungen in endlicher Zeit auch ohne äußere Kraft einen Blowup haben können, also die „echte“ Version des Problems. OpenAI hatte im September einen Blowup mit fein abgestimmter äußerer Kraft gezeigt, was viele Experten als Schlupfloch in der Formulierung des Clay-Problems sahen; Buckmaster hatte OpenAI vorgeworfen, ihnen zuvorgekommen zu sein, OpenAI wies Fehlverhalten zurück. Buckmaster stellte den Beweis am 20.11. auf Mastodon vor und schrieb, die Ausarbeitung sei unpoliert, weil sie „nach dem letzten Mal“ es „nicht riskieren konnten zu warten“. Das GitHub-Repo enthält das Paper und eine Formalisierung in Lean 4, das numerische Zertifikat (Verifikation per Intervallarithmetik) fehlt aber noch und soll laut den Autoren bald folgen; eine unabhängige Prüfung gibt es bisher nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/iCleanAI/status/2124157891695522278",
+        "handle": "iCleanAI",
+        "date": "2026-11-21",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
+        "label": "Scientific American"
+      }
+    },
+    {
+      "id": "anthropic-stock-week",
+      "headline": "Anthropic-Aktie fällt am zweiten Handelstag um 8,5 Prozent",
+      "status": "confirmed",
+      "summary": "Die Anthropic-Aktie (Nasdaq: ANT) schloss am Freitag, dem 20.11.2026, ihren zweiten Handelstag bei 88,91 Dollar, 8,5 Prozent unter dem Schlusskurs vom Donnerstag (97,17 Dollar) und nicht weit über dem Ausgabepreis von 83 Dollar; eröffnet hatte sie am Donnerstag bei 111,50 Dollar. Laut CNBC hat Anthropic beim Börsengang die Rekordsumme von 93,5 Milliarden Dollar eingesammelt, dazu 26 Milliarden Dollar von Tech-Konzernen, die zum Ausgabepreis kauften; der Börsenwert stieg mit dem Debüt auf 1,8 Billionen Dollar. In derselben Woche fiel Nvidia um 23 Prozent, der stärkste Wochenverlust seit 18 Jahren, und die Nasdaq verlor über fünf Handelstage 10 Prozent, die schlechteste Woche seit Anfang 2020.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2124050811927908629",
+        "handle": "testingcatalog",
+        "date": "2026-11-21",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+        "label": "CNBC"
+      }
+    },
+    {
+      "id": "antigravity-quota-reset",
+      "headline": "Google setzt Gemini-Kontingente in Antigravity zurück",
+      "status": "confirmed",
+      "summary": "Varun Mohan von Google hat die Gemini-Nutzungskontingente aller Nutzer im Coding-Tool Antigravity zurückgesetzt. Durch verbessertes Caching lässt sich mit demselben Kontingent laut Mohan 22 Prozent mehr erledigen. Das kommt wenige Tage nach dem Launch von Gemini 4 Neon; StatsWire hatte am 20.11. einen „Reset“ vorhergesagt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/_mohansolo/status/2124070033534161407",
+        "handle": "_mohansolo",
+        "date": "2026-11-21"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2124091275011821845",
+          "handle": "testingcatalog",
+          "date": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-5-commit",
+      "headline": "GLM-5.5 stand offenbar kurz in öffentlichem Z.ai-Commit",
+      "status": "rumor",
+      "summary": "Laut einem Screenshot des X-Nutzers mark_k stand der Name GLM-5.5 kurz in einem öffentlichen Commit im GitHub-Repo ZCode von Zhipu/Z.ai; drei Minuten später wurde er wieder in GLM-5.3 geändert. Posts, nach denen GLM-5.5 nächste Woche mit mehr als 1 Billion Parametern und offenen Gewichten kommt, nennen keine Quelle. Z.ai hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/mark_k/status/2124167285661216971",
+        "handle": "mark_k",
+        "date": "2026-11-21"
+      }
+    }
+  ]
+}
