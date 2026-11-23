@@ -1,0 +1,107 @@
+{
+  "issue": "2026-11-23",
+  "number": 38,
+  "title": "OpenAI veröffentlicht interne Perplexity-Werte, Trump fordert Huangs Rückkehr zu Nvidia, Berichte zu Nano Banana Pro 2",
+  "published": "2026-11-23",
+  "intro": "OpenAI-Chefwissenschaftler Jakub Pachocki veröffentlicht interne Perplexity-Werte aus dem Pretraining und schlägt gemeinsame Grenzwerte für alle Modellentwickler vor. Donald Trump fordert den Nvidia-Vorstand auf, Jensen Huang wieder einzustellen. Außerdem zeigt ein Tester laut X-Posts Beispielbilder, die von Googles Nano Banana Pro 2 stammen sollen, und TestingCatalog berichtet über lokale Computer Use für Grok Bot unter macOS sowie einen Inbox-Modus für Antigravity. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "openai-perplexity-intelligence",
+      "headline": "OpenAI veröffentlicht interne Perplexity-Werte und schlägt gemeinsame Grenzwerte vor",
+      "status": "confirmed",
+      "summary": "OpenAI-Chefwissenschaftler Jakub Pachocki schlägt im Blogpost „Perplexity and Intelligence“ die Pretraining-Perplexity (Cross-Entropy-Loss) als gemeinsame Metrik für alle Modellentwickler vor, als Grundlage für gemeinsame Sicherheitsstandards. Dazu veröffentlicht er interne Werte, gemessen auf zurückgehaltenen Daten aus OpenAIs interner Codebasis: GPT-3.5 liegt bei etwa 0,99, GPT-4 bei etwa 0,91; unter 0,8 zeigten sich transformative Fähigkeiten in Cybersecurity und Mathematik, und ab einem Modell mit einer Log-Perplexity von etwa 0,76 lieferte OpenAI bahnbrechende Ergebnisse in der Mathematik. Weitere transformative Fähigkeiten erwartet Pachocki im Bereich von etwa 0,68 bis 0,7, eine ähnliche Welle von Pretraining-Fortschritten hält er schon 2027 für möglich. Er schlägt gemeinsame Grenzwerte auf Basis von Perplexity und anderen Messungen vor, die Entwickler erst überschreiten, wenn das Verständnis und Monitoring von KI-Verhalten einen konkreten Meilenstein erreicht hat (etwa einen Nachfolger für Chain-of-Thought-Monitore), dazu gemeinsame Eval-Normen und Transparenzstandards; Sam Altman unterstützt den Vorschlag.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/merettm/status/2124549218995949967",
+        "handle": "merettm",
+        "date": "2026-11-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/sama/status/2124551594691932405",
+          "handle": "sama",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://x.com/btibor91/status/2124550678626660680",
+          "handle": "btibor91",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://x.com/gdb/status/2124582684840399311",
+          "handle": "gdb",
+          "date": "2026-11-22"
+        }
+      ],
+      "original": {
+        "url": "https://openai.com/index/perplexity-and-intelligence",
+        "label": "OpenAI-Blog"
+      }
+    },
+    {
+      "id": "trump-huang-rehire",
+      "headline": "Trump fordert Nvidia-Vorstand auf, Jensen Huang zurückzuholen",
+      "status": "confirmed",
+      "summary": "Donald Trump hat auf Truth Social geschrieben: „Ich hoffe, der Vorstand von Nvidia stellt Jensen Huang wieder ein. Das wäre das Beste für das Unternehmen und auch für die USA.“ Schon zuvor hatte er gesagt, Huang verdiene eine zweite Chance. Huang hatte Nvidia am 12.11. nach Berichten über außereheliche Beziehungen verlassen, darunter eine mit Alice Huang, einer chinesischen Staatsbürgerin, die US-Geheimdienste Verbindungen zum chinesischen Ministerium für Staatssicherheit verdächtigen; Nvidia-Chairman Harvey Jones hatte vergangene Woche erklärt, Huang werde nicht zurückgeholt, und die Personalberatung Heidrick & Struggles mit der Suche nach einem neuen CEO beauftragt. Finanzminister Scott Bessent schloss am Sonntag in der CBS-Sendung „Face the Nation“ eine Rückkehr Huangs nicht aus, eine Woche nachdem er bei Fox News einen externen Nachfolger gefordert hatte; die Regierung habe aber noch keine Antworten auf ihre Fragen zur Einhaltung der Regeln für Chip-Verkäufe nach China. Derzeit führt Nvidias CFO das Unternehmen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2124718809168986325",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-23",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.investing.com/news/stock-market-news/trump-urges-nvidia-board-to-rehire-jensen-huang-5044292",
+        "label": "Investing.com"
+      }
+    },
+    {
+      "id": "nano-banana-pro-2-samples",
+      "headline": "Bericht: Tester zeigt Beispielbilder von Nano Banana Pro 2",
+      "status": "rumor",
+      "summary": "Der X-Nutzer Waguri_Kaoruko8 postet Beispielbilder aus Tests, die angeblich von Googles nächstem Bildmodell stammen; vermutet wird Nano Banana Pro 2 mit dem Codenamen „paper-volcano“, der zuvor als PAPER_VOLCANO_VERTEX im Code von Google Flow aufgetaucht war. Die Bilder zeigen Unterstützung für transparente Hintergründe. Andrew Curran tippt auf einen Release „wahrscheinlich nächste Woche“, nennt das aber ausdrücklich eine Vermutung; Google hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2124592922779873452",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-22"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Waguri_Kaoruko8/status/2124542170140922048",
+          "handle": "Waguri_Kaoruko8",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://x.com/Waguri_Kaoruko8/status/2124401736358015035",
+          "handle": "Waguri_Kaoruko8",
+          "date": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "grok-bot-macos-computer-use",
+      "headline": "Bericht: Grok Bot für macOS bekommt lokale Computer Use",
+      "status": "rumor",
+      "summary": "Laut TestingCatalog bekommt die macOS-App Grok Bot von SpaceX/xAI bald eine lokale Computer-Use-Funktion, mit der der Assistent Apps auf dem Mac des Nutzers bedienen kann, dazu Diktieren auf Systemebene. Bisher läuft Computer Use in Grok Bot nur über Cloud-VMs. Offiziell angekündigt ist das nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2124666576263692490",
+        "handle": "testingcatalog",
+        "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "antigravity-inbox-mode",
+      "headline": "Bericht: Google arbeitet an Inbox-Modus für Antigravity",
+      "status": "rumor",
+      "summary": "Laut TestingCatalog arbeitet Google an einem „Inbox mode“ für das Coding-Tool Antigravity, der Agent-Threads anzeigt, die die Aufmerksamkeit des Nutzers brauchen. Das passt zu einer ähnlichen Umstellung bei anderen KI-Tools von Google: Bei Gemini ist sie in Arbeit, Loop hat eine Warteliste. Die Funktion ist noch in Entwicklung und nicht angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2124494418891645153",
+        "handle": "testingcatalog",
+        "date": "2026-11-22"
+      }
+    }
+  ]
+}
