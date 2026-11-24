@@ -1,0 +1,209 @@
+{
+  "issue": "2026-11-24",
+  "number": 39,
+  "title": "Nvidia setzt Jensen Huang wieder ein, Claude-Paper zu VP ≠ VNP, offenbar Tests mit Claude Opus 5.6",
+  "published": "2026-11-24",
+  "intro": "Nvidia setzt Jensen Huang wieder als CEO ein, und Anthropic hat ohne Ankündigung ein von Claude verfasstes Paper hochgeladen, das VP ≠ VNP beweisen will, aber noch von keinem menschlichen Mathematiker geprüft wurde. Ein X-Nutzer berichtet außerdem, dass Anthropic offenbar Claude Opus 5.6 testet; dazu kommen GPT-6.2 Sol im ChatGPT-Chat, Claude Ship, Shirudo von OpenAI und Cisco, GLM-5.4, Gemini 4 Carbon in Antigravity und Helium-Strings im Gemini-Code. Jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "nvidia-huang-reinstated",
+      "headline": "Nvidia setzt Jensen Huang wieder als CEO ein",
+      "status": "confirmed",
+      "summary": "Der Nvidia-Vorstand hat Jensen Huang mit sofortiger Wirkung wieder als President und CEO sowie als Board-Mitglied eingesetzt. Die Entscheidung fiel einstimmig nach mehreren Gesprächen und Treffen mit Huang, die den Vorstand nach eigener Aussage von seiner Aufrichtigkeit und seiner Fähigkeit, Nvidia zu führen, überzeugt haben; nach Rücksprache mit hochrangigen Vertretern der US-Regierung sieht er auch kein Risiko für die nationale Sicherheit. Harvey Jones bleibt Chairman, Interims-CEO Colette Kress kehrt auf ihren Posten als CFO zurück. Trump erklärte, die US-Regierung habe keinen Grund zur Annahme, dass Huangs Rückkehr ein Sicherheitsrisiko sei, und der US-Justizminister habe bestätigt, dass es keine Hinweise auf rechtswidriges Verhalten gebe. Huang hatte Nvidia am 12.11. verlassen, Jones hatte vergangene Woche eine Rückkehr noch ausgeschlossen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/nvidianewsroom/status/2124865060397019480",
+        "handle": "nvidianewsroom",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2124871082390007919",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-23"
+        }
+      ],
+      "original": {
+        "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "label": "NVIDIA-Newsroom"
+      }
+    },
+    {
+      "id": "claude-vp-vnp-proof",
+      "headline": "Anthropic veröffentlicht von Claude verfassten Beweis für VP ≠ VNP",
+      "status": "confirmed",
+      "summary": "Im GitHub-Repo anthropics/formal-math liegt jetzt das Paper „VP ≠ VNP over every field“ mit „Claude (Anthropic)“ als einzigem Autor, dazu eine Formalisierung in Lean 4. Es beansprucht einen Beweis der Valiant-Vermutung aus der algebraischen Komplexitätstheorie: Über jedem Körper brauchen Schaltkreise für das Hamiltonkreis-Polynom und, außer in Charakteristik 2, für die Permanente für alle großen m mehr als m^(c (log m)^(1/3)) Gatter, auch approximierende Schaltkreise; damit wäre VP eine echte Teilmenge von VNP. Gefunden hat das Ergebnis ein internes Claude-Forschungsmodell, Paper und Lean-Beweis stammen komplett von KI-Modellen, und kein menschlicher Mathematiker hat den Beweis geprüft. Lean prüft zwar die Beweise, aber keine Maschine prüft, ob die Statement-Datei wirklich das aussagt, was behauptet wird; P vs. NP ist damit laut Anthropics README ausdrücklich nicht gelöst. Wie schon das Paper zur Exponential Time Hypothesis kam auch dieses ohne Ankündigung.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2125001971690315858",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-24",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/Liam06972452/status/2124990562906304556",
+          "handle": "Liam06972452",
+          "date": "2026-11-23"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
+        "label": "GitHub/Anthropic"
+      }
+    },
+    {
+      "id": "claude-opus-5-6-test",
+      "headline": "Anthropic testet offenbar Claude Opus 5.6 mit ausgewählten Nutzern",
+      "status": "rumor",
+      "summary": "Der X-Nutzer synthwavedd geht davon aus, dass Anthropic Claude Opus 5.6 gerade mit einem Teil der Nutzer in Claude Code und in der Chat-App testet, ähnlich wie Opus 5.5 vor dem Release. Als Beleg postet synthwavedd Design- und SVG-Ausgaben und vergleicht sie mit den Ergebnissen von Opus 5.5 bei denselben Prompts, das Fazit: „quite a jump“. Zum Selbsttest wählt man Opus 5.5 aus und fragt „Where did Andrej Karpathy go in may 2026? Don't search“; lautet die Antwort durchgehend „Anthropic“, hat man das neue Modell. Anthropic hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/synthwavedd/status/2125018875217547382",
+        "handle": "synthwavedd",
+        "date": "2026-11-24"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/synthwavedd/status/2125018877897666696",
+          "handle": "synthwavedd",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-2-sol-chatgpt",
+      "headline": "OpenAI bringt GPT-6.2 Sol in den Chat-Tab von ChatGPT",
+      "status": "confirmed",
+      "summary": "OpenAI rollt im Chat-Tab von ChatGPT eine Version von GPT-6.2 Sol aus, die auf alltägliche Unterhaltungen optimiert ist; bisher war Sol in Work und Codex verfügbar. Laut OpenAI kommt das Modell deutlich besser mit komplexen Anfragen zurecht, vor allem mit detaillierten Anweisungen oder wenn es Informationen online suchen soll. Der Rollout geht laut testingcatalog an Plus-, Pro-, Business- und Enterprise-Nutzer. Unabhängig davon berichten kimmonismus und testingcatalog, dass sich ChatGPTs „Dot“ jetzt in Deutschland und der EU ohne VPN nutzen lässt; offiziell bestätigt ist das nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ChatGPT/status/2124942186425069836",
+        "handle": "ChatGPT",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2124946994439610482",
+          "handle": "testingcatalog",
+          "date": "2026-11-23"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2124955668989845710",
+          "handle": "kimmonismus",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "claude-ship-plugins",
+      "headline": "Anthropic stellt Claude Ship vor und führt Plugins ein",
+      "status": "confirmed",
+      "summary": "Mit Claude Ship (Beta) reviewt Claude Pull Requests, arbeitet an Fixes und approvt die PRs, die die Policy des Teams erlaubt. Laut testingcatalog wird /ship gerade in der CLI und der Desktop-App ausgerollt; in Team und Enterprise können Admins es für ein ganzes Repo aktivieren, dann läuft es ohne /ship auf den PRs des Teams. Am selben Abend hat Anthropic Connectors und Skills in Claude zu „Plugins“ zusammengelegt: Sie sind in Free, Pro, Max und Ultra live, Team und Enterprise folgen bald, unter claude.ai/plugins gibt es mehr als 10.000 Plugins.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+        "handle": "ClaudeDevs",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/testingcatalog/status/2124990088002310579",
+          "handle": "testingcatalog",
+          "date": "2026-11-23"
+        },
+        {
+          "url": "https://x.com/claudeai/status/2124970294523945328",
+          "handle": "claudeai",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "gemini-carbon-ai-pro",
+      "headline": "Google gibt Gemini 4 Carbon für AI-Pro-Nutzer in Antigravity frei",
+      "status": "confirmed",
+      "summary": "Google setzt in Antigravity die Gemini-Quotas für alle zurück und aktualisiert die Modelle in allen Tarifen: Zahlende Google-AI-Pro-Nutzer bekommen Zugriff auf Gemini 4 Carbon, Gemini 4 Hydrogen steht jetzt allen Nutzern zur Verfügung. Außerdem lassen sich in Antigravity jetzt Orchestrator-Modelle und deren Reasoning-Effort konfigurieren. Logan Kilpatrick meldet zusätzlich, dass Gemini 4 Neon über die Gemini-App jetzt auch für Google-Workspace-Kunden ausgerollt ist.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/_mohansolo/status/2124960419429458207",
+        "handle": "_mohansolo",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OfficialLoganK/status/2125018427790344654",
+          "handle": "OfficialLoganK",
+          "date": "2026-11-24"
+        },
+        {
+          "url": "https://x.com/testingcatalog/status/2124962486105280698",
+          "handle": "testingcatalog",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "openai-shirudo-gpt6-cyber",
+      "headline": "OpenAI und Cisco veröffentlichen Linux-Runtime Shirudo für Agenten",
+      "status": "confirmed",
+      "summary": "Shirudo ist eine Open-Source-Runtime für Linux, mit der Agenten Systeme ohne Downtime verteidigen: Sie schreiben dynamische eBPF-Controls, die Systeme vor Exploits abschirmen, damit Verteidiger mehr Zeit haben, Patches zu testen und auszurollen. Gebaut hat Cisco das Projekt zusammen mit OpenAI. Außerdem berichtet OpenAI, dass GPT-6 Cyber in einem Durchlauf geholfen hat, 948 Linux-Kernel-Bugs zu validieren, die lokalen Root-Zugriff ermöglichen könnten, und Patches zur Review erzeugt hat; die Forscher Clint Gibler und Kyle (@ky1ebot) beschreiben, wie sie die Fixes zusammen mit den Maintainern upstream gebracht haben.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2124980590717911527",
+        "handle": "OpenAI",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OpenAI/status/2125007927098699827",
+          "handle": "OpenAI",
+          "date": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-4",
+      "headline": "Z.ai veröffentlicht GLM-5.4 mit Loop-Transformer",
+      "status": "confirmed",
+      "summary": "GLM-5.4 ist der erste Loop-Transformer von Z.ai: Das Modell durchläuft für tieferes Reasoning vorhandene Layer des GLM-5-Basismodells mehrfach, erweitert Coding auf Video, Spiele, 3D-Shader und CAD-Modellierung und bringt Vision-Fähigkeiten für visuelles Coding mit. Es ist für alle Nutzer des GLM Coding Plan live, mit 50 Prozent mehr Wochenkontingent als GLM-5.3 und 1M Kontext in Claude Code (Model-ID glm-5.4[1m]). Benchmarks folgen laut louszbd von Z.ai später, Open Weights gibt es noch nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Zai_org/status/2124811995912286352",
+        "handle": "Zai_org",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/ZixuanLi_/status/2124719275864670681",
+          "handle": "ZixuanLi_",
+          "date": "2026-11-23"
+        },
+        {
+          "url": "https://x.com/louszbd/status/2124767547488968885",
+          "handle": "louszbd",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-helium-code",
+      "headline": "Code der Gemini-Web-App verweist offenbar auf Helium",
+      "status": "rumor",
+      "summary": "Im Produktions-JavaScript der Gemini-Web-App sind die Strings „TIER_HELIUM“ und „TIER_HELIUM_DISCOVERY_CARD“ aufgetaucht. Auf demselben Weg war vor dem Launch schon Gemini 4 Neon sichtbar geworden, außerdem hatte Google vergangene Woche in einem Teaser mit Periodensystem-Motiv Helium als nächstes Modell genannt. Beobachter erwarten ein kleineres Modell der Flash- bzw. Flash-Lite-Klasse, manche lesen die Strings eher als neuen Abo-Tarif; Google hat nichts angekündigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/lyraxana/status/2124742605015535659",
+        "handle": "lyraxana",
+        "date": "2026-11-23"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/StatsWire/status/2124746150490316900",
+          "handle": "StatsWire",
+          "date": "2026-11-23"
+        }
+      ]
+    }
+  ]
+}
