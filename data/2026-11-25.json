@@ -1,0 +1,96 @@
+{
+  "issue": "2026-11-25",
+  "number": 40,
+  "title": "Neun Mathe-Manuskripte und Protein-Design von OpenAI, Skills über MCP für Claude",
+  "published": "2026-11-25",
+  "intro": "OpenAI hat neun weitere Mathe-Manuskripte veröffentlicht, die unter anderem VP ≠ VNP und Smales neuntes Problem lösen wollen; unabhängig geprüft ist davon bisher nichts. Dazu kommen ein OpenAI-Preprint zu im Labor getestetem Protein-Design mit GPT-6.2, Skills über MCP und Tasks für Claude, Claude-Artifacts als Desktop-Apps und ein Nutzungsrekord für Gemini 4 Neon. Jede Meldung ist als bestätigt oder Gerücht markiert; heute sind alle fünf bestätigt, bei den Mathe-Manuskripten gilt das für die Veröffentlichung, nicht für die Beweise.",
+  "items": [
+    {
+      "id": "openai-math-nine-manuscripts",
+      "headline": "OpenAI veröffentlicht neun ungeprüfte Mathe-Manuskripte auf GitHub",
+      "status": "confirmed",
+      "summary": "OpenAI hat das Repo openai/math um neun Manuskripte aus zwei Ergebnisfamilien erweitert, jeweils mit Lean-Formalisierungen ausgewählter Resultate. Die sieben Manuskripte zur „Euclidean tensor geometry and its applications to complexity and combinatorics“ beanspruchen unter anderem Beweise für VP ≠ VNP über jedem Körper, für einen Exponenten von 9/4 bei der Multiplikation quadratischer Matrizen und für die Sonnenblumen-Vermutung von Erdős und Rado bei fester Zahl von Blütenblättern. Die beiden Manuskripte zu „Strongly polynomial-time linear programming“ beanspruchen einen deterministischen, stark polynomiellen Algorithmus für lineare Programmierung, was Smales neuntes Problem beantworten würde, und eine Widerlegung der polynomiellen Hirsch-Vermutung. Die neue Serie schließt OpenAIs Manuskript „VP and VNP are different“ ein, das am 23.11. am selben Tag wie Anthropics Claude-Paper erschienen war, laut OpenAI mit einem Ergebnis vom 6. November 2026; unabhängig geprüft ist bisher keiner der Beweise.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2125403132427731308",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-25",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2125289527531245998",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-24"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/openai/math/blob/main/history.md",
+        "label": "openai/math auf GitHub"
+      }
+    },
+    {
+      "id": "openai-protein-design",
+      "headline": "OpenAI zeigt im Labor validiertes Protein-Design mit GPT-6.2",
+      "status": "confirmed",
+      "summary": "In einem neuen Preprint zeigt OpenAI, dass Modelle der GPT-6-Familie Proteinformen und -sequenzen mit Reasoning und Code entwerfen können, ohne spezialisierte Biologie-Modelle aufzurufen; in Computertests lag ein internes Forschungsmodell bei vielen Protein-Aufgaben gleichauf mit spezialisierten Modellen oder vorn. Im Labor mit dem Forschungspartner Onava entwarf GPT-6.2 die Proteinformen, den Rest des Workflows übernahmen spezialisierte Modelle: Von 322 getesteten Proteinen zeigten 35 Anzeichen von Bindung. In einem separaten Experiment entwarf GPT-6.2 neue Sequenzen für drei Formen, die es zuvor selbst entworfen hatte; hier zeigten 14 von 107 Proteinen Bindung. OpenAI spricht von einem Proof of Concept und will als Nächstes testen, ob die Proteine nach dem Andocken etwas Nützliches tun, außerdem schwierigere Targets und andere Molekültypen.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/OpenAI/status/2125334383490105601",
+        "handle": "OpenAI",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "mcp-skills-tasks",
+      "headline": "Anthropic bringt Skills über MCP und Tasks zu Claude",
+      "status": "confirmed",
+      "summary": "Zum zweiten Geburtstag von MCP startet Skills over MCP als Public Beta: MCP-Server können Skills neben ihren Tools veröffentlichen, Claude lädt einen Skill erst, wenn er gebraucht wird, und die Skills aktualisieren sich mit dem Server und lassen sich auf Account oder Organisation zuschneiden. Erste Beispiele kommen von Shopify, HubSpot und Atlassian, Carta folgt bald; standardmäßig aktiv ist das Feature für Pro, Max und Ultra in Claude und Claude Code, in Team-Plänen nach Freischaltung durch einen Admin, Enterprise folgt bald. Tasks und Elicitation sind jetzt allgemein verfügbar: Mit Tasks können Server lange Operationen oder komplette Agent-Loops ausführen, während Claude weiterarbeitet und das Ergebnis später abholt. Bald kommen File Uploads, über die Claude PDFs, Tabellen und Bilder an einen Server schickt; insgesamt hat Claude inzwischen mehr als 10.000 MCP-Connectors.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ClaudeDevs/status/2125289794871963935",
+        "handle": "ClaudeDevs",
+        "date": "2026-11-24"
+      },
+      "original": {
+        "url": "https://claude.com/blog/skills-over-mcp-tasks-and-more",
+        "label": "Claude-Blog"
+      }
+    },
+    {
+      "id": "claude-artifacts-desktop-apps",
+      "headline": "Anthropic macht Claude-Artifacts zu installierbaren Desktop-Apps",
+      "status": "confirmed",
+      "summary": "Artifacts aus Claude lassen sich jetzt unter Mac und Windows als Desktop-Apps installieren: Claude baut das Artifact, ein Klick auf „Install as app“, danach öffnet man es wie jede andere App. Die Apps können die eigenen Connectors nutzen und, falls erlaubt, Benachrichtigungen schicken oder ein Element in der Menüleiste anlegen; Packaging, Signierung oder ein API-Key sind nicht nötig. Das Bauen der App und alle Claude-Aufrufe, die sie macht, zählen aufs Nutzungslimit. Die Funktion ist als Beta in allen Plänen in Claude Desktop verfügbar, bei Enterprise muss ein Owner sie zuerst einschalten.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/ClaudeDevs/status/2125315491522650299",
+        "handle": "ClaudeDevs",
+        "date": "2026-11-24"
+      },
+      "original": {
+        "url": "https://claude.com/resources/articles/install-as-app",
+        "label": "Claude-Hilfeartikel"
+      }
+    },
+    {
+      "id": "gemini-neon-usage-record",
+      "headline": "Google meldet Nutzungsrekord für Gemini 4 Neon",
+      "status": "confirmed",
+      "summary": "Laut Sundar Pichai hat Gemini 4 Neon am ersten Tag einen neuen Nutzungsrekord auf Googles kostenpflichtigen APIs aufgestellt. Die Tokens pro Tag in Antigravity sind seit dem Launch von Gemini 4 Argon vor sechs Wochen um 82 Prozent gestiegen. Laut Varun Mohan braucht Antigravity nach einem neuen Release mit Neon 12 Prozent weniger Quota pro Task und erledigt Tasks 17 Prozent schneller.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/sundarpichai/status/2125311868168515603",
+        "handle": "sundarpichai",
+        "date": "2026-11-24"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/_mohansolo/status/2125337132021780867",
+          "handle": "_mohansolo",
+          "date": "2026-11-24"
+        }
+      ]
+    }
+  ]
+}
