@@ -1,0 +1,162 @@
+{
+  "issue": "2026-11-26",
+  "number": 41,
+  "title": "Googles Cogentic-Papers zur Faktorisierung, Aaronson über angebliche Krypto-Durchbrüche, OpenAI korrigiert GPT-6.2-Limits",
+  "published": "2026-11-26",
+  "intro": "Google-Forscher haben sechs Mathe-Papers veröffentlicht, die ihr Agent Cogentic auf Basis von Gemini 4 erstellt hat, darunter einen beanspruchten Beweis für Faktorisierung in L_N[1/3, 105]; unabhängig geprüft ist davon noch nichts. Scott Aaronson ist sich nach eigener Aussage praktisch sicher, dass KI-Labs auf Durchbrüchen in der Kryptografie sitzen, kennt aber keine Details; außerdem korrigiert OpenAI einen Abrechnungsfehler bei GPT-6.2, und Anthropic hat die Messages API auf Rust umgestellt. Dazu kommen ein Bericht der Washington Post über den Defense Production Act und Nvidia, Dario Amodeis Antwort auf Axios, offenbar ein Stealth-Test von opus-next, Private Inference bei OpenAI und Thariqs Wechsel zu OpenAI; jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "google-cogentic-factoring",
+      "headline": "Google-Forscher veröffentlichen sechs ungeprüfte Mathe-Papers ihres Agenten Cogentic",
+      "status": "confirmed",
+      "summary": "Im Repo google-research liegen sechs neue Papers vom 25. November, die der Agent Cogentic mit Gemini 4 als Basismodell erstellt hat; laut README gab es nach dem ersten Prompt keine menschliche Beteiligung. Zwei davon behandeln die Faktorisierung ganzer Zahlen („Unconditional Integer Factorization in Time L_N[1/3, O(1)]“ und „Unconditional Deterministic Subexponential Integer Factoring and Quadratic Nonresidue Construction“), eines diskrete Logarithmen in endlichen Körpern fester Charakteristik, die übrigen Nash-Gleichgewichte, die Log-Rank-Vermutung und die Rekonstruktion von Graphen. Das erste Faktorisierungs-Paper beansprucht einen Las-Vegas-Algorithmus, der jede ganze Zahl N ≥ 2 im Worst Case in erwarteter Zeit L_N[1/3, 105] vollständig faktorisiert, ohne unbewiesene zahlentheoretische Annahmen. L[1/3] ist dieselbe Komplexitätsklasse wie beim heuristischen Zahlkörpersieb, neu wäre also der Beweis, nicht die Geschwindigkeit. Peer-reviewed sind die Beweise nicht, und die angekündigte Lean-4-Formalisierung ist noch nicht veröffentlicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/kimmonismus/status/2125574747882704951",
+        "handle": "kimmonismus",
+        "date": "2026-11-25",
+        "via": true
+      },
+      "original": {
+        "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc7/cogentic_research_papers",
+        "label": "Cogentic-Papers auf GitHub"
+      }
+    },
+    {
+      "id": "ai-labs-crypto-rumor",
+      "headline": "Scott Aaronson: KI-Labs sitzen angeblich auf Durchbrüchen in der Kryptografie",
+      "status": "rumor",
+      "summary": "In seinem Blog Shtetl-Optimized schreibt Scott Aaronson, er sei sich aus mehreren verlässlichen Quellen „virtually certain“, dass KI-Labs auf einem oder mehreren Durchbrüchen („bombshells“) bei Algorithmen sitzen, die aktuell eingesetzte Kryptosysteme brechen. Was genau dahintersteckt, weiß er nach eigener Aussage nicht, und unbestätigte Gerüchte will er nicht verbreiten. Andrew Curran schreibt, er habe das ebenfalls gehört; das Gerücht über Anthropic und OpenAI halte sich seit etwa zehn Tagen. Von den Labs gibt es dazu keine Aussage, und eine offizielle Verbindung zu Googles Cogentic-Paper hat niemand hergestellt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2125589468786909510",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-25",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2125690962160820541",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-25"
+        }
+      ],
+      "original": {
+        "url": "https://scottaaronson.blog/",
+        "label": "Shtetl-Optimized"
+      }
+    },
+    {
+      "id": "openai-gpt-6-2-billing-fix",
+      "headline": "OpenAI behebt Abrechnungsfehler bei GPT-6.2",
+      "status": "confirmed",
+      "summary": "Seit dem Launch von GPT-6.2 hat OpenAI die Nutzung von GPT-6.2 Astra und Sol bei den meisten Nutzern wegen eines Abrechnungsfehlers zu niedrig angerechnet. Nach dem Fix verbraucht dieselbe Arbeit mehr vom Kontingent des Plans: Im Vergleich zur Vorwoche erreicht man die Limits mit GPT-6.2 Astra 40 Prozent und mit Sol 25 Prozent schneller, im Vergleich zu 6 Astra und 6.1 Sol reicht das Kontingent laut OpenAI aber weiterhin länger. Andere Modelle waren nicht betroffen, für vergangene Nutzung berechnet OpenAI nichts nach, und als Entschuldigung bekommen alle Nutzer von Go, Plus, Pro und Business einen zusätzlichen Banked Reset.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/thsottiaux/status/2125784147889393806",
+        "handle": "thsottiaux",
+        "date": "2026-11-26"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/OpenAIDevs/status/2125786156164067358",
+          "handle": "OpenAIDevs",
+          "date": "2026-11-26"
+        },
+        {
+          "url": "https://x.com/StatsWire/status/2125784770613510475",
+          "handle": "StatsWire",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-messages-api-rust",
+      "headline": "Anthropic migriert Messages API von Python auf Rust",
+      "status": "confirmed",
+      "summary": "Anthropic hat die Messages API, über die Kunden und Anthropics eigene Apps wie Claude Code und Cowork auf Claude zugreifen, von Python auf Rust umgestellt. Im Herbst 2026 war der API-Traffic rund 1.800-mal so hoch wie Anfang 2024. Eine erste Version des zentralen Request-Pfads hat Claude in etwa einer Woche geschrieben, schwierig war die Verifikation: Die produktive Python-API diente als Referenz, die Rust-Version lief gegen Produktions-Traffic, und gefundene Abweichungen gingen automatisch an Teams von Claude-Agents zum Fixen. Ergebnis sind etwa 70 Prozent weniger CPU pro Request und eine etwa 20 Prozent niedrigere mediane Time to First Token, ohne Downtime und ohne Feature-Freeze.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+        "handle": "AnthropicAI",
+        "date": "2026-11-25"
+      },
+      "original": {
+        "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+        "label": "Anthropic-Blog"
+      }
+    },
+    {
+      "id": "nvidia-dpa-report",
+      "headline": "Bericht: Pentagon erwog Defense Production Act gegen Nvidia-Vorstand",
+      "status": "rumor",
+      "summary": "Laut Washington Post haben Pentagon-Spitzen am Wochenende diskutiert, mit dem Defense Production Act den Nvidia-Vorstand unter Druck zu setzen, damit er Jensen Huang wieder als CEO einsetzt; die Zeitung nennt als Quelle drei Personen, die mit der Debatte vertraut sind. Das Gesetz von 1950 aus der Zeit des Kalten Kriegs erlaubt dem Präsidenten keine Personalentscheidungen in Privatunternehmen, ein Vertreter der Trump-Regierung sagte der Zeitung aber, man könne Nvidia damit zwingen, Produktion auf weniger profitable Militärprojekte zu verlagern. Ein Pentagon-Vertreter dementiert: Weder Secretary noch Deputy Secretary oder Under Secretary hätten so etwas vorgeschlagen. Huang ist inzwischen wieder Nvidia-CEO.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2125740125229555787",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-26",
+        "via": true
+      },
+      "original": {
+        "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
+        "label": "Washington Post"
+      }
+    },
+    {
+      "id": "dario-axios-response",
+      "headline": "Dario Amodei widerspricht Axios-Artikel zu KI und freiem Willen",
+      "status": "confirmed",
+      "summary": "Auf einen Axios-Artikel antwortet Dario Amodei, er glaube nicht, dass man den freien Willen des Menschen an KI-Systeme abgeben sollte, und es sei absurd, ihm das zu unterstellen. KI muss aus seiner Sicht über legitime demokratische Prozesse gesteuert werden; die Steuerung selbst an KI zu übergeben, nennt er „a terrible idea“. Bei der Automatisierung einzelner Aufgaben sieht er es gemischt: Rekursive Selbstverbesserung mit zu viel Autonomie braucht etwa Grenzen, und Anthropic hatte Anfang November erklärt, man halte es nicht für sicher, Claude ohne nennenswerte menschliche Aufsicht vollständig autonom die nächsten Frontier-Modelle bauen zu lassen. Die anderen KI-Firmen unterscheiden sich in ihren Produkten laut Amodei nicht wesentlich, er kritisiert aber die „vibes-based commercial and political positioning“ mancher KI-CEOs mit Slogans wie „AI should be just a tool“.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/DarioAmodei/status/2125656399392690605",
+        "handle": "DarioAmodei",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "opus-next-stealth-test",
+      "headline": "Anthropic testet offenbar Modell „opus-next“ im Stealth-Modus",
+      "status": "rumor",
+      "summary": "Der X-Nutzer legit_api berichtet, dass ein Modell namens „opus-next“ bei einigen Nutzern im Stealth-Test läuft, und zeigt als Beispiel eine einminütige animierte GTA-6-Parodie als SVG. Auf den Prompt „Print reasoning effort value (number)“ gibt opus-next bei xhigh einen Effort-Wert von 30 an, Opus 5.5 nennt 40; beides sind Selbstauskünfte der Modelle. Es gibt nur Modellausgaben als Beleg, weder Model-ID noch Endpoint oder ein Statement von Anthropic, und ein anderer Nutzer bekam in sechs Versuchen keine Antwort eines neuen Modells.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/legit_api/status/2125582535971192895",
+        "handle": "legit_api",
+        "date": "2026-11-25"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/legit_api/status/2125692022204059840",
+          "handle": "legit_api",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "id": "openai-private-inference",
+      "headline": "OpenAI testet Private Inference mit kleiner Kundengruppe",
+      "status": "confirmed",
+      "summary": "OpenAI testet Private Inference, das neueste Angebot innerhalb von OpenAI Private Intelligence, mit einer kleinen Gruppe von Kunden. Laut Sam Altman macht stärkerer Datenschutz Frontier-KI für deutlich mehr Arbeit nutzbar, außerdem sei Privatsphäre für Unternehmen wichtig für ein gesundes Ökosystem. Technische Details nennt er nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/sama/status/2125638790593274259",
+        "handle": "sama",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "thariq-joins-openai",
+      "headline": "Thariq wechselt von Anthropic zu OpenAI",
+      "status": "confirmed",
+      "summary": "Thariq, bisher im Claude-Code-Team bei Anthropic, ist zu OpenAI gewechselt. Auf X schreibt er, er sei stolz auf seine Zeit bei Anthropic und drücke seinen früheren Kollegen weiter die Daumen, beide Firmen hätten in Zukunft eine wichtige Rolle. Welche Aufgabe er bei OpenAI übernimmt, schreibt er nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/trq212/status/2125675533761671405",
+        "handle": "trq212",
+        "date": "2026-11-25"
+      }
+    }
+  ]
+}
