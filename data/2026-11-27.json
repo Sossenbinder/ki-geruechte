@@ -1,0 +1,177 @@
+{
+  "issue": "2026-11-27",
+  "number": 42,
+  "title": "Bank-of-England-Chef Bailey zu neuen KI-Modellen, Bericht über Verzögerung von GLM-5.5, Google verdoppelt Gemini-4-Preise",
+  "published": "2026-11-27",
+  "intro": "Andrew Bailey, Chef der Bank of England, sagt, KI-Entwickler machten sich Sorgen, dass ihre neuesten Modelle noch stärkere Fähigkeiten haben, und fordert robuste Tests vor und nach dem Release. Laut Reuters verzögert sich Z.AIs GLM-5.5, außerdem verdoppelt Google zum 1. Dezember die API-Preise für Gemini 4 Carbon und Argon. Dazu kommen ein Paper von Venkatesa Chandrasekaran zur Quantengravitation, GigaChat 4 von Sber mit offenen Gewichten, angebliche Speed-Werte für Opus Next, offenbar ein Google-Drive-Test in Claude, Ming-Image-0.2-Design von Ant Group und Perplexity Time Machine; jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "boe-bailey-ai-crypto",
+      "headline": "Bank-of-England-Chef Bailey fordert robuste Tests für neue KI-Modelle",
+      "status": "confirmed",
+      "summary": "Auf der Pressekonferenz zum Financial Stability Report hat FT-Journalist Martin Arnold Andrew Bailey nach Gerüchten gefragt, KI-Labs hätten schon Modelle, die die Kryptografie des Finanzsystems knacken können. Bailey hat das nicht bestätigt und sagt, er könne nicht kommentieren, was diese Modelle können und was nicht. Er sagt aber, die Entwickler hätten Bedenken, dass ihre neuesten Modelle noch stärkere Fähigkeiten haben, „Mythos is history“, und man sei laut den Firmen „on the exponential part“ der Entwicklung; das sorge für viel Vorsicht bei Releases. Bailey fordert robuste Modelltests vor und nach dem Release, national wie international. Im Report selbst nennt die Bank of England Quantencomputing als Risiko für verbreitete Kryptografie und einen geordneten Übergang zu quantenresistenter Kryptografie als Priorität.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AndrewCurran_/status/2126104931946156270",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/cmani/status/2126153963578032328",
+          "handle": "cmani",
+          "date": "2026-11-27"
+        }
+      ],
+      "original": {
+        "url": "https://www.bankofengland.co.uk/-/media/boe/files/financial-stability-report/2026/fsr-press-conference-transcript-november-2026.pdf",
+        "label": "Bank of England, Transkript"
+      }
+    },
+    {
+      "id": "reuters-glm-5-5-delay",
+      "headline": "Bericht: Z.AI verschiebt GLM-5.5, US-Regeln könnten Release weiter verzögern",
+      "status": "rumor",
+      "summary": "Z.AI wollte sein Flaggschiffmodell GLM-5.5 mit rund 3 Billionen Parametern im November veröffentlichen, hat das aber noch nicht getan, berichtet Reuters mit Bezug auf zwei anonyme Quellen. Einer der Gründe sind laut einer Quelle die immer wirksameren Schutzmaßnahmen gegen Distillation; die US-Regel, die seit dem 19. November chinesischen Zugriff auf große Rechenkapazität mit US-Chips in Rechenzentren im Ausland an Lizenzen knüpft, könnte den Launch bis ins erste Quartal 2027 oder später verschieben. Moonshot rechnet intern damit, dass der Abstand zwischen großen Releases von sechs auf zwölf Monate oder mehr wächst, falls der Zugang zu Rechenkapazität im Ausland ganz wegfällt. GLM-5.4 mit 750 Milliarden Parametern hat Z.AI am Montag veröffentlicht; Z.AI und Moonshot haben sich zunächst nicht geäußert.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/Reuters/status/2125904941545865231",
+        "handle": "Reuters",
+        "date": "2026-11-26"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2125899930996740427",
+          "handle": "kimmonismus",
+          "date": "2026-11-26"
+        }
+      ],
+      "original": {
+        "url": "https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154",
+        "label": "Reuters"
+      }
+    },
+    {
+      "id": "gemini-4-price-increase",
+      "headline": "Google verdoppelt API-Preise für Gemini 4 Carbon und Argon",
+      "status": "confirmed",
+      "summary": "Laut der Doku in Google AI Studio kostet Gemini 4 Carbon im Paid Tier ab dem 1. Dezember 2026 4 statt 2 US-Dollar pro 1 Million Input-Tokens und 20 statt 10 US-Dollar pro 1 Million Output-Tokens, Thinking-Tokens eingeschlossen. Context Caching steigt von 0,10 auf 0,20 US-Dollar pro 1 Million Tokens. Für Gemini 4 Argon gelten ab dem 1. Dezember dieselben neuen Preise von 4 und 20 US-Dollar.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/yinggewangel3/status/2125957737695547496",
+        "handle": "yinggewangel3",
+        "date": "2026-11-26",
+        "via": true
+      },
+      "original": {
+        "url": "https://aistudio.google.com/docs/models/gemini-4-carbon",
+        "label": "Google AI Studio"
+      }
+    },
+    {
+      "id": "openai-quantum-gravity-paper",
+      "headline": "Venkatesa Chandrasekaran stellt Ansatz für Quantengravitation in 4D vor",
+      "status": "confirmed",
+      "summary": "Im arXiv-Paper „An algebraic quantization of gravity from the null cone“ beschreibt Venkatesa Chandrasekaran eine hintergrundunabhängige Quantisierung der allgemeinen Relativitätstheorie im Vakuum auf vierdimensionalen Lorentz-Raumzeiten. Laut Abstract liefert der Ansatz eine endliche Amplitude für die Paarerzeugung von Gravitonen, reproduziert die Bekenstein-Hawking-Entropie samt logarithmischer Korrektur und leitet die semiklassischen Einstein-Gleichungen auf One-Loop-Ebene her. roon von OpenAI hat das Paper geteilt, Sam Altman nennt Chandrasekaran einen der Ersten, die daran glaubten, mit den damaligen Modellen Millennium-Probleme lösen zu können; kimmonismus schreibt, die Arbeit sei großteils mit GPT-6 Astra entstanden, im Abstract steht davon nichts. arXiv nennt Stanford als Affiliation, peer-reviewed ist das Paper nicht, und eine unabhängige Einschätzung gibt es noch nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/tszzl/status/2125809711509336342",
+        "handle": "tszzl",
+        "date": "2026-11-26"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/sama/status/2125990371897557278",
+          "handle": "sama",
+          "date": "2026-11-26"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2125856219667566872",
+          "handle": "kimmonismus",
+          "date": "2026-11-26"
+        }
+      ],
+      "original": {
+        "url": "https://arxiv.org/abs/2611.34924",
+        "label": "arXiv"
+      }
+    },
+    {
+      "id": "gigachat-4-open-weights",
+      "headline": "Sber veröffentlicht GigaChat 4 mit offenen Gewichten",
+      "status": "confirmed",
+      "summary": "Sber hat GigaChat 4 auf Hugging Face veröffentlicht: ein hybrides MoE-Modell mit 708 Milliarden Parametern, davon 41 Milliarden aktive Parameter, rund 1 Million Tokens Kontext und Instant- und Reasoning-Modus in einem Checkpoint, unter MIT-Lizenz. Dazu gibt es eine kleinere 37B-Variante mit rund 3,8 Milliarden aktiven Parametern, laut einem X-Post unter einer nicht-kommerziellen Lizenz für Privatpersonen. In der eigenen Eval-Tabelle kommt das 708B-Modell auf 69,66 Prozent in Terminal-Bench 2.1, GLM-5.3 liegt dort mit 88,70 Prozent vorn.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/supermy/status/2126111442487361554",
+        "handle": "supermy",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "original": {
+        "url": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B",
+        "label": "Hugging Face"
+      }
+    },
+    {
+      "id": "opus-next-speed-claim",
+      "headline": "Opus Next laut Tester doppelt so schnell wie Opus 5.5",
+      "status": "rumor",
+      "summary": "Neues zum gestern gemeldeten Stealth-Test: Der Tester chetaslua schreibt, Opus Next sei doppelt so schnell wie Opus 5.5, mit bis zu 291 Tokens pro Sekunde im normalen Modus (nicht im Fast Mode) und 1 bis 1,5 Sekunden bis zum ersten Token statt 4 bis 6 Sekunden bei Opus 5.5 mit Extra Effort; die Token-Effizienz sei im Schnitt rund 30 Prozent besser. Das sind seine eigenen Messwerte, später schrieb er, sein Routing habe in der Nacht aufgehört und nur sehr wenige hätten Zugang, andere können das Routing nicht reproduzieren. kimmonismus fragt sich, ob das Opus 5.6 ist; Anthropic hat weder ein neues Modell noch eine Model-ID oder ein Datum bestätigt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/chetaslua/status/2125871189537218930",
+        "handle": "chetaslua",
+        "date": "2026-11-26"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/kimmonismus/status/2125986784853262662",
+          "handle": "kimmonismus",
+          "date": "2026-11-26"
+        }
+      ]
+    },
+    {
+      "id": "claude-google-drive-test",
+      "headline": "Anthropic testet offenbar Google-Drive-Integration in Claude",
+      "status": "rumor",
+      "summary": "Laut testingcatalog testet Anthropic eine Dateiverwaltung für Google Drive, mit der man direkt in der Claude-Oberfläche durch Docs, Sheets und Slides navigieren kann; als Beleg gibt es einen Screenshot. Eine ähnliche Funktion gibt es laut testingcatalog schon in ChatGPT Spaces. Angekündigt hat Anthropic das nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/testingcatalog/status/2126014729273405625",
+        "handle": "testingcatalog",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ming-image-0-2-design",
+      "headline": "Ant Group veröffentlicht Bildmodell Ming-Image-0.2-Design als Open Source",
+      "status": "confirmed",
+      "summary": "Ant Group hat Ming-Image-0.2-Design unter MIT-Lizenz auf Hugging Face gestellt, ein Text-to-Image-Modell mit rund 6 Milliarden Parametern für Hero-Bilder im E-Commerce, UI-Entwürfe und Raum-Renderings. Nach Angaben von Ant Group liegt es im AA-Image-T2I v2.1 von Artificial Analysis mit 1.095 Elo auf Platz 1 der Open-Weight-Modelle. Nächste Woche soll Ming-Image-0.2-Design-Layer folgen, das Designs in transparente Ebenen zerlegt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AntLingAGI/status/2125916926048358827",
+        "handle": "AntLingAGI",
+        "date": "2026-11-26"
+      },
+      "original": {
+        "url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design",
+        "label": "Hugging Face"
+      }
+    },
+    {
+      "id": "perplexity-time-machine",
+      "headline": "Perplexity bringt Time Machine in Search- und Context-API",
+      "status": "confirmed",
+      "summary": "Perplexity Time Machine zeigt einem Modell das Web so, wie es an einem frei gewählten Datum aussah. Laut Perplexity-CEO Aravind Srinivas lassen sich damit Agents post-trainen, die gut darin sind, die Zukunft vorherzusagen; die Funktion ist ab sofort in den Search und Context APIs verfügbar. Ein Nutzer weist darauf hin, dass mit Epochal einen Tag vorher schon eine ähnliche Time Machine fürs Internet erschienen ist, praktisch etwa für Backtests ohne Leaks.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/AravSrinivas/status/2125707364053680383",
+        "handle": "AravSrinivas",
+        "date": "2026-11-25"
+      }
+    }
+  ]
+}
