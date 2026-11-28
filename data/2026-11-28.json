@@ -1,0 +1,253 @@
+{
+  "issue": "2026-11-28",
+  "number": 43,
+  "title": "OpenAI erhebt Gegenklage gegen Apple, britischer Parlamentsausschuss schreibt Anthropic wegen METR-Bericht, Hackerangriff auf SAP",
+  "published": "2026-11-28",
+  "intro": "OpenAI wirft Apple in einer Gegenklage unter anderem vor, Mitarbeiter mit seinen Arbeitsbedingungen in eine Falle zu locken und Zulieferer unter Druck zu setzen; Apple weist das zurück. Ein Ausschuss des britischen Parlaments hat Anthropic wegen des METR-Berichts zur KI-Forschung bei Anthropic angeschrieben, und SAP bestätigt einen Hackerangriff, bei dem laut Insidern Quellcode auf GitHub verändert wurde. Außerdem: ein neuer Blogpost von Scott Aaronson zu einem angeblichen Durchbruch in der Kryptoanalyse, Platz 2 für Gemini 4 Neon im Epoch Capabilities Index, offenbar ein Stealth-Test von Sonnet Next, Berichte über Änderungen in Antigravity und eine neue Codex-Alpha; jede Meldung ist als bestätigt oder Gerücht markiert.",
+  "items": [
+    {
+      "id": "openai-apple-countersuit",
+      "headline": "OpenAI erhebt Gegenklage gegen Apple wegen Geschäftsgeheimnissen",
+      "status": "confirmed",
+      "summary": "OpenAI hat am Freitag vor einem Bundesgericht in Kalifornien Gegenklage gegen Apple eingereicht, zuerst hatte die Financial Times berichtet. Es geht um Apples Klage wegen Geschäftsgeheimnissen gegen OpenAI, io Products und die früheren Apple-Mitarbeiter Tang Tan und Chang Liu. OpenAI wirft Apple unter anderem vor, seine Arbeitsbedingungen seien darauf angelegt, Mitarbeiter in eine „Falle“ zu locken, Apple habe einen früheren OpenAI-Mitarbeiter mit Zugriff auf ein neues Gerät und die Hardware-Roadmap wieder eingestellt und setze Zulieferer unter Druck, die für beide Firmen arbeiten. Apple nennt die Gegenklage einen durchsichtigen Ablenkungsversuch, bestreitet die Vorwürfe und verweist darauf, dass OpenAI im laufenden Verfahren schon angewiesen wurde, keine vertraulichen Apple-Informationen mehr zu nutzen. Über OpenAIs Vorwürfe hat noch kein Gericht entschieden.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126383625222672691",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/",
+          "handle": "CBS News",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://decrypt.co/384222/openai-countersuit-apple-trade-secret-theft-claims",
+          "handle": "Decrypt",
+          "date": "2026-11-27"
+        }
+      ],
+      "original": {
+        "url": "https://www.cnbc.com/2026/11/27/openai-countersues-apple-for-stealing-trade-secrets-ft-reports.html",
+        "label": "CNBC"
+      }
+    },
+    {
+      "id": "uk-committee-metr-anthropic",
+      "headline": "Britischer Parlamentsausschuss schreibt Anthropic wegen METR-Bericht",
+      "status": "confirmed",
+      "summary": "Der Business, Innovation, Science and Trade Committee des britischen Parlaments hat am Freitag einen Brief an Anthropic veröffentlicht, Thema ist der METR-Bericht zur Beschleunigung der KI-Forschung bei Anthropic. Laut Presseberichten fordert der Ausschussvorsitzende Liam Byrne bis zum 4. Dezember den ungeschwärzten Bericht oder die fehlenden Teile und eine Erklärung der Schwärzungen. Diese Details stammen aus der Presse, nicht aus dem Brief selbst. METR schätzt in dem Bericht vom 5. November, dass Anthropic seine Fähigkeiten bei klar spezifizierten Aufgaben etwa doppelt so schnell verbessert wie von März 2024 bis Oktober 2025, rund 80 Prozent davon gehen demnach auf KI zurück, bei großer Unsicherheit. Den Großteil der Belege, die METR für am aussagekräftigsten hielt, hat Anthropic geschwärzt, mit der Begründung, vertrauliche Informationen könnten anderen KI-Entwicklern helfen; eine Antwort von Anthropic auf den Brief ist nicht bekannt.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126300492653613373",
+        "handle": "discoplomacy",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/i/status/2126340522021458217",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+          "handle": "METR",
+          "date": "2026-11-05"
+        }
+      ],
+      "original": {
+        "url": "https://api.parliament.uk/committees/publications/56062",
+        "label": "UK Parliament"
+      }
+    },
+    {
+      "id": "sap-cyberattack-spiegel",
+      "headline": "SAP bestätigt Hackerangriff, Insider berichten von manipuliertem Quellcode",
+      "status": "confirmed",
+      "summary": "SAP hat verdächtige Aktivitäten festgestellt und nach eigenen Angaben sofort die nötigen Maßnahmen ergriffen; Hinweise auf unbefugten Zugriff auf Geschäftsdaten von Kunden gibt es laut SAP bisher nicht. Insider sagen dem SPIEGEL, die Angreifer hätten Authentifizierungs-Tokens von Mitarbeitern erbeutet und damit Quellcode auf GitHub kopiert und verändert, möglicherweise mit Hilfe von KI-Agents; Security Affairs berichtet von einem internen Memo, in dem der Vorfall „Project Granite“ heißt. Laut Handelsblatt hat SAP Signing Keys ausgetauscht, den GitHub-Zugriff eingeschränkt und automatisierte Entwicklungsprozesse ausgesetzt. Ob proprietärer Code betroffen ist, ist unklar, weil SAP auch Open-Source-Projekte auf GitHub veröffentlicht; dass manipulierter Code bei Kunden gelandet ist, berichtet niemand, und bekannt hat sich zu dem Angriff bisher niemand.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126139949024002276",
+        "handle": "IntCyberDigest",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+          "handle": "SecurityWeek",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://securityaffairs.com/204121/data-breach/sap-security-incident-stolen-tokens-raise-supply-chain-concerns.html",
+          "handle": "Security Affairs",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://x.com/i/status/2126222397778899075",
+          "handle": "kimmonismus",
+          "date": "2026-11-27"
+        }
+      ],
+      "original": {
+        "url": "https://www.spiegel.de/netzwelt/sap-wird-opfer-von-hackerangriff-a-6648b5ce-5d74-48dc-86ea-9469705bb91d",
+        "label": "DER SPIEGEL"
+      }
+    },
+    {
+      "id": "aaronson-cryptanalysis-breakthrough",
+      "headline": "Scott Aaronson: KI-Labs veröffentlichen angeblich bald Durchbruch in Kryptoanalyse",
+      "status": "rumor",
+      "summary": "In einem neuen Blogpost, aufgemacht als humorvolles Telefonat mit einem Autor eines Finanz-Newsletters, schreibt Scott Aaronson, er habe „specific information“, dass die Labs bald einen großen Durchbruch in der theoretischen Kryptoanalyse veröffentlichen; aktuell eingesetzte Kryptosysteme seien dadurch aber nicht unmittelbar in Gefahr. Damit wird er konkreter und zurückhaltender als in seinem vorigen Post, in dem es noch hieß, einige der Algorithmen würden eingesetzte Kryptosysteme brechen. Konkrete Informationen hat er nach eigener Aussage nicht, auch nicht zu Gerüchten über Brüche, die gefährlich wären, falls sie stimmen. Andrew Curran schreibt, er kenne die Entdeckung nicht, sie sei aber echt; bestätigt hat keins der Labs etwas.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126419031582449674",
+        "handle": "AndrewCurran_",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/i/status/2126431298705035697",
+          "handle": "kimmonismus",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://x.com/i/status/2126465655377633494",
+          "handle": "AndrewCurran_",
+          "date": "2026-11-28"
+        },
+        {
+          "url": "https://scottaaronson.blog/?p=10379",
+          "handle": "Scott Aaronson",
+          "date": "2026-11-25"
+        }
+      ],
+      "original": {
+        "url": "https://scottaaronson.blog/?p=10387",
+        "label": "Shtetl-Optimized"
+      }
+    },
+    {
+      "id": "gemini-neon-epoch-eci",
+      "headline": "Gemini 4 Neon landet im Epoch Capabilities Index auf Platz 2",
+      "status": "confirmed",
+      "summary": "Im Epoch Capabilities Index (ECI) von Epoch AI kommt Gemini 4 Neon auf 171,79 Punkte, gerundet 172. Damit liegt das Modell knapp hinter Claude Fable 5.2 mit 173,16 und knapp vor GPT-6.2 Astra mit 171,64. Die Abstände von 1,37 und 0,15 Punkten liegen weit innerhalb der Konfidenzintervalle, für Neon reicht das 95-Prozent-Intervall von 168,42 bis 175,65.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126426884225589663",
+        "handle": "HarshithLucky3",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "original": {
+        "url": "https://epoch.ai/benchmarks/eci",
+        "label": "Epoch AI"
+      }
+    },
+    {
+      "id": "sonnet-next-stealth-test",
+      "headline": "Anthropic testet offenbar Sonnet Next in Claude Code",
+      "status": "rumor",
+      "summary": "Laut synthwavedd läuft Claude Sonnet Next gerade als Stealth-Test bei einigen Claude-Code-Nutzern und ist ein großer Sprung gegenüber dem Vorgänger; als Demo gibt es ein „infinite driving game“, gebaut mit Ultracode im Ultra-Plan. legit_api schreibt, Sonnet Next sei schon seit einigen Wochen im Test und der Checkpoint Anfang der Woche aktualisiert worden, Opus Next habe Anthropic in der Nacht auf Donnerstag aus dem Stealth-Test genommen; kimmonismus erwartet, dass bald auch „Sonnet 5.6“ kommt, der Name ist seine Vermutung. Dagegen spricht: Der Modellkatalog, den Claude Code herunterlädt, listet weiterhin claude-opus-5-5, und es gibt weder Ankündigung noch Model-ID, Preis oder System Card.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126375716518252889",
+        "handle": "synthwavedd",
+        "date": "2026-11-27"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/i/status/2126260111437930877",
+          "handle": "legit_api",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://x.com/i/status/2126381535024615511",
+          "handle": "kimmonismus",
+          "date": "2026-11-27"
+        },
+        {
+          "url": "https://x.com/i/status/2126505218875805787",
+          "handle": "hu87677",
+          "date": "2026-11-28"
+        },
+        {
+          "url": "https://x.com/i/status/2126529020892467278",
+          "handle": "hjdiandian",
+          "date": "2026-11-28"
+        }
+      ]
+    },
+    {
+      "id": "antigravity-model-retirements",
+      "headline": "Bericht: Google nimmt fünf Modelle aus Antigravity",
+      "status": "rumor",
+      "summary": "StatsWire meldet, dass Google am 30. November fünf Modelle aus Antigravity entfernt: Gemini 4 Argon, Gemini 3.8 Flash, Claude Opus 4.6 (Thinking), Claude Sonnet 4.6 (Thinking) und GPT-OSS 120B. Argon wäre damit nach 48 Tagen wieder weg, das Modell kam am 13. Oktober. Logan Kilpatrick von Google antwortet darauf, die Frontier bewege sich schnell, Neon sei „amazing“ und der Wechsel sollte reibungslos laufen; das bestätigt indirekt das Aus für Argon, die anderen Modelle nennt er nicht, und einen Hinweis im Antigravity-Changelog oder in der Doku gibt es bisher nicht.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126216957124890934",
+        "handle": "StatsWire",
+        "date": "2026-11-27"
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/i/status/2126522921418178991",
+          "handle": "OfficialLoganK",
+          "date": "2026-11-28"
+        }
+      ]
+    },
+    {
+      "id": "antigravity-agents-bundles",
+      "headline": "Bericht: Google arbeitet an Agent-Erstellung und Bundles für Antigravity",
+      "status": "rumor",
+      "summary": "TestingCatalog hat in Antigravity zwei versteckte Funktionen gefunden: einen Screen, auf dem man eigene Agents mit Icon, Name, Ziel und angehängten Ressourcen anlegt und der noch früh in der Entwicklung ist, und Bundles, also kuratierte Plugin-Sammlungen für typische Workflows und Berufe wie Finance oder Legal. Belege sind zwei Screenshots vom 26. November. Laut Changelog zeigt Antigravity seit Version 2.34.0 vom 20. November im Tab Installed allerdings schon „bundles“ an, den Begriff gibt es also womöglich schon in anderer Form; angekündigt hat Google nichts.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126306271892475950",
+        "handle": "testingcatalog",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://x.com/i/status/2126331794379215080",
+          "handle": "testingcatalog",
+          "date": "2026-11-27"
+        }
+      ],
+      "original": {
+        "url": "https://www.testingcatalog.com/google-develops-bundles-and-agent-creation-for-antigravity/",
+        "label": "TestingCatalog"
+      }
+    },
+    {
+      "id": "codex-alpha-features",
+      "headline": "StatsWire: Neue Codex-Alpha enthält ChatGPT Voice und Bildvorschau",
+      "status": "rumor",
+      "summary": "OpenAI hat im Repo openai/codex am 27. November das Pre-Release rust-v0.174.0-alpha.9 ohne Release Notes veröffentlicht, die aktuelle stabile Version ist rust-v0.172.0 vom 24. November. StatsWire will im Diff zwischen beiden Versionen unter anderem eine ChatGPT-Voice-Integration, Bildvorschauen direkt im Terminal, dauerhafte Side Chats, signierte Plugins, eigene Statuszeilen und animierte Terminal-Pets gefunden haben. Geprüft ist die Liste nicht, Alpha-Builds sind keine Release-Zusage, und angekündigt hat OpenAI nichts davon.",
+      "take": "",
+      "source": {
+        "url": "https://x.com/i/status/2126389761443021056",
+        "handle": "StatsWire",
+        "date": "2026-11-27",
+        "via": true
+      },
+      "more_sources": [
+        {
+          "url": "https://github.com/openai/codex/tags",
+          "handle": "GitHub",
+          "date": "2026-11-27"
+        }
+      ],
+      "original": {
+        "url": "https://github.com/openai/codex/releases",
+        "label": "GitHub"
+      }
+    }
+  ]
+}
